@@ -1,0 +1,45 @@
+{
+  "id": "homepage",
+  "type": "SharedSlice",
+  "name": "Homepage",
+  "description": "Homepage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "banner_heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Banner_heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1"
+          }
+        },
+        "banner_paragraph": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Banner_paragraph",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "banner_image": {
+          "type": "Image",
+          "config": {
+            "label": "Banner_Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

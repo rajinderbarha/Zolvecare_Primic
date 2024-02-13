@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +31,56 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+.container_benner {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.benner_Home {
+  padding: 0px 0px 495px 0px;
+  position: relative;
+}
+
+.Beener-bg {
+  padding: 56px 16px 0px 16px;
+  background: linear-gradient(180deg, #FFF 0%, #DBEAFE 100%);
+}
+
+.Benner_intro h1 {
+  color:  #1E293B;
+  font-size: 72px;
+  line-height: 74px;
+  letter-spacing: 0.5px;
+}
+
+.Benner_intro p {
+  color: #334155;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.benner_blenk {
+  height: 420px;
+}
+
+.Benner_img img {
+  max-width: 996px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 120px;
+}
+.Logos_move {
+  background: #F8FAFC;
+  padding: 48px 0;
+}
+
+.rfm-child {
+  padding: 0 54px;
 }
