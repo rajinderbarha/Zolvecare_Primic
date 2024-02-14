@@ -2,6 +2,7 @@ import Documentation from "@/components/Homepage/Documentation";
 import Feature from "@/components/Homepage/Feature";
 import Heading from "@/components/Homepage/Heading";
 import Logomove from "@/components/Homepage/Logomove";
+import TestimonialSection from "@/components/Homepage/TestimonialSection";
 import { createClient } from "@/prismicio";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
@@ -84,6 +85,8 @@ const Homepage = ({ slice }: HomepageProps): JSX.Element => {
             <Feature/>
 
             <Documentation/>
+            <TestimonialSection/>
+        
           </section>
 
         </>

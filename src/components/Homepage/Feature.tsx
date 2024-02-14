@@ -51,6 +51,7 @@ const Feature = async () => {
 
 
       <section >
+        {/**Add a Background Image here  either below or normal reactjsx */}
       {/* <PrismicNextImage field={data.getstartedbgimage} /> */}
 
       <PrismicRichText field={Homepagelanding.data.getstartedh2} components={{
@@ -63,7 +64,8 @@ const Feature = async () => {
                         <p className="font-normal relative z-10">{children}</p>
                       )
                     }}/>
-      {/* <PrismicNextLink field={Homepagelanding.data.getstartedlinkbtn}>{<>{Homepagelanding.data.getstartedbtnlabel}</>}</PrismicNextLink> */}
+        {/**Add a button here  either below or normal reactjsx */}
+           {/* <PrismicNextLink field={Homepagelanding.data.getstartedlinkbtn} style={{backgroundColor:"lightblue"}}>{<>{Homepagelanding.data.getstartedbtnlabel}</>}</PrismicNextLink> */}
 
       </section>
     </>

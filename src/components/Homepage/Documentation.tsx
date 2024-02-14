@@ -6,17 +6,17 @@ import { PrismicRichText } from "@prismicio/react";
 
 const Documentation = async () => {
   const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
-  const HomepageHomepageDocumentation = await client.getSingle(
+  const HomepageDocumentation = await client.getSingle(
     "homepagedocumentation"
-  ); // here settings is API id //// here we are fetching our settings from Settings document(whose type is single when we created) of Custom types in the Prismic  //Queries a single document from the Prismic repository for a specific custom type.//@returns The singleton document for the custom type, if a matching document exists.
-  // console.log("HomepageHomepageDocumentation",HomepageHomepageDocumentation)
-  //   console.log("landing", landing.data.featureboxes[0])
+  ); 
+
+  const Homepagelanding = await client.getSingle("landing")  //     we accessing this for below buttton 
 
   return (
     <div>
       <div>
         <PrismicRichText
-          field={HomepageHomepageDocumentation.data.documentationh2}
+          field={HomepageDocumentation.data.documentationh2}
           components={{
             heading2: ({ children }) => (
               <h2 className="xl:mb-20 text-center mx-auto font-semibold sm:mb-10">
@@ -26,7 +26,7 @@ const Documentation = async () => {
           }}
         />
         <section>
-          {HomepageHomepageDocumentation.data.documentationcontent.map(
+          {HomepageDocumentation.data.documentationefficiency.map(
             (item) => (
               <ul
                 key={Math.random.toString()}
@@ -66,17 +66,166 @@ const Documentation = async () => {
             )
           )}
           <PrismicNextImage
-            field={HomepageHomepageDocumentation.data.documentation_mobileimg1}
+            field={HomepageDocumentation.data.documentation_parallelmobileimg1}
             className=""
           />
         </section>
 
         <div>
           <PrismicNextImage
-            field={HomepageHomepageDocumentation.data.documentation_vector1}
+            field={HomepageDocumentation.data.documentation_vector1}
           />
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+      <div>
+
+      <PrismicNextImage
+            field={HomepageDocumentation.data.documentation_ai_image}
+            className=""
+          />
+
+  
+        <section>
+          {HomepageDocumentation.data.documentation_ai_content.map(
+            (item) => (
+              <ul
+                key={Math.random.toString()}
+                className="relative Features_boxs"
+              >
+                <li>
+                  <PrismicRichText
+                    field={item.documentation_ai_para1}
+                    components={{
+                      paragraph: ({ children }) => (
+                        <p className="font-normal relative z-10">{children}</p>
+                      ),
+                    }}
+                  />
+
+                  <PrismicRichText
+                    field={item.documentation_ai_h3tag}
+                    components={{
+                      heading3: ({ children }) => (
+                        <h3 className="mb-4 relative z-10  font-semibold">
+                          {children}
+                        </h3>
+                      ),
+                    }}
+                  />
+
+                  <PrismicRichText
+                    field={item.documentation_ai_para2}
+                    components={{
+                      paragraph: ({ children }) => (
+                        <p className="font-normal relative z-10">{children}</p>
+                      ),
+                    }}
+                  />
+                </li>
+              </ul>
+            )
+          )}
+         
+        </section>
+
+        <div>
+        <PrismicNextImage
+            field={HomepageDocumentation.data.documentation_ai_vector2}
+          />
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+      <div>
+       
+        <section>
+          {HomepageDocumentation.data.documentation_optimizing_content.map(
+            (item) => (
+              <ul
+                key={Math.random.toString()}
+                className="relative Features_boxs"
+              >
+                <li>
+                  <PrismicRichText
+                    field={item.documentation_optimizing_para1}
+                    components={{
+                      paragraph: ({ children }) => (
+                        <p className="font-normal relative z-10">{children}</p>
+                      ),
+                    }}
+                  />
+
+                  <PrismicRichText
+                    field={item.documentation_optimizing_h3tag}
+                    components={{
+                      heading3: ({ children }) => (
+                        <h3 className="mb-4 relative z-10  font-semibold">
+                          {children}
+                        </h3>
+                      ),
+                    }}
+                  />
+
+                  <PrismicRichText
+                    field={item.documentation_optimizing_para2}
+                    components={{
+                      paragraph: ({ children }) => (
+                        <p className="font-normal relative z-10">{children}</p>
+                      ),
+                    }}
+                  />
+                </li>
+              </ul>
+            )
+          )}
+          <PrismicNextImage
+            field={HomepageDocumentation.data.documentation_parallelmobileimg2}
+            className=""
+          />
+        </section>
+
+        <div>
+
+          {/**Add a button here  either below or normal reactjsx */}
+           {/* <PrismicNextLink field={Homepagelanding.data.getstartedlinkbtn} style={{backgroundColor:"lightblue"}}>{<>{Homepagelanding.data.getstartedbtnlabel}</>}</PrismicNextLink> */}
+        </div>
+
+
+      </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 };

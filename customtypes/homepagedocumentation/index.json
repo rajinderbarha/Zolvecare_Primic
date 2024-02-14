@@ -21,10 +21,10 @@
           "multi": "heading2"
         }
       },
-      "documentationcontent": {
+      "documentationefficiency": {
         "type": "Group",
         "config": {
-          "label": "DocumentationContent",
+          "label": "DocumentationEfficiency",
           "repeat": true,
           "fields": {
             "documentation_efficiencyptag": {
@@ -57,10 +57,10 @@
           }
         }
       },
-      "documentation_mobileimg1": {
+      "documentation_parallelmobileimg1": {
         "type": "Image",
         "config": {
-          "label": "Documentation_MobileImg1",
+          "label": "Documentation_ParallelMobileImg1",
           "constraint": {},
           "thumbnails": []
         }
@@ -69,6 +69,162 @@
         "type": "Image",
         "config": {
           "label": "Documentation_Vector1",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "documentation_ai_image": {
+        "type": "Image",
+        "config": {
+          "label": "Documentation_AI_image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "documentation_ai_content": {
+        "type": "Group",
+        "config": {
+          "label": "Documentation_AI_Content",
+          "repeat": true,
+          "fields": {
+            "documentation_ai_para1": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Documentation_AI_para1",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "documentation_ai_h3tag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Documentation_AI_H3tag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading3"
+              }
+            },
+            "documentation_ai_para2": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Documentation_AI_para2",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "documentation_ai_vector2": {
+        "type": "Image",
+        "config": {
+          "label": "Documentation_AI_Vector2",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "documentation_optimizing_content": {
+        "type": "Group",
+        "config": {
+          "label": "Documentation_Optimizing_Content",
+          "repeat": true,
+          "fields": {
+            "documentation_optimizing_para1": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Documentation_Optimizing_Para1",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "documentation_optimizing_h3tag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Documentation_Optimizing_H3Tag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading3"
+              }
+            },
+            "documentation_optimizing_para2": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Documentation_Optimizing_Para2",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "documentation_parallelmobileimg2": {
+        "type": "Image",
+        "config": {
+          "label": "Documentation_ParallelMobileImg2",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "documentation_testimonial": {
+        "type": "Group",
+        "config": {
+          "label": "Documentation_Testimonial",
+          "repeat": true,
+          "fields": {
+            "documentation_testimonialbgimage": {
+              "type": "Image",
+              "config": {
+                "label": "Documentation_TestimonialBgImage",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "documentation_testimonialimage": {
+              "type": "Image",
+              "config": {
+                "label": "Documentation_TestimonialImage",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "documentation_testimonialpara1": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Documentation_TestimonialPara1",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "documentation_testimonialpara2": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Documentation_TestimonialPara2",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "documentation_testimonialpara3": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Documentation_TestimonialPara3",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "documentation_testimonial_smallicon": {
+        "type": "Image",
+        "config": {
+          "label": "Documentation_Testimonial_SmallIcon",
           "constraint": {},
           "thumbnails": []
         }

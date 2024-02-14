@@ -485,38 +485,163 @@ export type HomePageDocument<Lang extends string = string> =
   >;
 
 /**
- * Item in *HomepageDocumentation → DocumentationContent*
+ * Item in *HomepageDocumentation → DocumentationEfficiency*
  */
-export interface HomepagedocumentationDocumentDataDocumentationcontentItem {
+export interface HomepagedocumentationDocumentDataDocumentationefficiencyItem {
   /**
-   * Documentation_EfficiencyPtag field in *HomepageDocumentation → DocumentationContent*
+   * Documentation_EfficiencyPtag field in *HomepageDocumentation → DocumentationEfficiency*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.documentationcontent[].documentation_efficiencyptag
+   * - **API ID Path**: homepagedocumentation.documentationefficiency[].documentation_efficiencyptag
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   documentation_efficiencyptag: prismic.RichTextField;
 
   /**
-   * DocumentationH3tag field in *HomepageDocumentation → DocumentationContent*
+   * DocumentationH3tag field in *HomepageDocumentation → DocumentationEfficiency*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.documentationcontent[].documentationh3tag
+   * - **API ID Path**: homepagedocumentation.documentationefficiency[].documentationh3tag
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   documentationh3tag: prismic.RichTextField;
 
   /**
-   * Documentation_Ptag field in *HomepageDocumentation → DocumentationContent*
+   * Documentation_Ptag field in *HomepageDocumentation → DocumentationEfficiency*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.documentationcontent[].documentation_ptag
+   * - **API ID Path**: homepagedocumentation.documentationefficiency[].documentation_ptag
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   documentation_ptag: prismic.RichTextField;
+}
+
+/**
+ * Item in *HomepageDocumentation → Documentation_AI_Content*
+ */
+export interface HomepagedocumentationDocumentDataDocumentationAiContentItem {
+  /**
+   * Documentation_AI_para1 field in *HomepageDocumentation → Documentation_AI_Content*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_ai_content[].documentation_ai_para1
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  documentation_ai_para1: prismic.RichTextField;
+
+  /**
+   * Documentation_AI_H3tag field in *HomepageDocumentation → Documentation_AI_Content*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_ai_content[].documentation_ai_h3tag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  documentation_ai_h3tag: prismic.RichTextField;
+
+  /**
+   * Documentation_AI_para2 field in *HomepageDocumentation → Documentation_AI_Content*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_ai_content[].documentation_ai_para2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  documentation_ai_para2: prismic.RichTextField;
+}
+
+/**
+ * Item in *HomepageDocumentation → Documentation_Optimizing_Content*
+ */
+export interface HomepagedocumentationDocumentDataDocumentationOptimizingContentItem {
+  /**
+   * Documentation_Optimizing_Para1 field in *HomepageDocumentation → Documentation_Optimizing_Content*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_optimizing_content[].documentation_optimizing_para1
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  documentation_optimizing_para1: prismic.RichTextField;
+
+  /**
+   * Documentation_Optimizing_H3Tag field in *HomepageDocumentation → Documentation_Optimizing_Content*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_optimizing_content[].documentation_optimizing_h3tag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  documentation_optimizing_h3tag: prismic.RichTextField;
+
+  /**
+   * Documentation_Optimizing_Para2 field in *HomepageDocumentation → Documentation_Optimizing_Content*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_optimizing_content[].documentation_optimizing_para2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  documentation_optimizing_para2: prismic.RichTextField;
+}
+
+/**
+ * Item in *HomepageDocumentation → Documentation_Testimonial*
+ */
+export interface HomepagedocumentationDocumentDataDocumentationTestimonialItem {
+  /**
+   * Documentation_TestimonialBgImage field in *HomepageDocumentation → Documentation_Testimonial*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_testimonial[].documentation_testimonialbgimage
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  documentation_testimonialbgimage: prismic.ImageField<never>;
+
+  /**
+   * Documentation_TestimonialImage field in *HomepageDocumentation → Documentation_Testimonial*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_testimonial[].documentation_testimonialimage
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  documentation_testimonialimage: prismic.ImageField<never>;
+
+  /**
+   * Documentation_TestimonialPara1 field in *HomepageDocumentation → Documentation_Testimonial*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_testimonial[].documentation_testimonialpara1
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  documentation_testimonialpara1: prismic.RichTextField;
+
+  /**
+   * Documentation_TestimonialPara2 field in *HomepageDocumentation → Documentation_Testimonial*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_testimonial[].documentation_testimonialpara2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  documentation_testimonialpara2: prismic.RichTextField;
+
+  /**
+   * Documentation_TestimonialPara3 field in *HomepageDocumentation → Documentation_Testimonial*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_testimonial[].documentation_testimonialpara3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  documentation_testimonialpara3: prismic.RichTextField;
 }
 
 /**
@@ -535,28 +660,28 @@ interface HomepagedocumentationDocumentData {
   documentationh2: prismic.RichTextField;
 
   /**
-   * DocumentationContent field in *HomepageDocumentation*
+   * DocumentationEfficiency field in *HomepageDocumentation*
    *
    * - **Field Type**: Group
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.documentationcontent[]
+   * - **API ID Path**: homepagedocumentation.documentationefficiency[]
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#group
    */
-  documentationcontent: prismic.GroupField<
-    Simplify<HomepagedocumentationDocumentDataDocumentationcontentItem>
+  documentationefficiency: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataDocumentationefficiencyItem>
   >;
 
   /**
-   * Documentation_MobileImg1 field in *HomepageDocumentation*
+   * Documentation_ParallelMobileImg1 field in *HomepageDocumentation*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.documentation_mobileimg1
+   * - **API ID Path**: homepagedocumentation.documentation_parallelmobileimg1
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  documentation_mobileimg1: prismic.ImageField<never>;
+  documentation_parallelmobileimg1: prismic.ImageField<never>;
 
   /**
    * Documentation_Vector1 field in *HomepageDocumentation*
@@ -568,6 +693,89 @@ interface HomepagedocumentationDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   documentation_vector1: prismic.ImageField<never>;
+
+  /**
+   * Documentation_AI_image field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_ai_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  documentation_ai_image: prismic.ImageField<never>;
+
+  /**
+   * Documentation_AI_Content field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_ai_content[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  documentation_ai_content: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataDocumentationAiContentItem>
+  >;
+
+  /**
+   * Documentation_AI_Vector2 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_ai_vector2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  documentation_ai_vector2: prismic.ImageField<never>;
+
+  /**
+   * Documentation_Optimizing_Content field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_optimizing_content[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  documentation_optimizing_content: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataDocumentationOptimizingContentItem>
+  >;
+
+  /**
+   * Documentation_ParallelMobileImg2 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_parallelmobileimg2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  documentation_parallelmobileimg2: prismic.ImageField<never>;
+
+  /**
+   * Documentation_Testimonial field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_testimonial[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  documentation_testimonial: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataDocumentationTestimonialItem>
+  >;
+
+  /**
+   * Documentation_Testimonial_SmallIcon field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.documentation_testimonial_smallicon
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  documentation_testimonial_smallicon: prismic.ImageField<never>;
 }
 
 /**
@@ -1003,7 +1211,10 @@ declare module "@prismicio/client" {
       HomePageDocumentDataSlicesSlice,
       HomepagedocumentationDocument,
       HomepagedocumentationDocumentData,
-      HomepagedocumentationDocumentDataDocumentationcontentItem,
+      HomepagedocumentationDocumentDataDocumentationefficiencyItem,
+      HomepagedocumentationDocumentDataDocumentationAiContentItem,
+      HomepagedocumentationDocumentDataDocumentationOptimizingContentItem,
+      HomepagedocumentationDocumentDataDocumentationTestimonialItem,
       LandingDocument,
       LandingDocumentData,
       LandingDocumentDataFeatureboxesItem,
