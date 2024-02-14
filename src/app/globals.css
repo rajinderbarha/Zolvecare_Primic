@@ -84,3 +84,41 @@ body {
 .rfm-child {
   padding: 0 54px;
 }
+
+
+
+/* .Features */
+.Features {
+  padding: 160px 16px;
+}
+
+.container_x {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Features_boxs {
+  padding-left: 95px;
+  max-width: 565px;
+}
+
+.Features h2 {
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: 0.5px;
+  max-width: 720px;
+
+}
+
+.Features_boxs h4 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+
+.Features_boxs p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}

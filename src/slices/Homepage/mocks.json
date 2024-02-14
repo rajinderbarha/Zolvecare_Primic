@@ -32,8 +32,10 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Labore labore ea sunt laborum do nulla qui excepteur ex voluptate est laboris tempor. Do consectetur consequat quis fugiat excepteur ipsum mollit ipsum."
-						}
+							"text": "Labore labore ea sunt laborum do nulla qui excepteur ex voluptate est laboris tempor. Do consectetur consequat quis fugiat excepteur ipsum mollit ipsum.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -49,6 +51,11 @@
 				]
 			}
 		},
-		"items": []
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
 	}
 ]

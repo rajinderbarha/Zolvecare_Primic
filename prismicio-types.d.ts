@@ -484,6 +484,151 @@ export type HomePageDocument<Lang extends string = string> =
     Lang
   >;
 
+/**
+ * Item in *Landing → FeatureBoxes*
+ */
+export interface LandingDocumentDataFeatureboxesItem {
+  /**
+   * count1 field in *Landing → FeatureBoxes*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.featureboxes[].count1
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  count1: prismic.ImageField<never>;
+
+  /**
+   * FeatureIcon1 field in *Landing → FeatureBoxes*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.featureboxes[].featureicon1
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  featureicon1: prismic.ImageField<never>;
+
+  /**
+   * FeatureHeading3 field in *Landing → FeatureBoxes*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.featureboxes[].featureheading3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  featureheading3: prismic.RichTextField;
+
+  /**
+   * FeatureParagraph field in *Landing → FeatureBoxes*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.featureboxes[].featureparagraph
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  featureparagraph: prismic.RichTextField;
+}
+
+/**
+ * Content for Landing documents
+ */
+interface LandingDocumentData {
+  /**
+   * Feature_Heading2 field in *Landing*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.feature_heading2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  feature_heading2: prismic.RichTextField;
+
+  /**
+   * FeatureBoxes field in *Landing*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.featureboxes[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  featureboxes: prismic.GroupField<
+    Simplify<LandingDocumentDataFeatureboxesItem>
+  >;
+
+  /**
+   * GetStartedBGImage field in *Landing*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.getstartedbgimage
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  getstartedbgimage: prismic.ImageField<never>;
+
+  /**
+   * GetStartedh2 field in *Landing*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.getstartedh2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  getstartedh2: prismic.RichTextField;
+
+  /**
+   * GetStartedParagraph field in *Landing*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.getstartedparagraph
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  getstartedparagraph: prismic.RichTextField;
+
+  /**
+   * GetStartedLinkBtn field in *Landing*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.getstartedlinkbtn
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  getstartedlinkbtn: prismic.LinkField;
+
+  /**
+   * GetStartedBtnLabel field in *Landing*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: landing.getstartedbtnlabel
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  getstartedbtnlabel: prismic.KeyTextField;
+}
+
+/**
+ * Landing document from Prismic
+ *
+ * - **API ID**: `landing`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type LandingDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<LandingDocumentData>,
+    "landing",
+    Lang
+  >;
+
 type LandingPageDocumentDataSlicesSlice = never;
 
 /**
@@ -656,6 +801,7 @@ export type AllDocumentTypes =
   | BlogIndexDocument
   | FooterDocument
   | HomePageDocument
+  | LandingDocument
   | LandingPageDocument
   | NavigationDocument
   | SettingsDocument;
@@ -752,6 +898,9 @@ declare module "@prismicio/client" {
       HomePageDocument,
       HomePageDocumentData,
       HomePageDocumentDataSlicesSlice,
+      LandingDocument,
+      LandingDocumentData,
+      LandingDocumentDataFeatureboxesItem,
       LandingPageDocument,
       LandingPageDocumentData,
       LandingPageDocumentDataSlicesSlice,
