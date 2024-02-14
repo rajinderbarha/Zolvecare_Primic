@@ -1,0 +1,78 @@
+{
+  "format": "custom",
+  "id": "homepagedocumentation",
+  "label": "HomepageDocumentation",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "documentationh2": {
+        "type": "StructuredText",
+        "config": {
+          "label": "DocumentationH2",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "heading2"
+        }
+      },
+      "documentationcontent": {
+        "type": "Group",
+        "config": {
+          "label": "DocumentationContent",
+          "repeat": true,
+          "fields": {
+            "documentation_efficiencyptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Documentation_EfficiencyPtag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "documentationh3tag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "DocumentationH3tag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading3"
+              }
+            },
+            "documentation_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Documentation_Ptag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "documentation_mobileimg1": {
+        "type": "Image",
+        "config": {
+          "label": "Documentation_MobileImg1",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "documentation_vector1": {
+        "type": "Image",
+        "config": {
+          "label": "Documentation_Vector1",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

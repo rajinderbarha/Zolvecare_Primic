@@ -1,6 +1,7 @@
-import Feature from "@/components/Feature";
-import Heading from "@/components/Heading";
-import Logomove from "@/components/Logomove";
+import Documentation from "@/components/Homepage/Documentation";
+import Feature from "@/components/Homepage/Feature";
+import Heading from "@/components/Homepage/Heading";
+import Logomove from "@/components/Homepage/Logomove";
 import { createClient } from "@/prismicio";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
@@ -81,66 +82,17 @@ const Homepage = ({ slice }: HomepageProps): JSX.Element => {
             <Logomove />
 
             <Feature/>
+
+            <Documentation/>
           </section>
 
         </>
 
       )}
-      <section className='Features'>
-        {/* <div className='container_x'>
-          <PrismicRichText field={slice.primary.heading2} components={{
-            heading2: ({ children }) => (
-              <h2 className="xl:mb-20 text-center mx-auto font-semibold sm:mb-10">{children}</h2>
-            )
-          }} />
+      {/* <section className='Features'>
+        
 
-
-          <div className='Features_box grid md:grid-cols-2 sm:grid-cols-1	 md:gap-y-16 gap-y-12 gap-x-8'>
-
-
-
-              <div className='relative Features_boxs'>
-               
-                <PrismicNextImage field={slice.primary.banner_background_image1} className="absolute bottom-0 left-0 w-auto" />
-                <PrismicNextImage field={slice.primary.banner_background_image2} className="mb-4 relative z-10 w-auto" />
-                <PrismicRichText field={slice.primary.banner_heading3} components={{
-                  heading3: ({ children }) => (
-                    <h3 className="xl:mb-20 text-center mx-auto font-semibold sm:mb-10">{children}</h3>
-                  )
-                }} />
-                <PrismicRichText field={slice.primary.banner_para} components={{
-                  paragraph: ({ children }) => (
-                    <p className="xl:mb-20 text-center mx-auto font-semibold sm:mb-10">{children}</p>
-                  )
-                }} />
-
-              </div> <div className='relative Features_boxs'>
-              
-                <PrismicNextImage field={slice.primary.banner_background_image1} className="absolute bottom-0 left-0 w-auto" />
-                <PrismicNextImage field={slice.primary.banner_background_image2} className="mb-4 relative z-10 w-auto" />
-                <PrismicRichText field={slice.primary.banner_heading3} components={{
-                  heading3: ({ children }) => (
-                    <h3 className="xl:mb-20 text-center mx-auto font-semibold sm:mb-10">{children}</h3>
-                  )
-                }} />
-                <PrismicRichText field={slice.primary.banner_para} components={{
-                  paragraph: ({ children }) => (
-                    <p className="xl:mb-20 text-center mx-auto font-semibold sm:mb-10">{children}</p>
-                  )
-                }} />
-
-              </div>
-              
-          
-          </div>
-        </div> */}
-
-
-
-
-
-
-      </section>
+      </section> */}
     </>
 
   );
