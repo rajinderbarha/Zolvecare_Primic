@@ -228,6 +228,90 @@
           "constraint": {},
           "thumbnails": []
         }
+      },
+      "tab_sectionh2": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Tab_SectionH2",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "heading2"
+        }
+      },
+      "tab_section_multi_buttons": {
+        "type": "Group",
+        "config": {
+          "label": "Tab_Section_Multi_Buttons",
+          "repeat": true,
+          "fields": {
+            "tab_section_multi_btnlink": {
+              "type": "Link",
+              "config": {
+                "label": "Tab_Section_Multi_BtnLink",
+                "placeholder": "",
+                "allowTargetBlank": false,
+                "select": null
+              }
+            },
+            "tab_section_multibtnlabel": {
+              "type": "Text",
+              "config": {
+                "label": "Tab_Section_MultiBtnLabel",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "tab_section_mobileimage": {
+        "type": "Image",
+        "config": {
+          "label": "Tab_Section_MobileImage",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "tab_section_h3": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Tab_Section_h3",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "heading3"
+        }
+      },
+      "tab_section_ptag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Tab_Section_Ptag",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "tab_section_singlebtn": {
+        "type": "Group",
+        "config": {
+          "label": "Tab_Section_Singlebtn",
+          "repeat": true,
+          "fields": {
+            "tab_section_single_btnlabel": {
+              "type": "Text",
+              "config": {
+                "label": "Tab_Section_Single_btnLabel",
+                "placeholder": ""
+              }
+            },
+            "tab_section_single_btnlink": {
+              "type": "Link",
+              "config": {
+                "label": "Tab_Section_Single_btnLink",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
       }
     }
   }

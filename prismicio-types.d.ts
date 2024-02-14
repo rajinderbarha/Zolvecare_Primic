@@ -645,6 +645,56 @@ export interface HomepagedocumentationDocumentDataDocumentationTestimonialItem {
 }
 
 /**
+ * Item in *HomepageDocumentation → Tab_Section_Multi_Buttons*
+ */
+export interface HomepagedocumentationDocumentDataTabSectionMultiButtonsItem {
+  /**
+   * Tab_Section_Multi_BtnLink field in *HomepageDocumentation → Tab_Section_Multi_Buttons*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_multi_buttons[].tab_section_multi_btnlink
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  tab_section_multi_btnlink: prismic.LinkField;
+
+  /**
+   * Tab_Section_MultiBtnLabel field in *HomepageDocumentation → Tab_Section_Multi_Buttons*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_multi_buttons[].tab_section_multibtnlabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  tab_section_multibtnlabel: prismic.KeyTextField;
+}
+
+/**
+ * Item in *HomepageDocumentation → Tab_Section_Singlebtn*
+ */
+export interface HomepagedocumentationDocumentDataTabSectionSinglebtnItem {
+  /**
+   * Tab_Section_Single_btnLabel field in *HomepageDocumentation → Tab_Section_Singlebtn*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_singlebtn[].tab_section_single_btnlabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  tab_section_single_btnlabel: prismic.KeyTextField;
+
+  /**
+   * Tab_Section_Single_btnLink field in *HomepageDocumentation → Tab_Section_Singlebtn*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_singlebtn[].tab_section_single_btnlink
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  tab_section_single_btnlink: prismic.LinkField;
+}
+
+/**
  * Content for HomepageDocumentation documents
  */
 interface HomepagedocumentationDocumentData {
@@ -776,6 +826,76 @@ interface HomepagedocumentationDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   documentation_testimonial_smallicon: prismic.ImageField<never>;
+
+  /**
+   * Tab_SectionH2 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_sectionh2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  tab_sectionh2: prismic.RichTextField;
+
+  /**
+   * Tab_Section_Multi_Buttons field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_multi_buttons[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  tab_section_multi_buttons: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataTabSectionMultiButtonsItem>
+  >;
+
+  /**
+   * Tab_Section_MobileImage field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_mobileimage
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  tab_section_mobileimage: prismic.ImageField<never>;
+
+  /**
+   * Tab_Section_h3 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_h3
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  tab_section_h3: prismic.RichTextField;
+
+  /**
+   * Tab_Section_Ptag field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_ptag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  tab_section_ptag: prismic.RichTextField;
+
+  /**
+   * Tab_Section_Singlebtn field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_singlebtn[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  tab_section_singlebtn: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataTabSectionSinglebtnItem>
+  >;
 }
 
 /**
@@ -1215,6 +1335,8 @@ declare module "@prismicio/client" {
       HomepagedocumentationDocumentDataDocumentationAiContentItem,
       HomepagedocumentationDocumentDataDocumentationOptimizingContentItem,
       HomepagedocumentationDocumentDataDocumentationTestimonialItem,
+      HomepagedocumentationDocumentDataTabSectionMultiButtonsItem,
+      HomepagedocumentationDocumentDataTabSectionSinglebtnItem,
       LandingDocument,
       LandingDocumentData,
       LandingDocumentDataFeatureboxesItem,
