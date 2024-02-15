@@ -1,8 +1,11 @@
+import Awaits from "@/components/Homepage/Awaits";
 import Documentation from "@/components/Homepage/Documentation";
 import Feature from "@/components/Homepage/Feature";
 import Heading from "@/components/Homepage/Heading";
 import Logomove from "@/components/Homepage/Logomove";
-import TabsSection from "@/components/Homepage/TabsSection";
+import Pricesec from "@/components/Homepage/Pricesec";
+import Slider from "@/components/Homepage/Slider";
+import TabSection from "@/components/Homepage/TabSection";
 import TestimonialSection from "@/components/Homepage/TestimonialSection";
 import { createClient } from "@/prismicio";
 import { Content } from "@prismicio/client";
@@ -86,9 +89,11 @@ const Homepage = ({ slice }: HomepageProps): JSX.Element => {
             <Feature/>
 
             <Documentation/>
-            <TestimonialSection/>
-            <TabsSection/>
-        
+            {/* <TestimonialSection/> */}
+            <TabSection/>
+        <Pricesec />
+        <Awaits />
+        <Slider />
           </section>
 
         </>

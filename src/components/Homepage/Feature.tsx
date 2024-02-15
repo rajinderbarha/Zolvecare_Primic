@@ -3,6 +3,7 @@ import { createClient } from '@/prismicio'
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next' // PrismicNextLink is useful for internal linking bcz it can access the id of the link from the prismic document(settings) with some extra features that next/link
 import Link from 'next/link'
 import { PrismicRichText } from '@prismicio/react'
+import GetStartedsec from './GetStartedsec'
 
 const Feature = async () => {
 
@@ -50,24 +51,7 @@ const Feature = async () => {
       </section>
 
 
-      <section >
-        {/**Add a Background Image here  either below or normal reactjsx */}
-      {/* <PrismicNextImage field={data.getstartedbgimage} /> */}
-
-      <PrismicRichText field={Homepagelanding.data.getstartedh2} components={{
-                    heading2: ({ children }) => (
-                       <h2 className="xl:mb-20 text-center mx-auto font-semibold sm:mb-10">{children}</h2>
-                    )
-                  }}/>
-      <PrismicRichText field={Homepagelanding.data.getstartedparagraph}  components={{
-                      paragraph: ({ children }) => (
-                        <p className="font-normal relative z-10">{children}</p>
-                      )
-                    }}/>
-        {/**Add a button here  either below or normal reactjsx */}
-           {/* <PrismicNextLink field={Homepagelanding.data.getstartedlinkbtn} style={{backgroundColor:"lightblue"}}>{<>{Homepagelanding.data.getstartedbtnlabel}</>}</PrismicNextLink> */}
-
-      </section>
+     <GetStartedsec/>
     </>
 
 

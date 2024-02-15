@@ -645,53 +645,268 @@ export interface HomepagedocumentationDocumentDataDocumentationTestimonialItem {
 }
 
 /**
- * Item in *HomepageDocumentation → Tab_Section_Multi_Buttons*
+ * Item in *HomepageDocumentation → Tab_Section_Start_Session*
  */
-export interface HomepagedocumentationDocumentDataTabSectionMultiButtonsItem {
+export interface HomepagedocumentationDocumentDataTabSectionStartSessionItem {
   /**
-   * Tab_Section_Multi_BtnLink field in *HomepageDocumentation → Tab_Section_Multi_Buttons*
+   * Tab_Section_Start_Session_MobileImg field in *HomepageDocumentation → Tab_Section_Start_Session*
    *
-   * - **Field Type**: Link
+   * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.tab_section_multi_buttons[].tab_section_multi_btnlink
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   * - **API ID Path**: homepagedocumentation.tab_section_start_session[].tab_section_start_session_mobileimg
+   * - **Documentation**: https://prismic.io/docs/field#image
    */
-  tab_section_multi_btnlink: prismic.LinkField;
+  tab_section_start_session_mobileimg: prismic.ImageField<never>;
 
   /**
-   * Tab_Section_MultiBtnLabel field in *HomepageDocumentation → Tab_Section_Multi_Buttons*
+   * Tab_Section_Start_Session_h3 field in *HomepageDocumentation → Tab_Section_Start_Session*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_start_session[].tab_section_start_session_h3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  tab_section_start_session_h3: prismic.RichTextField;
+
+  /**
+   * Tab_Section_Start_Session_Ptag field in *HomepageDocumentation → Tab_Section_Start_Session*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_start_session[].tab_section_start_session_ptag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  tab_section_start_session_ptag: prismic.RichTextField;
+
+  /**
+   * Tab_Section_Strt_Ssion_Dmo_btnLabel field in *HomepageDocumentation → Tab_Section_Start_Session*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.tab_section_multi_buttons[].tab_section_multibtnlabel
+   * - **API ID Path**: homepagedocumentation.tab_section_start_session[].tab_section_strt_ssion_dmo_btnlabel
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  tab_section_multibtnlabel: prismic.KeyTextField;
-}
-
-/**
- * Item in *HomepageDocumentation → Tab_Section_Singlebtn*
- */
-export interface HomepagedocumentationDocumentDataTabSectionSinglebtnItem {
-  /**
-   * Tab_Section_Single_btnLabel field in *HomepageDocumentation → Tab_Section_Singlebtn*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.tab_section_singlebtn[].tab_section_single_btnlabel
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  tab_section_single_btnlabel: prismic.KeyTextField;
+  tab_section_strt_ssion_dmo_btnlabel: prismic.KeyTextField;
 
   /**
-   * Tab_Section_Single_btnLink field in *HomepageDocumentation → Tab_Section_Singlebtn*
+   * Tab_Section_Strt_Ssion_Dmo_btnLink field in *HomepageDocumentation → Tab_Section_Start_Session*
    *
    * - **Field Type**: Link
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.tab_section_singlebtn[].tab_section_single_btnlink
+   * - **API ID Path**: homepagedocumentation.tab_section_start_session[].tab_section_single_btnlink
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   tab_section_single_btnlink: prismic.LinkField;
+}
+
+/**
+ * Item in *HomepageDocumentation → Tab_Section_Start_Recording*
+ */
+export interface HomepagedocumentationDocumentDataTabSectionStartRecordingItem {
+  /**
+   * Start_Recording_Mobile_Img field in *HomepageDocumentation → Tab_Section_Start_Recording*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_start_recording[].start_recording_mobile_img
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  start_recording_mobile_img: prismic.ImageField<never>;
+
+  /**
+   * Start_Recording_h3 field in *HomepageDocumentation → Tab_Section_Start_Recording*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_start_recording[].start_recording_h3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  start_recording_h3: prismic.RichTextField;
+
+  /**
+   * Start_Recording_Ptag field in *HomepageDocumentation → Tab_Section_Start_Recording*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_start_recording[].start_recording_ptag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  start_recording_ptag: prismic.RichTextField;
+
+  /**
+   * Start_Recording_Demo_btnLink field in *HomepageDocumentation → Tab_Section_Start_Recording*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_start_recording[].start_recording_demo_btnlink
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  start_recording_demo_btnlink: prismic.LinkField;
+
+  /**
+   * Start_Recording_Demo_btnLabel field in *HomepageDocumentation → Tab_Section_Start_Recording*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_start_recording[].start_recording_demo_btnlabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  start_recording_demo_btnlabel: prismic.KeyTextField;
+}
+
+/**
+ * Item in *HomepageDocumentation → Tab_Section_Sumary*
+ */
+export interface HomepagedocumentationDocumentDataTabSectionSumaryItem {
+  /**
+   * AI_Summary_Mobile_Img field in *HomepageDocumentation → Tab_Section_Sumary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sumary[].ai_summary_mobile_img
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  ai_summary_mobile_img: prismic.ImageField<never>;
+
+  /**
+   * Summary_h3 field in *HomepageDocumentation → Tab_Section_Sumary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sumary[].summary_h3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  summary_h3: prismic.RichTextField;
+
+  /**
+   * Summary_Ptag field in *HomepageDocumentation → Tab_Section_Sumary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sumary[].summary_ptag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  summary_ptag: prismic.RichTextField;
+
+  /**
+   * Summary_Demo_btnLink field in *HomepageDocumentation → Tab_Section_Sumary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sumary[].summary_demo_btnlink
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  summary_demo_btnlink: prismic.LinkField;
+
+  /**
+   * Summary_Demo_btnLabel field in *HomepageDocumentation → Tab_Section_Sumary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sumary[].summary_demo_btnlabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  summary_demo_btnlabel: prismic.KeyTextField;
+}
+
+/**
+ * Item in *HomepageDocumentation → Tab_Section_SendTo_Patient*
+ */
+export interface HomepagedocumentationDocumentDataTabSectionSendtoPatientItem {
+  /**
+   * SendToPatient_Mobile_Img field in *HomepageDocumentation → Tab_Section_SendTo_Patient*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sendto_patient[].sendtopatient_mobile_img
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  sendtopatient_mobile_img: prismic.ImageField<never>;
+
+  /**
+   * Patient_h3 field in *HomepageDocumentation → Tab_Section_SendTo_Patient*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sendto_patient[].patient_h3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  patient_h3: prismic.RichTextField;
+
+  /**
+   * Patient_Ptag field in *HomepageDocumentation → Tab_Section_SendTo_Patient*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sendto_patient[].patient_ptag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  patient_ptag: prismic.RichTextField;
+
+  /**
+   * Patient_Demo_btnLink field in *HomepageDocumentation → Tab_Section_SendTo_Patient*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sendto_patient[].patient_demo_btnlink
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  patient_demo_btnlink: prismic.LinkField;
+
+  /**
+   * Patient_Demo_btnLabel field in *HomepageDocumentation → Tab_Section_SendTo_Patient*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sendto_patient[].patient_demo_btnlabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  patient_demo_btnlabel: prismic.KeyTextField;
+}
+
+/**
+ * Item in *HomepageDocumentation → PriceSec_Starter_Ul*
+ */
+export interface HomepagedocumentationDocumentDataPricesecStarterUlItem {
+  /**
+   * PriceSec_Starter_LI field in *HomepageDocumentation → PriceSec_Starter_Ul*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.pricesec_starter_ul[].pricesec_starter_li
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_starter_li: prismic.RichTextField;
+}
+
+/**
+ * Item in *HomepageDocumentation → PriceSec_Professional_Ul*
+ */
+export interface HomepagedocumentationDocumentDataPricesecProfessionalUlItem {
+  /**
+   * PriceSec_Professional_LI field in *HomepageDocumentation → PriceSec_Professional_Ul*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.pricesec_professional_ul[].pricesec_professional_li
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_professional_li: prismic.RichTextField;
+}
+
+/**
+ * Item in *HomepageDocumentation → PriceSec_Custom_Ul*
+ */
+export interface HomepagedocumentationDocumentDataPricesecCustomUlItem {
+  /**
+   * PriceSec_Custom_LI field in *HomepageDocumentation → PriceSec_Custom_Ul*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.pricesec_custom_ul[].pricesec_custom_li
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_custom_li: prismic.RichTextField;
 }
 
 /**
@@ -839,63 +1054,260 @@ interface HomepagedocumentationDocumentData {
   tab_sectionh2: prismic.RichTextField;
 
   /**
-   * Tab_Section_Multi_Buttons field in *HomepageDocumentation*
+   * Tab_Section_Start_Session field in *HomepageDocumentation*
    *
    * - **Field Type**: Group
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.tab_section_multi_buttons[]
+   * - **API ID Path**: homepagedocumentation.tab_section_start_session[]
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#group
    */
-  tab_section_multi_buttons: prismic.GroupField<
-    Simplify<HomepagedocumentationDocumentDataTabSectionMultiButtonsItem>
+  tab_section_start_session: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataTabSectionStartSessionItem>
   >;
 
   /**
-   * Tab_Section_MobileImage field in *HomepageDocumentation*
+   * Tab_Section_Start_Recording field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_start_recording[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  tab_section_start_recording: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataTabSectionStartRecordingItem>
+  >;
+
+  /**
+   * Tab_Section_Sumary field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sumary[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  tab_section_sumary: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataTabSectionSumaryItem>
+  >;
+
+  /**
+   * Tab_Section_SendTo_Patient field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.tab_section_sendto_patient[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  tab_section_sendto_patient: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataTabSectionSendtoPatientItem>
+  >;
+
+  /**
+   * PriceSec_H2 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Explore our flexible pricing plans
+   * - **API ID Path**: homepagedocumentation.pricesec_h2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_h2: prismic.RichTextField;
+
+  /**
+   * PriceSec_Starter_H4 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Starter Plan
+   * - **API ID Path**: homepagedocumentation.pricesec_starter_h4
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_starter_h4: prismic.RichTextField;
+
+  /**
+   * PriceSec_Starter_H3 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: $0.00
+   * - **API ID Path**: homepagedocumentation.pricesec_starter_h3
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_starter_h3: prismic.RichTextField;
+
+  /**
+   * PriceSec_Starter_PTag field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Kickstart your healthcare journey with Zolvecare&apos;s Starter Plan
+   * - **API ID Path**: homepagedocumentation.pricesec_starter_ptag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_starter_ptag: prismic.RichTextField;
+
+  /**
+   * PriceSec_Sarter_H5 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Access to:
+   * - **API ID Path**: homepagedocumentation.pricesec_starter_h5
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_starter_h5: prismic.RichTextField;
+
+  /**
+   * PriceSec_Starter_Ul field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.pricesec_starter_ul[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  pricesec_starter_ul: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataPricesecStarterUlItem>
+  >;
+
+  /**
+   * PriceSec_Professional_H4 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Professional Plan
+   * - **API ID Path**: homepagedocumentation.pricesec_professional_h4
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_professional_h4: prismic.RichTextField;
+
+  /**
+   * PriceSec_Professional_H3 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: $99.00/m
+   * - **API ID Path**: homepagedocumentation.pricesec_professional_h3
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_professional_h3: prismic.RichTextField;
+
+  /**
+   * PriceSec_Professional_PTag field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Zolvecare&apos;s Professional Plan empowers healthcare teams with advanced documentation
+   * - **API ID Path**: homepagedocumentation.pricesec_professional_ptag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_professional_ptag: prismic.RichTextField;
+
+  /**
+   * PriceSec_Professional_H5 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Everything in Starter+
+   * - **API ID Path**: homepagedocumentation.pricesec_professional_h5
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_professional_h5: prismic.RichTextField;
+
+  /**
+   * PriceSec_Professional_Ul field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.pricesec_professional_ul[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  pricesec_professional_ul: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataPricesecProfessionalUlItem>
+  >;
+
+  /**
+   * PriceSec_Custom_H4 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Custom Plan
+   * - **API ID Path**: homepagedocumentation.pricesec_custom_h4
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_custom_h4: prismic.RichTextField;
+
+  /**
+   * PriceSec_Custom_H3 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Talk to us!
+   * - **API ID Path**: homepagedocumentation.pricesec_custom_h3
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_custom_h3: prismic.RichTextField;
+
+  /**
+   * PriceSec_Custom_PTag field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Tailor Zolvecare to fit your unique needs with the Custom Plan:
+   * - **API ID Path**: homepagedocumentation.pricesec_custom_ptag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_custom_ptag: prismic.RichTextField;
+
+  /**
+   * PriceSec_Custom_H5 field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Customize to your own needs
+   * - **API ID Path**: homepagedocumentation.pricesec_custom_h5
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  pricesec_custom_h5: prismic.RichTextField;
+
+  /**
+   * PriceSec_Custom_Ul field in *HomepageDocumentation*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepagedocumentation.pricesec_custom_ul[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  pricesec_custom_ul: prismic.GroupField<
+    Simplify<HomepagedocumentationDocumentDataPricesecCustomUlItem>
+  >;
+
+  /**
+   * Awaits_img field in *HomepageDocumentation*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.tab_section_mobileimage
+   * - **API ID Path**: homepagedocumentation.awaits_img
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  tab_section_mobileimage: prismic.ImageField<never>;
+  awaits_img: prismic.ImageField<never>;
 
   /**
-   * Tab_Section_h3 field in *HomepageDocumentation*
+   * Awaits_text field in *HomepageDocumentation*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.tab_section_h3
+   * - **API ID Path**: homepagedocumentation.awaits_text
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  tab_section_h3: prismic.RichTextField;
-
-  /**
-   * Tab_Section_Ptag field in *HomepageDocumentation*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.tab_section_ptag
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  tab_section_ptag: prismic.RichTextField;
-
-  /**
-   * Tab_Section_Singlebtn field in *HomepageDocumentation*
-   *
-   * - **Field Type**: Group
-   * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.tab_section_singlebtn[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#group
-   */
-  tab_section_singlebtn: prismic.GroupField<
-    Simplify<HomepagedocumentationDocumentDataTabSectionSinglebtnItem>
-  >;
+  awaits_text: prismic.RichTextField;
 }
 
 /**
@@ -911,6 +1323,38 @@ export type HomepagedocumentationDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<
     Simplify<HomepagedocumentationDocumentData>,
     "homepagedocumentation",
+    Lang
+  >;
+
+/**
+ * Content for HomepageShadcn documents
+ */
+interface HomepageshadcnDocumentData {
+  /**
+   * Carouselshadcn field in *HomepageShadcn*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  carouselshadcn: prismic.ImageField<never>;
+}
+
+/**
+ * HomepageShadcn document from Prismic
+ *
+ * - **API ID**: `homepageshadcn`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type HomepageshadcnDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<HomepageshadcnDocumentData>,
+    "homepageshadcn",
     Lang
   >;
 
@@ -1232,6 +1676,7 @@ export type AllDocumentTypes =
   | FooterDocument
   | HomePageDocument
   | HomepagedocumentationDocument
+  | HomepageshadcnDocument
   | LandingDocument
   | LandingPageDocument
   | NavigationDocument
@@ -1335,8 +1780,15 @@ declare module "@prismicio/client" {
       HomepagedocumentationDocumentDataDocumentationAiContentItem,
       HomepagedocumentationDocumentDataDocumentationOptimizingContentItem,
       HomepagedocumentationDocumentDataDocumentationTestimonialItem,
-      HomepagedocumentationDocumentDataTabSectionMultiButtonsItem,
-      HomepagedocumentationDocumentDataTabSectionSinglebtnItem,
+      HomepagedocumentationDocumentDataTabSectionStartSessionItem,
+      HomepagedocumentationDocumentDataTabSectionStartRecordingItem,
+      HomepagedocumentationDocumentDataTabSectionSumaryItem,
+      HomepagedocumentationDocumentDataTabSectionSendtoPatientItem,
+      HomepagedocumentationDocumentDataPricesecStarterUlItem,
+      HomepagedocumentationDocumentDataPricesecProfessionalUlItem,
+      HomepagedocumentationDocumentDataPricesecCustomUlItem,
+      HomepageshadcnDocument,
+      HomepageshadcnDocumentData,
       LandingDocument,
       LandingDocumentData,
       LandingDocumentDataFeatureboxesItem,

@@ -238,79 +238,394 @@
           "multi": "heading2"
         }
       },
-      "tab_section_multi_buttons": {
+      "tab_section_start_session": {
         "type": "Group",
         "config": {
-          "label": "Tab_Section_Multi_Buttons",
+          "label": "Tab_Section_Start_Session",
           "repeat": true,
           "fields": {
-            "tab_section_multi_btnlink": {
-              "type": "Link",
+            "tab_section_start_session_mobileimg": {
+              "type": "Image",
               "config": {
-                "label": "Tab_Section_Multi_BtnLink",
-                "placeholder": "",
-                "allowTargetBlank": false,
-                "select": null
+                "label": "Tab_Section_Start_Session_MobileImg",
+                "constraint": {},
+                "thumbnails": []
               }
             },
-            "tab_section_multibtnlabel": {
-              "type": "Text",
+            "tab_section_start_session_h3": {
+              "type": "StructuredText",
               "config": {
-                "label": "Tab_Section_MultiBtnLabel",
-                "placeholder": ""
+                "label": "Tab_Section_Start_Session_h3",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading3"
               }
-            }
-          }
-        }
-      },
-      "tab_section_mobileimage": {
-        "type": "Image",
-        "config": {
-          "label": "Tab_Section_MobileImage",
-          "constraint": {},
-          "thumbnails": []
-        }
-      },
-      "tab_section_h3": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Tab_Section_h3",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "multi": "heading3"
-        }
-      },
-      "tab_section_ptag": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Tab_Section_Ptag",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "multi": "paragraph"
-        }
-      },
-      "tab_section_singlebtn": {
-        "type": "Group",
-        "config": {
-          "label": "Tab_Section_Singlebtn",
-          "repeat": true,
-          "fields": {
-            "tab_section_single_btnlabel": {
+            },
+            "tab_section_start_session_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Tab_Section_Start_Session_Ptag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "tab_section_strt_ssion_dmo_btnlabel": {
               "type": "Text",
               "config": {
-                "label": "Tab_Section_Single_btnLabel",
+                "label": "Tab_Section_Strt_Ssion_Dmo_btnLabel",
                 "placeholder": ""
               }
             },
             "tab_section_single_btnlink": {
               "type": "Link",
               "config": {
-                "label": "Tab_Section_Single_btnLink",
+                "label": "Tab_Section_Strt_Ssion_Dmo_btnLink",
                 "placeholder": "",
+                "allowTargetBlank": false,
                 "select": null
               }
             }
           }
+        }
+      },
+      "tab_section_start_recording": {
+        "type": "Group",
+        "config": {
+          "label": "Tab_Section_Start_Recording",
+          "repeat": true,
+          "fields": {
+            "start_recording_mobile_img": {
+              "type": "Image",
+              "config": {
+                "label": "Start_Recording_Mobile_Img",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "start_recording_h3": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Start_Recording_h3",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading3"
+              }
+            },
+            "start_recording_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Start_Recording_Ptag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "start_recording_demo_btnlink": {
+              "type": "Link",
+              "config": {
+                "label": "Start_Recording_Demo_btnLink",
+                "placeholder": "",
+                "allowTargetBlank": false,
+                "select": null
+              }
+            },
+            "start_recording_demo_btnlabel": {
+              "type": "Text",
+              "config": {
+                "label": "Start_Recording_Demo_btnLabel",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "tab_section_sumary": {
+        "type": "Group",
+        "config": {
+          "label": "Tab_Section_Sumary",
+          "repeat": true,
+          "fields": {
+            "ai_summary_mobile_img": {
+              "type": "Image",
+              "config": {
+                "label": "AI_Summary_Mobile_Img",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "summary_h3": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Summary_h3",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading3"
+              }
+            },
+            "summary_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Summary_Ptag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "summary_demo_btnlink": {
+              "type": "Link",
+              "config": {
+                "label": "Summary_Demo_btnLink",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "summary_demo_btnlabel": {
+              "type": "Text",
+              "config": {
+                "label": "Summary_Demo_btnLabel",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "tab_section_sendto_patient": {
+        "type": "Group",
+        "config": {
+          "label": "Tab_Section_SendTo_Patient",
+          "repeat": true,
+          "fields": {
+            "sendtopatient_mobile_img": {
+              "type": "Image",
+              "config": {
+                "label": "SendToPatient_Mobile_Img",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "patient_h3": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Patient_h3",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading3"
+              }
+            },
+            "patient_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Patient_Ptag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "patient_demo_btnlink": {
+              "type": "Link",
+              "config": {
+                "label": "Patient_Demo_btnLink",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "patient_demo_btnlabel": {
+              "type": "Text",
+              "config": {
+                "label": "Patient_Demo_btnLabel",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "pricesec_h2": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_H2",
+          "placeholder": "Explore our flexible pricing plans",
+          "allowTargetBlank": true,
+          "multi": "heading2"
+        }
+      },
+      "pricesec_starter_h4": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Starter_H4",
+          "placeholder": "Starter Plan",
+          "allowTargetBlank": true,
+          "multi": "heading4"
+        }
+      },
+      "pricesec_starter_h3": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Starter_H3",
+          "placeholder": "$0.00",
+          "allowTargetBlank": true,
+          "multi": "heading3"
+        }
+      },
+      "pricesec_starter_ptag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Starter_PTag",
+          "placeholder": "Kickstart your healthcare journey with Zolvecare&apos;s Starter Plan",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "pricesec_starter_h5": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Sarter_H5",
+          "placeholder": "Access to:",
+          "allowTargetBlank": true,
+          "multi": "heading5"
+        }
+      },
+      "pricesec_starter_ul": {
+        "type": "Group",
+        "config": {
+          "label": "PriceSec_Starter_Ul",
+          "repeat": true,
+          "fields": {
+            "pricesec_starter_li": {
+              "type": "StructuredText",
+              "config": {
+                "label": "PriceSec_Starter_LI",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "list-item"
+              }
+            }
+          }
+        }
+      },
+      "pricesec_professional_h4": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Professional_H4",
+          "placeholder": "Professional Plan",
+          "allowTargetBlank": true,
+          "multi": "heading4"
+        }
+      },
+      "pricesec_professional_h3": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Professional_H3",
+          "placeholder": "$99.00/m",
+          "allowTargetBlank": true,
+          "multi": "heading3"
+        }
+      },
+      "pricesec_professional_ptag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Professional_PTag",
+          "placeholder": "Zolvecare&apos;s Professional Plan empowers healthcare teams with advanced documentation",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "pricesec_professional_h5": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Professional_H5",
+          "placeholder": "Everything in Starter+",
+          "allowTargetBlank": true,
+          "multi": "heading5"
+        }
+      },
+      "pricesec_professional_ul": {
+        "type": "Group",
+        "config": {
+          "label": "PriceSec_Professional_Ul",
+          "repeat": true,
+          "fields": {
+            "pricesec_professional_li": {
+              "type": "StructuredText",
+              "config": {
+                "label": "PriceSec_Professional_LI",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "list-item"
+              }
+            }
+          }
+        }
+      },
+      "pricesec_custom_h4": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Custom_H4",
+          "placeholder": "Custom Plan",
+          "allowTargetBlank": true,
+          "multi": "heading4"
+        }
+      },
+      "pricesec_custom_h3": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Custom_H3",
+          "placeholder": "Talk to us!",
+          "allowTargetBlank": true,
+          "multi": "heading3"
+        }
+      },
+      "pricesec_custom_ptag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Custom_PTag",
+          "placeholder": "Tailor Zolvecare to fit your unique needs with the Custom Plan:",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "pricesec_custom_h5": {
+        "type": "StructuredText",
+        "config": {
+          "label": "PriceSec_Custom_H5",
+          "placeholder": "Customize to your own needs",
+          "allowTargetBlank": true,
+          "multi": "heading5"
+        }
+      },
+      "pricesec_custom_ul": {
+        "type": "Group",
+        "config": {
+          "label": "PriceSec_Custom_Ul",
+          "repeat": true,
+          "fields": {
+            "pricesec_custom_li": {
+              "type": "StructuredText",
+              "config": {
+                "label": "PriceSec_Custom_LI",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "list-item"
+              }
+            }
+          }
+        }
+      },
+      "awaits_img": {
+        "type": "Image",
+        "config": {
+          "label": "Awaits_img",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "awaits_text": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Awaits_text",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       }
     }

@@ -1,0 +1,25 @@
+{
+  "format": "custom",
+  "id": "homepageshadcn",
+  "label": "HomepageShadcn",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "carouselshadcn": {
+        "type": "Image",
+        "config": {
+          "label": "Carouselshadcn",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}
