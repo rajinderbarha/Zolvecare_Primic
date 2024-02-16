@@ -1,0 +1,74 @@
+{
+  "format": "custom",
+  "id": "navbar",
+  "label": "Navbar",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "navbar_homepage": {
+        "type": "Group",
+        "config": {
+          "label": "Navbar_Homepage",
+          "repeat": true,
+          "fields": {
+            "zolvecare_logo": {
+              "type": "Image",
+              "config": {
+                "label": "Zolvecare_Logo",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "features_link": {
+              "type": "Link",
+              "config": {
+                "label": "Features_Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "benifits_link": {
+              "type": "Link",
+              "config": {
+                "label": "Benifits_Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "how_it_works_link": {
+              "type": "Link",
+              "config": {
+                "label": "How_It_Works_Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "pricing_link": {
+              "type": "Link",
+              "config": {
+                "label": "Pricing_Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "sign_up_link": {
+              "type": "Link",
+              "config": {
+                "label": "Sign_Up_Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

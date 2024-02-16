@@ -231,16 +231,6 @@ const Documentation = async () => {
           )}
 
 
-
-
-
-
-
-
-
-
-
-
                         
                         </div>
                         <div className='Efficiency_img'>

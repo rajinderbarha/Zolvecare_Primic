@@ -624,14 +624,14 @@ export interface HomepagedocumentationDocumentDataDocumentationTestimonialItem {
   documentation_testimonialpara1: prismic.RichTextField;
 
   /**
-   * Documentation_TestimonialPara2 field in *HomepageDocumentation → Documentation_Testimonial*
+   * Documentation_TestimonialH6tag field in *HomepageDocumentation → Documentation_Testimonial*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepagedocumentation.documentation_testimonial[].documentation_testimonialpara2
+   * - **API ID Path**: homepagedocumentation.documentation_testimonial[].documentation_testimonialh6tag
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  documentation_testimonialpara2: prismic.RichTextField;
+  documentation_testimonialh6tag: prismic.RichTextField;
 
   /**
    * Documentation_TestimonialPara3 field in *HomepageDocumentation → Documentation_Testimonial*
@@ -1327,19 +1327,288 @@ export type HomepagedocumentationDocument<Lang extends string = string> =
   >;
 
 /**
+ * Item in *HomepageShadcn → Carouselshadcn_First*
+ */
+export interface HomepageshadcnDocumentDataCarouselshadcnFirstItem {
+  /**
+   * First_Image field in *HomepageShadcn → Carouselshadcn_First*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_first[].first_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  first_image: prismic.ImageField<never>;
+
+  /**
+   * First_h3tag field in *HomepageShadcn → Carouselshadcn_First*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_first[].first_h3tag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  first_h3tag: prismic.RichTextField;
+
+  /**
+   * First_Ptag field in *HomepageShadcn → Carouselshadcn_First*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_first[].first_ptag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  first_ptag: prismic.RichTextField;
+}
+
+/**
+ * Item in *HomepageShadcn → Carouselshadcn_Second*
+ */
+export interface HomepageshadcnDocumentDataCarouselshadcnSecondItem {
+  /**
+   * Second_Image field in *HomepageShadcn → Carouselshadcn_Second*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_second[].second_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  second_image: prismic.ImageField<never>;
+
+  /**
+   * Second_h3tag field in *HomepageShadcn → Carouselshadcn_Second*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_second[].second_h3tag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  second_h3tag: prismic.RichTextField;
+
+  /**
+   * Second_Ptag field in *HomepageShadcn → Carouselshadcn_Second*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_second[].second_ptag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  second_ptag: prismic.RichTextField;
+}
+
+/**
+ * Item in *HomepageShadcn → Carouselshadcn_Third*
+ */
+export interface HomepageshadcnDocumentDataCarouselshadcnThirdItem {
+  /**
+   * Third_Image field in *HomepageShadcn → Carouselshadcn_Third*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_third[].third_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  third_image: prismic.ImageField<never>;
+
+  /**
+   * Third_h3tag field in *HomepageShadcn → Carouselshadcn_Third*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_third[].third_h3tag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  third_h3tag: prismic.RichTextField;
+
+  /**
+   * Third_Ptag field in *HomepageShadcn → Carouselshadcn_Third*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_third[].third_ptag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  third_ptag: prismic.RichTextField;
+}
+
+/**
+ * Item in *HomepageShadcn → Carouselshadcn_Fourth*
+ */
+export interface HomepageshadcnDocumentDataCarouselshadcnFourthItem {
+  /**
+   * Fourth_Image field in *HomepageShadcn → Carouselshadcn_Fourth*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_fourth[].fourth_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  fourth_image: prismic.ImageField<never>;
+
+  /**
+   * Fourth_h3tag field in *HomepageShadcn → Carouselshadcn_Fourth*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_fourth[].fourth_h3tag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  fourth_h3tag: prismic.RichTextField;
+
+  /**
+   * Fourth_Ptag field in *HomepageShadcn → Carouselshadcn_Fourth*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_fourth[].fourth_ptag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  fourth_ptag: prismic.RichTextField;
+}
+
+/**
  * Content for HomepageShadcn documents
  */
 interface HomepageshadcnDocumentData {
   /**
-   * Carouselshadcn field in *HomepageShadcn*
+   * Carousel_shadcn_h2 field in *HomepageShadcn*
    *
-   * - **Field Type**: Image
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: homepageshadcn.carouselshadcn
+   * - **API ID Path**: homepageshadcn.carousel_shadcn_h2
    * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#image
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  carouselshadcn: prismic.ImageField<never>;
+  carousel_shadcn_h2: prismic.RichTextField;
+
+  /**
+   * Carouselshadcn_First field in *HomepageShadcn*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_first[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  carouselshadcn_first: prismic.GroupField<
+    Simplify<HomepageshadcnDocumentDataCarouselshadcnFirstItem>
+  >;
+
+  /**
+   * Carouselshadcn_Second field in *HomepageShadcn*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_second[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  carouselshadcn_second: prismic.GroupField<
+    Simplify<HomepageshadcnDocumentDataCarouselshadcnSecondItem>
+  >;
+
+  /**
+   * Carouselshadcn_Third field in *HomepageShadcn*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_third[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  carouselshadcn_third: prismic.GroupField<
+    Simplify<HomepageshadcnDocumentDataCarouselshadcnThirdItem>
+  >;
+
+  /**
+   * Carouselshadcn_Fourth field in *HomepageShadcn*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.carouselshadcn_fourth[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  carouselshadcn_fourth: prismic.GroupField<
+    Simplify<HomepageshadcnDocumentDataCarouselshadcnFourthItem>
+  >;
+
+  /**
+   * Faq_sec_h2 field in *HomepageShadcn*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.faq_sec_h2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  faq_sec_h2: prismic.RichTextField;
+
+  /**
+   * Faq_sec_Ques1_pTag field in *HomepageShadcn*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.faq_sec_ques1_ptag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  faq_sec_ques1_ptag: prismic.RichTextField;
+
+  /**
+   * Faq_sec_Answer1_pTag field in *HomepageShadcn*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.faq_sec_answer1_ptag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  faq_sec_answer1_ptag: prismic.RichTextField;
+
+  /**
+   * Faq_sec_Ques2_pTag field in *HomepageShadcn*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.faq_sec_ques2_ptag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  faq_sec_ques2_ptag: prismic.RichTextField;
+
+  /**
+   * Faq_sec_Answer2_pTag field in *HomepageShadcn*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.faq_sec_answer2_ptag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  faq_sec_answer2_ptag: prismic.RichTextField;
+
+  /**
+   * Faq_sec_Ques3_pTag field in *HomepageShadcn*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.faq_sec_ques3_ptag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  faq_sec_ques3_ptag: prismic.RichTextField;
+
+  /**
+   * Faq_sec_Answer3_pTag field in *HomepageShadcn*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepageshadcn.faq_sec_answer3_ptag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  faq_sec_answer3_ptag: prismic.RichTextField;
 }
 
 /**
@@ -1580,6 +1849,101 @@ export type LandingPageDocument<Lang extends string = string> =
   >;
 
 /**
+ * Item in *Navbar → Navbar_Homepage*
+ */
+export interface NavbarDocumentDataNavbarHomepageItem {
+  /**
+   * Zolvecare_Logo field in *Navbar → Navbar_Homepage*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.navbar_homepage[].zolvecare_logo
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  zolvecare_logo: prismic.ImageField<never>;
+
+  /**
+   * Features_Link field in *Navbar → Navbar_Homepage*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.navbar_homepage[].features_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  features_link: prismic.LinkField;
+
+  /**
+   * Benifits_Link field in *Navbar → Navbar_Homepage*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.navbar_homepage[].benifits_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  benifits_link: prismic.LinkField;
+
+  /**
+   * How_It_Works_Link field in *Navbar → Navbar_Homepage*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.navbar_homepage[].how_it_works_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  how_it_works_link: prismic.LinkField;
+
+  /**
+   * Pricing_Link field in *Navbar → Navbar_Homepage*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.navbar_homepage[].pricing_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  pricing_link: prismic.LinkField;
+
+  /**
+   * Sign_Up_Link field in *Navbar → Navbar_Homepage*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.navbar_homepage[].sign_up_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  sign_up_link: prismic.LinkField;
+}
+
+/**
+ * Content for Navbar documents
+ */
+interface NavbarDocumentData {
+  /**
+   * Navbar_Homepage field in *Navbar*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.navbar_homepage[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  navbar_homepage: prismic.GroupField<
+    Simplify<NavbarDocumentDataNavbarHomepageItem>
+  >;
+}
+
+/**
+ * Navbar document from Prismic
+ *
+ * - **API ID**: `navbar`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type NavbarDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<NavbarDocumentData>, "navbar", Lang>;
+
+/**
  * Item in *Navigation → Links*
  */
 export interface NavigationDocumentDataLinksItem {
@@ -1679,6 +2043,7 @@ export type AllDocumentTypes =
   | HomepageshadcnDocument
   | LandingDocument
   | LandingPageDocument
+  | NavbarDocument
   | NavigationDocument
   | SettingsDocument;
 
@@ -1789,12 +2154,19 @@ declare module "@prismicio/client" {
       HomepagedocumentationDocumentDataPricesecCustomUlItem,
       HomepageshadcnDocument,
       HomepageshadcnDocumentData,
+      HomepageshadcnDocumentDataCarouselshadcnFirstItem,
+      HomepageshadcnDocumentDataCarouselshadcnSecondItem,
+      HomepageshadcnDocumentDataCarouselshadcnThirdItem,
+      HomepageshadcnDocumentDataCarouselshadcnFourthItem,
       LandingDocument,
       LandingDocumentData,
       LandingDocumentDataFeatureboxesItem,
       LandingPageDocument,
       LandingPageDocumentData,
       LandingPageDocumentDataSlicesSlice,
+      NavbarDocument,
+      NavbarDocumentData,
+      NavbarDocumentDataNavbarHomepageItem,
       NavigationDocument,
       NavigationDocumentData,
       NavigationDocumentDataLinksItem,

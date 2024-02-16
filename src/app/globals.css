@@ -606,6 +606,54 @@ color: #fff;
   letter-spacing: 0.5px;
 }
 
+.container_clint{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.clint .clint_img_text img{
+  width: 100%;
+  max-width: 88px ;
+}
+.clint_img_text .clint_name{
+  font-size: 16px;
+  line-height: 20px;
+
+}
+.clint_img_text p{
+  font-size: 32px ;
+  line-height: 48px;
+  max-width: 848px;
+}
+.clint_img img{
+  max-width: 400px;
+  width: 100%;
+}
+.clint{
+  padding: 160px 16px;
+  background-color: #FFF7ED;
+}
+.clint img{
+  max-width: 457px;
+}
+.clint_img_absolute{
+
+  left: -100px;
+    top: -57px;
+    height: 926px;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 1600px) {
+  .clint_img_absolute{
+
+    left: -50px;
+      top: -57px;
+      height: 926px;
+      object-fit: cover;
+  }
+}
 @media only screen and (max-width: 640px) {
   .nav_bar {
     padding: 16px 24px;
@@ -788,6 +836,18 @@ color: #fff;
   .Footer {
     padding: 30px 24px 30px 24px;
   }
+  .clint_img_text p {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 848px;
+}
+.clint .clint_img_text img {
+  max-width: 60px;
+}
+.clint {
+  padding: 60px 16px;
+  background-color: #FFF7ED;
+}
 }
 
 @media screen and (min-device-width: 420px) and (max-device-width: 640px) {

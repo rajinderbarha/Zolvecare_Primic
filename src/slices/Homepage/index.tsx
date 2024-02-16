@@ -1,5 +1,6 @@
 import Awaits from "@/components/Homepage/Awaits";
 import Documentation from "@/components/Homepage/Documentation";
+import Faq_sec from "@/components/Homepage/Faq";
 import Feature from "@/components/Homepage/Feature";
 import Heading from "@/components/Homepage/Heading";
 import Logomove from "@/components/Homepage/Logomove";
@@ -58,7 +59,7 @@ const Homepage = ({ slice }: HomepageProps): JSX.Element => {
               <div className='Beener-bg'>
                 <div className='container_benner'>
                   <div className='Benner_intro'>
-
+                    
                     <PrismicRichText field={slice.primary.banner_heading} components={{
                       heading1: ({ children }) => (
                         <h1 className="text-7xl	mb-4 text-center font-semibold">{children}</h1>
@@ -86,23 +87,21 @@ const Homepage = ({ slice }: HomepageProps): JSX.Element => {
           <section>
             <Logomove />
 
-            <Feature/>
+            <Feature/>  
 
             <Documentation/>
-            {/* <TestimonialSection/> */}
+            <TestimonialSection/>
             <TabSection/>
         <Pricesec />
         <Awaits />
         <Slider />
+        <Faq_sec />
           </section>
 
         </>
 
       )}
-      {/* <section className='Features'>
-        
-
-      </section> */}
+     
     </>
 
   );
