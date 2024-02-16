@@ -5,6 +5,429 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
 /**
+ * Item in *AboutsPageFeatures → Aboutus_Feature_1*
+ */
+export interface AboutspagefeaturesDocumentDataAboutusFeature1Item {
+  /**
+   * Aboutus_FeatureImg1 field in *AboutsPageFeatures → Aboutus_Feature_1*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_1[].aboutus_featureimg1
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  aboutus_featureimg1: prismic.ImageField<never>;
+
+  /**
+   * Aboutus_FeatureH4tag_1 field in *AboutsPageFeatures → Aboutus_Feature_1*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_1[].aboutus_featureh4tag_1
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureh4tag_1: prismic.RichTextField;
+
+  /**
+   * Aboutus_FeaturePtag_1 field in *AboutsPageFeatures → Aboutus_Feature_1*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_1[].aboutus_featureptag_1
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureptag_1: prismic.RichTextField;
+}
+
+/**
+ * Item in *AboutsPageFeatures → Aboutus_Feature_2*
+ */
+export interface AboutspagefeaturesDocumentDataAboutusFeature2Item {
+  /**
+   * Aboutus_FeatureImg2 field in *AboutsPageFeatures → Aboutus_Feature_2*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_2[].aboutus_featureimg2
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  aboutus_featureimg2: prismic.ImageField<never>;
+
+  /**
+   * Aboutus_FeatureH4tag_2 field in *AboutsPageFeatures → Aboutus_Feature_2*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_2[].aboutus_featureh4tag_2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureh4tag_2: prismic.RichTextField;
+
+  /**
+   * Aboutus_FeaturePtag_2 field in *AboutsPageFeatures → Aboutus_Feature_2*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_2[].aboutus_featureptag_2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureptag_2: prismic.RichTextField;
+}
+
+/**
+ * Item in *AboutsPageFeatures → Aboutus_Feature_3*
+ */
+export interface AboutspagefeaturesDocumentDataAboutusFeature3Item {
+  /**
+   * Aboutus_FeatureImg3 field in *AboutsPageFeatures → Aboutus_Feature_3*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_3[].aboutus_featureimg3
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  aboutus_featureimg3: prismic.ImageField<never>;
+
+  /**
+   * Aboutus_FeatureH4tag_3 field in *AboutsPageFeatures → Aboutus_Feature_3*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_3[].aboutus_featureh4tag_3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureh4tag_3: prismic.RichTextField;
+
+  /**
+   * Aboutus_FeaturePtag_3 field in *AboutsPageFeatures → Aboutus_Feature_3*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_3[].aboutus_featureptag_3
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureptag_3: prismic.RichTextField;
+}
+
+/**
+ * Item in *AboutsPageFeatures → Aboutus_Feature_4*
+ */
+export interface AboutspagefeaturesDocumentDataAboutusFeature4Item {
+  /**
+   * Aboutus_FeatureImg4 field in *AboutsPageFeatures → Aboutus_Feature_4*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_4[].aboutus_featureimg4
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  aboutus_featureimg4: prismic.ImageField<never>;
+
+  /**
+   * Aboutus_FeatureH4tag_4 field in *AboutsPageFeatures → Aboutus_Feature_4*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_4[].aboutus_featureh4tag_4
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureh4tag_4: prismic.RichTextField;
+
+  /**
+   * Aboutus_FeaturePtag_4 field in *AboutsPageFeatures → Aboutus_Feature_4*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_4[].aboutus_featureptag_4
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureptag_4: prismic.RichTextField;
+}
+
+/**
+ * Item in *AboutsPageFeatures → Aboutus_Feature_5*
+ */
+export interface AboutspagefeaturesDocumentDataAboutusFeature5Item {
+  /**
+   * Aboutus_FeatureImg5 field in *AboutsPageFeatures → Aboutus_Feature_5*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_5[].aboutus_featureimg5
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  aboutus_featureimg5: prismic.ImageField<never>;
+
+  /**
+   * Aboutus_FeatureH4tag_5 field in *AboutsPageFeatures → Aboutus_Feature_5*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_5[].aboutus_featureh4tag_5
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureh4tag_5: prismic.RichTextField;
+
+  /**
+   * Aboutus_FeaturePtag_5 field in *AboutsPageFeatures → Aboutus_Feature_5*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_5[].aboutus_featureptag_5
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureptag_5: prismic.RichTextField;
+}
+
+/**
+ * Item in *AboutsPageFeatures → Aboutus_Feature_6*
+ */
+export interface AboutspagefeaturesDocumentDataAboutusFeature6Item {
+  /**
+   * Aboutus_FeatureImg6 field in *AboutsPageFeatures → Aboutus_Feature_6*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_6[].aboutus_featureimg6
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  aboutus_featureimg6: prismic.ImageField<never>;
+
+  /**
+   * Aboutus_FeatureH4tag_6 field in *AboutsPageFeatures → Aboutus_Feature_6*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_6[].aboutus_featureh4tag_6
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureh4tag_6: prismic.RichTextField;
+
+  /**
+   * Aboutus_FeaturePtag_6 field in *AboutsPageFeatures → Aboutus_Feature_6*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_6[].aboutus_featureptag_6
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_featureptag_6: prismic.RichTextField;
+}
+
+/**
+ * Item in *AboutsPageFeatures → About_Shortcut_Section *
+ */
+export interface AboutspagefeaturesDocumentDataAboutShortcutSectionItem {
+  /**
+   * Shortcut_image field in *AboutsPageFeatures → About_Shortcut_Section *
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.about_shortcut_section[].shortcut_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  shortcut_image: prismic.ImageField<never>;
+
+  /**
+   * Shortcut_H2 field in *AboutsPageFeatures → About_Shortcut_Section *
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.about_shortcut_section[].shortcut_h2
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  shortcut_h2: prismic.RichTextField;
+}
+
+/**
+ * Content for AboutsPageFeatures documents
+ */
+interface AboutspagefeaturesDocumentData {
+  /**
+   * Aboutus_Feature_1 field in *AboutsPageFeatures*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_1[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  aboutus_feature_1: prismic.GroupField<
+    Simplify<AboutspagefeaturesDocumentDataAboutusFeature1Item>
+  >;
+
+  /**
+   * Aboutus_Feature_2 field in *AboutsPageFeatures*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_2[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  aboutus_feature_2: prismic.GroupField<
+    Simplify<AboutspagefeaturesDocumentDataAboutusFeature2Item>
+  >;
+
+  /**
+   * Aboutus_Feature_3 field in *AboutsPageFeatures*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_3[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  aboutus_feature_3: prismic.GroupField<
+    Simplify<AboutspagefeaturesDocumentDataAboutusFeature3Item>
+  >;
+
+  /**
+   * Aboutus_Feature_4 field in *AboutsPageFeatures*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_4[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  aboutus_feature_4: prismic.GroupField<
+    Simplify<AboutspagefeaturesDocumentDataAboutusFeature4Item>
+  >;
+
+  /**
+   * Aboutus_Feature_5 field in *AboutsPageFeatures*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_5[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  aboutus_feature_5: prismic.GroupField<
+    Simplify<AboutspagefeaturesDocumentDataAboutusFeature5Item>
+  >;
+
+  /**
+   * Aboutus_Feature_6 field in *AboutsPageFeatures*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.aboutus_feature_6[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  aboutus_feature_6: prismic.GroupField<
+    Simplify<AboutspagefeaturesDocumentDataAboutusFeature6Item>
+  >;
+
+  /**
+   * About_Shortcut_Section  field in *AboutsPageFeatures*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutspagefeatures.about_shortcut_section[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  about_shortcut_section: prismic.GroupField<
+    Simplify<AboutspagefeaturesDocumentDataAboutShortcutSectionItem>
+  >;
+}
+
+/**
+ * AboutsPageFeatures document from Prismic
+ *
+ * - **API ID**: `aboutspagefeatures`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type AboutspagefeaturesDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<AboutspagefeaturesDocumentData>,
+    "aboutspagefeatures",
+    Lang
+  >;
+
+type AboutusDocumentDataSlicesSlice = AboutusSlice;
+
+/**
+ * Content for Aboutus documents
+ */
+interface AboutusDocumentData {
+  /**
+   * Aboutus_Mobile_Img field in *Aboutus*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutus.aboutus_mobile_img
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  aboutus_mobile_img: prismic.ImageField<never>;
+
+  /**
+   * Slice Zone field in *Aboutus*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutus.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<AboutusDocumentDataSlicesSlice> /**
+   * Meta Description field in *Aboutus*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: aboutus.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Aboutus*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutus.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Aboutus*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: aboutus.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Aboutus document from Prismic
+ *
+ * - **API ID**: `aboutus`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type AboutusDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<AboutusDocumentData>,
+    "aboutus",
+    Lang
+  >;
+
+/**
  * Content for Author documents
  */
 interface AuthorDocumentData {
@@ -1863,6 +2286,16 @@ export interface NavbarDocumentDataNavbarHomepageItem {
   zolvecare_logo: prismic.ImageField<never>;
 
   /**
+   * Menu_Logo_nav field in *Navbar → Navbar_Homepage*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.navbar_homepage[].menu_logo_nav
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  menu_logo_nav: prismic.ImageField<never>;
+
+  /**
    * Features_Link field in *Navbar → Navbar_Homepage*
    *
    * - **Field Type**: Link
@@ -2033,6 +2466,8 @@ export type SettingsDocument<Lang extends string = string> =
   >;
 
 export type AllDocumentTypes =
+  | AboutspagefeaturesDocument
+  | AboutusDocument
   | AuthorDocument
   | BlogArticleDocument
   | BlogCategoryDocument
@@ -2046,6 +2481,71 @@ export type AllDocumentTypes =
   | NavbarDocument
   | NavigationDocument
   | SettingsDocument;
+
+/**
+ * Primary content in *Aboutus → Primary*
+ */
+export interface AboutusSliceDefaultPrimary {
+  /**
+   * Aboutus_Mobile_Img1 field in *Aboutus → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutus.primary.aboutus_mobile_img1
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  aboutus_mobile_img1: prismic.ImageField<never>;
+
+  /**
+   * Aboutus_h2tag field in *Aboutus → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutus.primary.aboutus_h2tag
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_h2tag: prismic.RichTextField;
+
+  /**
+   * Aboutus_Para field in *Aboutus → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: aboutus.primary.aboutus_para
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  aboutus_para: prismic.RichTextField;
+}
+
+/**
+ * Default variation for Aboutus Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AboutusSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<AboutusSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Aboutus*
+ */
+type AboutusSliceVariation = AboutusSliceDefault;
+
+/**
+ * Aboutus Shared Slice
+ *
+ * - **API ID**: `aboutus`
+ * - **Description**: Aboutus
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AboutusSlice = prismic.SharedSlice<
+  "aboutus",
+  AboutusSliceVariation
+>;
 
 /**
  * Primary content in *Homepage → Primary*
@@ -2122,6 +2622,18 @@ declare module "@prismicio/client" {
 
   namespace Content {
     export type {
+      AboutspagefeaturesDocument,
+      AboutspagefeaturesDocumentData,
+      AboutspagefeaturesDocumentDataAboutusFeature1Item,
+      AboutspagefeaturesDocumentDataAboutusFeature2Item,
+      AboutspagefeaturesDocumentDataAboutusFeature3Item,
+      AboutspagefeaturesDocumentDataAboutusFeature4Item,
+      AboutspagefeaturesDocumentDataAboutusFeature5Item,
+      AboutspagefeaturesDocumentDataAboutusFeature6Item,
+      AboutspagefeaturesDocumentDataAboutShortcutSectionItem,
+      AboutusDocument,
+      AboutusDocumentData,
+      AboutusDocumentDataSlicesSlice,
       AuthorDocument,
       AuthorDocumentData,
       BlogArticleDocument,
@@ -2173,6 +2685,10 @@ declare module "@prismicio/client" {
       SettingsDocument,
       SettingsDocumentData,
       AllDocumentTypes,
+      AboutusSlice,
+      AboutusSliceDefaultPrimary,
+      AboutusSliceVariation,
+      AboutusSliceDefault,
       HomepageSlice,
       HomepageSliceDefaultPrimary,
       HomepageSliceVariation,

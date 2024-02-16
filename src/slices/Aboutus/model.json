@@ -1,0 +1,45 @@
+{
+  "id": "aboutus",
+  "type": "SharedSlice",
+  "name": "Aboutus",
+  "description": "Aboutus",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "aboutus_mobile_img1": {
+          "type": "Image",
+          "config": {
+            "label": "Aboutus_Mobile_Img1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "aboutus_h2tag": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Aboutus_h2tag",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2"
+          }
+        },
+        "aboutus_para": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Aboutus_Para",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,10 +1,12 @@
 import Awaits from "@/components/Homepage/Awaits";
 import Documentation from "@/components/Homepage/Documentation";
-import Faq_sec from "@/components/Homepage/Faq";
+import Faq_sec from "@/GlobalComponents/Faq";
 import Feature from "@/components/Homepage/Feature";
+import Footer from "@/GlobalComponents/Footer";
 import Heading from "@/components/Homepage/Heading";
 import Logomove from "@/components/Homepage/Logomove";
-import Pricesec from "@/components/Homepage/Pricesec";
+import NavBar from "@/GlobalComponents/Navbar";
+import Pricesec from "@/GlobalComponents/Pricesec";
 import Slider from "@/components/Homepage/Slider";
 import TabSection from "@/components/Homepage/TabSection";
 import TestimonialSection from "@/components/Homepage/TestimonialSection";
@@ -34,8 +36,7 @@ const components: JSXMapSerializer = {      //A map of Rich Text block types to 
 }
 
 
-// const client  =  createClient()
-// const  repeatableBannerImagesSection =  client.getSingle("home_page")
+
 
 
 
@@ -48,9 +49,11 @@ const Homepage = ({ slice }: HomepageProps): JSX.Element => {
   return (
 
     <>
+   
       {slice.variation === "default" && (
 
         <>
+         <NavBar/>
           <section className="Banner"
             data-slice-type={slice.slice_type}
             data-slice-variation={slice.variation}
@@ -96,6 +99,7 @@ const Homepage = ({ slice }: HomepageProps): JSX.Element => {
         <Awaits />
         <Slider />
         <Faq_sec />
+     <Footer />
           </section>
 
         </>

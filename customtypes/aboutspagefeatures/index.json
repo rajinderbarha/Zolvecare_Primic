@@ -1,0 +1,253 @@
+{
+  "format": "custom",
+  "id": "aboutspagefeatures",
+  "label": "AboutsPageFeatures",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "aboutus_feature_1": {
+        "type": "Group",
+        "config": {
+          "label": "Aboutus_Feature_1",
+          "repeat": true,
+          "fields": {
+            "aboutus_featureimg1": {
+              "type": "Image",
+              "config": {
+                "label": "Aboutus_FeatureImg1",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "aboutus_featureh4tag_1": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeatureH4tag_1",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading4"
+              }
+            },
+            "aboutus_featureptag_1": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeaturePtag_1",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "aboutus_feature_2": {
+        "type": "Group",
+        "config": {
+          "label": "Aboutus_Feature_2",
+          "repeat": true,
+          "fields": {
+            "aboutus_featureimg2": {
+              "type": "Image",
+              "config": {
+                "label": "Aboutus_FeatureImg2",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "aboutus_featureh4tag_2": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeatureH4tag_2",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading4"
+              }
+            },
+            "aboutus_featureptag_2": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeaturePtag_2",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "aboutus_feature_3": {
+        "type": "Group",
+        "config": {
+          "label": "Aboutus_Feature_3",
+          "repeat": true,
+          "fields": {
+            "aboutus_featureimg3": {
+              "type": "Image",
+              "config": {
+                "label": "Aboutus_FeatureImg3",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "aboutus_featureh4tag_3": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeatureH4tag_3",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading4"
+              }
+            },
+            "aboutus_featureptag_3": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeaturePtag_3",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "aboutus_feature_4": {
+        "type": "Group",
+        "config": {
+          "label": "Aboutus_Feature_4",
+          "repeat": true,
+          "fields": {
+            "aboutus_featureimg4": {
+              "type": "Image",
+              "config": {
+                "label": "Aboutus_FeatureImg4",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "aboutus_featureh4tag_4": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeatureH4tag_4",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading4"
+              }
+            },
+            "aboutus_featureptag_4": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeaturePtag_4",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "aboutus_feature_5": {
+        "type": "Group",
+        "config": {
+          "label": "Aboutus_Feature_5",
+          "repeat": true,
+          "fields": {
+            "aboutus_featureimg5": {
+              "type": "Image",
+              "config": {
+                "label": "Aboutus_FeatureImg5",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "aboutus_featureh4tag_5": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeatureH4tag_5",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading4"
+              }
+            },
+            "aboutus_featureptag_5": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeaturePtag_5",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "aboutus_feature_6": {
+        "type": "Group",
+        "config": {
+          "label": "Aboutus_Feature_6",
+          "repeat": true,
+          "fields": {
+            "aboutus_featureimg6": {
+              "type": "Image",
+              "config": {
+                "label": "Aboutus_FeatureImg6",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "aboutus_featureh4tag_6": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeatureH4tag_6",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading4"
+              }
+            },
+            "aboutus_featureptag_6": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Aboutus_FeaturePtag_6",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "about_shortcut_section": {
+        "type": "Group",
+        "config": {
+          "label": "About_Shortcut_Section ",
+          "repeat": true,
+          "fields": {
+            "shortcut_image": {
+              "type": "Image",
+              "config": {
+                "label": "Shortcut_image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "shortcut_h2": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Shortcut_H2",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

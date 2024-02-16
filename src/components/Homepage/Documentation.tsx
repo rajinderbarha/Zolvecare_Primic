@@ -3,12 +3,11 @@ import { createClient } from "@/prismicio";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next"; // PrismicNextLink is useful for internal linking bcz it can access the id of the link from the prismic document(settings) with some extra features that next/link
 import Link from "next/link";
 import { PrismicRichText } from "@prismicio/react";
+import FreeDemo_Btn from "./FreeDemo_Btn";
 
 const Documentation = async () => {
   const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
-  const HomepageDocumentation = await client.getSingle(
-    "homepagedocumentation"
-  ); 
+  const HomepageDocumentation = await client.getSingle("homepagedocumentation"); 
 
   const Homepagelanding = await client.getSingle("landing")  //     we accessing this for below buttton 
 
@@ -73,10 +72,6 @@ const Documentation = async () => {
               </ul>
             )
           )}
-                            {/* <p className='font-semibold Efficiency_bg_blu'>Efficiency</p>
-                           
-                            <h3 className='my-3 font-semibold '>Efficiency in health documentation</h3>
-                            <p className='font-normal'>Zolvecare streamlines and accelerates the medical documentation process through AI automation, reducing the time and effort required for healthcare professionals to record and manage patient information. This efficiency allows practitioners to devote more time to patient care rather than administrative tasks.</p> */}
                         </div>
                         <div className='Efficiency_img'>
                         <PrismicNextImage
@@ -104,11 +99,7 @@ const Documentation = async () => {
             field={HomepageDocumentation.data.documentation_ai_image}
             className="w-full"
           />
-{/*                         
-                        <PrismicNextImage
-            field={HomepageDocumentation.data.documentation_parallelmobileimg2}
-            className="w-full"
-          /> */}
+
                         </div>
                         <div className='Efficiency'>
 
@@ -240,12 +231,15 @@ const Documentation = async () => {
             className="w-full"
           />
 
-                        {/* <PrismicNextImage
-            field={HomepageDocumentation.data.documentation_parallelmobileimg2}
-            className="w-full"
-          /> */}
+                      
                         </div>
+                        
+          
                     </div>
+                    <div className="text-center md:mt-16 mt-8 w-full">
+                      <button  className='Free_Demo'>Free Demo</button>
+                        {/* <FreeDemo_Btn/> */}
+                        </div>
                 </div>
             </div>
 

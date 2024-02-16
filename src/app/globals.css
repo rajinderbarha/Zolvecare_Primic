@@ -996,9 +996,74 @@ color: #fff;
   align-items: center;
 }
 
-div#radix-\:Ra6ukq\: {
+div#radix-\:R18t6ukq\: {
   width: 100vw !important;
-  max-width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100%;
+  padding: 0;
+}
+div#radix-\:r0\: {
+  width: 100vw;
+  max-width: 100%;
+  padding: 0;
+}
+div#radix-\:R16ukq\: {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100%;
+  padding: 0;
+}
+.About_banner{
+  background: linear-gradient(90deg, rgb(253, 251, 251) 0%, rgb(235, 237, 238) 100%);
+  padding: 70px 16px 70px 16px;
+
+}
+.About_banner_img{
+  max-width: 544px;
+  width: 100%;
+}
+.About_banner_text h2{
+  font-size: 56px;
+}
+.container_Abanner{
+  width: 100%;
+  max-width: 1347px;
+}
+
+/* platform */
+.platform{
+  padding: 160px 16px;
+}
+.container_platform{
+  width: 100%;
+  max-width: 1120px;
+}
+.platform_box img{
+  width: 72px;
+  
+}
+.container_shortcut{
+  width: 100%;
+  max-width: 1400px;
+}
+.shortcut_text h2{
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  max-width: 671px;
+}
+.shortcut{
+background-image: linear-gradient(109deg,#3D4E81, #5753C9 ,#6E7FF3);
+border-radius: 40px;
+}
+.shortcut img{
+  max-width: 417px;
+  width: 100%;
+}
+.platform h2{
+  font-size: 40px;
+  line-height: 50px;
+  max-width:1232px;
 }
 @media screen and (min-device-width: 901px) and (max-device-width: 1205px) {
 
@@ -1023,6 +1088,17 @@ div#radix-\:Ra6ukq\: {
   .form_stap {
     padding: 20px;
   }
+  div#radix-\:r0\: {
+    width: 100vw;
+    max-width: 100%;
+    padding: 0;
+  }
+  div#radix-\:R16ukq\: {
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100%;
+    padding: 0;
+  }
 
 }
 
@@ -1040,6 +1116,7 @@ div#radix-\:Ra6ukq\: {
   .stap {
     display: block;
     overflow-y: scroll;
+    padding-bottom: 30px;
   }
 
   .start_demo {
@@ -1060,9 +1137,43 @@ div#radix-\:Ra6ukq\: {
     margin: 0 0 10px 0;
     font-size: 26px;
   }
-
+  div#radix-\:r0\: {
+    width: 100vw;
+    max-width: 100%;
+    padding: 0;
+  }
+  div#radix-\:R16ukq\: {
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100%;
+    padding: 0;
+  }
 
 }
+
+@media only screen and (max-width: 768px) {
+  .About_banner_text h2{
+      font-size: 36px;
+  }
+  .About_banner{
+      padding: 50px 16px 50px 16px;
+  }
+  .platform{
+      padding: 60px 16px;
+  }
+  .shortcut_text h2{
+    font-size: 36px;
+    margin-top: 30px;
+    line-height: 40px;
+  }
+  .platform h2{
+    font-size: 26px;
+    line-height: 36px;
+    max-width:1232px;
+  }
+  }
+
+
 
 @media screen and (min-device-width: 350px) and (max-device-width: 407px) {
   .demo_start h2 {
@@ -1076,6 +1187,7 @@ div#radix-\:Ra6ukq\: {
   .stap {
     display: block;
     overflow-y: scroll;
+    padding-bottom: 30px;
   }
 
   .start_demo {
@@ -1110,5 +1222,15 @@ div#radix-\:Ra6ukq\: {
   .stap_1_img img {
     max-height: 500px;
 }
-
+div#radix-\:r0\: {
+  width: 100vw;
+  max-width: 100%;
+  padding: 0;
+}
+div#radix-\:R16ukq\: {
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100%;
+  padding: 0;
+}
 }

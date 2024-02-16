@@ -26,6 +26,14 @@
                 "thumbnails": []
               }
             },
+            "menu_logo_nav": {
+              "type": "Image",
+              "config": {
+                "label": "Menu_Logo_nav",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
             "features_link": {
               "type": "Link",
               "config": {

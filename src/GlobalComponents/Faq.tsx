@@ -4,7 +4,7 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "../ui/accordion"
+} from "../components/ui/accordion"
 import { createClient } from '@/prismicio';
 import { PrismicRichText } from '@prismicio/react';
 async function Faq_sec() {
