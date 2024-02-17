@@ -1,6 +1,6 @@
 import Awaits from "@/components/Homepage/Awaits";
 import Documentation from "@/components/Homepage/Documentation";
-import Faq_sec from "@/GlobalComponents/Faq";
+import Faq_sec from "@/GlobalComponents/Faq_sec";
 import Feature from "@/components/Homepage/Feature";
 import Footer from "@/GlobalComponents/Footer";
 import Heading from "@/components/Homepage/Heading";

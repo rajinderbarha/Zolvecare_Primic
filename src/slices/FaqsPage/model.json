@@ -1,0 +1,28 @@
+{
+  "id": "faqs_page",
+  "type": "SharedSlice",
+  "name": "FaqsPage",
+  "description": "FaqsPage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "faqh2tag": {
+          "type": "StructuredText",
+          "config": {
+            "label": "FaqH2tag",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

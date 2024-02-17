@@ -17,7 +17,7 @@ function Footer() {
                                 <a href="#" className="   font-medium md:me-6">Blog</a>
                             </li>
                             <li>
-                                <a href="#" className="  font-medium  md:me-6">FAQ</a>
+                            <Link href="/FAQ" className=' font-medium  md:me-6'>FAQ</Link> 
                             </li>
                             <li>
                                 <a href="#" className="  font-medium">Contact Us</a>

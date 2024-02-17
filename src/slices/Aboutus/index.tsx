@@ -1,3 +1,5 @@
+import Faq_sec from "@/GlobalComponents/Faq_sec";
+import Footer from "@/GlobalComponents/Footer";
 import NavBar from "@/GlobalComponents/Navbar";
 import Pricesec from "@/GlobalComponents/Pricesec";
 import AboutusFeatures from "@/components/Aboutus/AboutusFeatures";
@@ -27,6 +29,7 @@ const Aboutus = ({ slice }: AboutusProps): JSX.Element => {
             <div className="container_Abanner mx-auto">
                 <div className='md:flex block  gap-x-24 items-center'>
                     <div className='About_banner_img md:mb-0 mb-12 '>
+                      
                     <PrismicNextImage field={slice.primary.aboutus_mobile_img1} className="image_banner mx-auto" />
                     </div>
                     <div className='About_banner_text'>
@@ -47,8 +50,11 @@ const Aboutus = ({ slice }: AboutusProps): JSX.Element => {
         </div>
     </section>
     <AboutusFeatures />
-    <Pricesec/>
-                  <ShortcutSection/>
+    <div className="Pricesec_ShortcutSection_BG">
+    <Pricesec/> <ShortcutSection/>
+    </div>
+    <Faq_sec />
+     <Footer />
     </>
 
   );

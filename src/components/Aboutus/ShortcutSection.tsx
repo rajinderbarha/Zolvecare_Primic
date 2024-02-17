@@ -10,7 +10,8 @@ const ShortcutSection = async() => {
     <section>
     <div className='container_shortcut md:px-0 px-3  mx-auto'>
         <div className='shortcut md:p-0 p-5'>
-            {AboutsPageFeatures.data.about_shortcut_section.map(item => (
+        {AboutsPageFeatures.data.about_shortcut_section.map(item => (
+            // {AboutsPageFeatures.data.about_shortcut_section.map(item => (
 
            
             <div className='md:gap-16 gap-8 block items-center justify-center md:flex'>
@@ -22,7 +23,7 @@ const ShortcutSection = async() => {
            field={item.shortcut_h2}
           components={{
             heading2: ({ children }) => (
-              <h2 className="mb-4 font-semibold text-2xl">
+              <h2 className="mb-10 text-white">
                 {children}
               </h2>
             ),
@@ -30,6 +31,7 @@ const ShortcutSection = async() => {
         />
                     {/* <h2 className='mb-10 text-white'>Your shortcut to healthcare brilliance. Try our free demo!</h2> */}
                     {/* Free  demo */}
+                    <button className="Free_Demo">Start a demo</button>
                 </div>
                 
             </div>

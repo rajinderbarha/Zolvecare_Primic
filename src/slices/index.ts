@@ -4,5 +4,6 @@ import dynamic from "next/dynamic";
 
 export const components = {
   aboutus: dynamic(() => import("./Aboutus")),
+  faqs_page: dynamic(() => import("./FaqsPage")),
   homepage: dynamic(() => import("./Homepage")),
 };

@@ -1065,6 +1065,19 @@ border-radius: 40px;
   line-height: 50px;
   max-width:1232px;
 }
+.Pricesec_ShortcutSection_BG{
+  background-color: #EFF6FF;
+  padding-bottom: 120px;
+}
+.Faq_sec  h3{
+    font-size: 56px;
+}
+.Blog_view{
+  font-size: 16px;
+  text-decoration: underline;
+  color: #1E293B;
+  font-weight: 500;
+}
 @media screen and (min-device-width: 901px) and (max-device-width: 1205px) {
 
   .demo_start {
@@ -1171,6 +1184,12 @@ border-radius: 40px;
     line-height: 36px;
     max-width:1232px;
   }
+  .Pricesec_ShortcutSection_BG{
+    padding-bottom: 60px;
+  }
+  .Faq_sec  h3{
+    font-size: 36px;
+}
   }
 
 
