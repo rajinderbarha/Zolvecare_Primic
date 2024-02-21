@@ -40,7 +40,7 @@ const Aboutus = ({ slice }: AboutusProps): JSX.Element => {
                   }}/>
                         <PrismicRichText  field={slice.primary.aboutus_para}  components={{
                     paragraph: ({ children }) => (
-                       <p className="md:mb-16 mb-6 md:text-lg text-base font-normal leading-8">{children}</p>
+                       <p className="md:mb-16 mb-6 md:text- lg text-base font-normal leading-8">{children}</p>
                     )
                   }}/>
                         <button className='Free_Demo'>Start a demo</button>

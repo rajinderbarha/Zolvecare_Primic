@@ -5,5 +5,8 @@ import dynamic from "next/dynamic";
 export const components = {
   aboutus: dynamic(() => import("./Aboutus")),
   faqs_page: dynamic(() => import("./FaqsPage")),
+  hero: dynamic(() => import("./Hero")),
   homepage: dynamic(() => import("./Homepage")),
+  page: dynamic(() => import("./Page")),
+  rich_text: dynamic(() => import("./RichText")),
 };
