@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Adipisicing culpa proident anim fugiat cillum nostrud ex officia nulla non sit consequat eiusmod. Aliqua aute dolore voluptate duis ea consequat labore fugiat minim enim magna ipsum."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

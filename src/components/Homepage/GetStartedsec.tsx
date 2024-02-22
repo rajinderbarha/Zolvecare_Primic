@@ -1,6 +1,7 @@
 import { PrismicRichText } from '@prismicio/react'
 import React from 'react'
 import { createClient } from '@/prismicio'
+import FreeDemo_Btn from './FreeDemo_Btn'
 
 const GetStartedsec = async() => {
     const client = createClient()       //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
@@ -25,16 +26,11 @@ const GetStartedsec = async() => {
                         <p className="mb-5 font-normal text-white">{children}</p>
                       )
                     }}/>
-                        <button className='Free_Demo'>Get a free demo</button>
+                     <FreeDemo_Btn name={"Get a free demo"}/>
                     </div>
                 </div>
             </div>
-           {/**Add a Background Image here  either below or normal reactjsx */}
-      {/* <PrismicNextImage field={data.getstartedbgimage} /> */}
-
-   
-        {/**Add a button here  either below or normal reactjsx */}
-           {/* <PrismicNextLink field={Homepagelanding.data.getstartedlinkbtn} style={{backgroundColor:"lightblue"}}>{<>{Homepagelanding.data.getstartedbtnlabel}</>}</PrismicNextLink> */}
+          
 
     </div>
   )

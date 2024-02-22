@@ -12,12 +12,216 @@
         },
         "type": "UID"
       },
-      "carouselshadcn": {
-        "type": "Image",
+      "carousel_shadcn_h2": {
+        "type": "StructuredText",
         "config": {
-          "label": "Carouselshadcn",
-          "constraint": {},
-          "thumbnails": []
+          "label": "Carousel_shadcn_h2",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "heading2"
+        }
+      },
+      "carouselshadcn_first": {
+        "type": "Group",
+        "config": {
+          "label": "Carouselshadcn_First",
+          "repeat": true,
+          "fields": {
+            "first_image": {
+              "type": "Image",
+              "config": {
+                "label": "First_Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "first_h3tag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "First_h3tag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading3"
+              }
+            },
+            "first_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "First_Ptag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "carouselshadcn_second": {
+        "type": "Group",
+        "config": {
+          "label": "Carouselshadcn_Second",
+          "repeat": true,
+          "fields": {
+            "second_image": {
+              "type": "Image",
+              "config": {
+                "label": "Second_Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "second_h3tag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Second_h3tag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading3"
+              }
+            },
+            "second_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Second_Ptag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "carouselshadcn_third": {
+        "type": "Group",
+        "config": {
+          "label": "Carouselshadcn_Third",
+          "repeat": true,
+          "fields": {
+            "third_image": {
+              "type": "Image",
+              "config": {
+                "label": "Third_Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "third_h3tag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Third_h3tag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading3"
+              }
+            },
+            "third_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Third_Ptag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "carouselshadcn_fourth": {
+        "type": "Group",
+        "config": {
+          "label": "Carouselshadcn_Fourth",
+          "repeat": true,
+          "fields": {
+            "fourth_image": {
+              "type": "Image",
+              "config": {
+                "label": "Fourth_Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "fourth_h3tag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Fourth_h3tag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "heading3"
+              }
+            },
+            "fourth_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Fourth_Ptag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_h2": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Faq_sec_h2",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "heading2"
+        }
+      },
+      "faq_sec_ques1_ptag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Faq_sec_Ques1_pTag",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "faq_sec_answer1_ptag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Faq_sec_Answer1_pTag",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "faq_sec_ques2_ptag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Faq_sec_Ques2_pTag",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "faq_sec_answer2_ptag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Faq_sec_Answer2_pTag",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "faq_sec_ques3_ptag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Faq_sec_Ques3_pTag",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "faq_sec_answer3_ptag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Faq_sec_Answer3_pTag",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
         }
       }
     }

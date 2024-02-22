@@ -1,0 +1,380 @@
+{
+  "format": "custom",
+  "id": "allfaqs",
+  "label": "AllFaqs",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "faq_sec_h2": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Faq_sec_h2",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "heading2"
+        }
+      },
+      "faq_sec_h3": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Faq_sec_h3",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "heading3"
+        }
+      },
+      "faq_sec_ques_answer_1": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_1",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_2": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_2",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_3": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_3",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_4": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_4",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_5": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_5",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_6": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_6",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_7": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_7",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_8": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_8",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_9": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_9",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_10": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_10",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_11": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_11",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_12": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_12",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      },
+      "faq_sec_ques_answer_13": {
+        "type": "Group",
+        "config": {
+          "label": "Faq_sec_Ques_Answer_13",
+          "repeat": true,
+          "fields": {
+            "faq_sec_ques1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Ques1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            },
+            "faq_sec_answer1_ptag": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Faq_sec_Answer1_pTag",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -18,7 +18,7 @@ const Pricesec = async() => {
                   }}/>
 
                 <div className='  grid items-center md:gap-8 gap-4 md:grid-cols-3 grid-cols-1'>
-                    <div className='Pricing_box'>
+                    <div className='Pricing_box bg-white'>
                     <PrismicRichText field={HomepageDocumentation.data.pricesec_starter_h4} components={{
                     heading4: ({ children }) => (
                        <h4 className="font-semibold py-4 px-6">{children}</h4>
@@ -59,7 +59,7 @@ const Pricesec = async() => {
 
 
 
-                    <div className='Pricing_box_2 '>
+                    <div className='Pricing_box_2  bg-white'>
                     <PrismicRichText field={HomepageDocumentation.data.pricesec_professional_h4} components={{
                     heading4: ({ children }) => (
                        <h4 className="font-semibold py-4 px-6">{children}</h4>
@@ -107,7 +107,7 @@ const Pricesec = async() => {
 
 
 
-                    <div className='Pricing_box'>
+                    <div className='Pricing_box  bg-white'>
                     <PrismicRichText field={HomepageDocumentation.data.pricesec_custom_h4} components={{
                     heading4: ({ children }) => (
                        <h4 className="font-semibold py-4 px-6">{children}</h4>

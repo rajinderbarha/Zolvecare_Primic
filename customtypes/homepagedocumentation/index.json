@@ -200,13 +200,13 @@
                 "multi": "paragraph"
               }
             },
-            "documentation_testimonialpara2": {
+            "documentation_testimonialh6tag": {
               "type": "StructuredText",
               "config": {
-                "label": "Documentation_TestimonialPara2",
+                "label": "Documentation_TestimonialH6tag",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "multi": "paragraph"
+                "multi": "heading6"
               }
             },
             "documentation_testimonialpara3": {
