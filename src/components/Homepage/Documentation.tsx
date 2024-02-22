@@ -237,8 +237,8 @@ const Documentation = async () => {
           
                     </div>
                     <div className="text-center md:mt-16 mt-8 w-full">
-                      <button  className='Free_Demo'>Free Demo</button>
-                        {/* <FreeDemo_Btn/> */}
+                      {/* <button  className='Free_Demo'>Free Demo</button> */}
+                      <FreeDemo_Btn name={"Free Demo"}/>
                         </div>
                 </div>
             </div>

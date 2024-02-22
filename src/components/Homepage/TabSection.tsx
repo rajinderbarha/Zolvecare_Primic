@@ -82,8 +82,7 @@ const TabSection = async () => {
                         </p>
                       ),
                     }} />
-                    <button  className='Free_Demo'>Free Demo</button>
-                    {/* <FreeDemo_Btn /> */}
+                    <FreeDemo_Btn name="Free Demo"/>
 
                   </div>
 

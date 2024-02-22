@@ -1541,6 +1541,41 @@ export interface FooterDocumentDataLinksItem {
 }
 
 /**
+ * Item in *Footer → Popup_Play_AppStore_link*
+ */
+export interface FooterDocumentDataPopupPlayAppstoreLinkItem {
+  /**
+   * Popup_Slider field in *Footer → Popup_Play_AppStore_link*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: footer.popup_play_appstore_link[].popup_slider
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  popup_slider: prismic.LinkField;
+
+  /**
+   * GooglePlayStore_img field in *Footer → Popup_Play_AppStore_link*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: footer.popup_play_appstore_link[].googleplaystore_img
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  googleplaystore_img: prismic.ImageField<never>;
+
+  /**
+   * AppStore_img field in *Footer → Popup_Play_AppStore_link*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: footer.popup_play_appstore_link[].appstore_img
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  appstore_img: prismic.ImageField<never>;
+}
+
+/**
  * Item in *Footer → Social Links*
  */
 export interface FooterDocumentDataSocialLinksItem {
@@ -1570,17 +1605,6 @@ export interface FooterDocumentDataSocialLinksItem {
  */
 interface FooterDocumentData {
   /**
-   * Logo field in *Footer*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: footer.logo
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  logo: prismic.ImageField<never>;
-
-  /**
    * Links field in *Footer*
    *
    * - **Field Type**: Group
@@ -1592,15 +1616,17 @@ interface FooterDocumentData {
   links: prismic.GroupField<Simplify<FooterDocumentDataLinksItem>>;
 
   /**
-   * Social Links field in *Footer*
+   * Popup_Play_AppStore_link field in *Footer*
    *
    * - **Field Type**: Group
    * - **Placeholder**: *None*
-   * - **API ID Path**: footer.social_links[]
+   * - **API ID Path**: footer.popup_play_appstore_link[]
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#group
    */
-  social_links: prismic.GroupField<Simplify<FooterDocumentDataSocialLinksItem>>;
+  popup_play_appstore_link: prismic.GroupField<
+    Simplify<FooterDocumentDataPopupPlayAppstoreLinkItem>
+  >;
 
   /**
    * Copyright field in *Footer*
@@ -1612,6 +1638,17 @@ interface FooterDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   copyright: prismic.RichTextField;
+
+  /**
+   * Social Links field in *Footer*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: footer.social_links[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  social_links: prismic.GroupField<Simplify<FooterDocumentDataSocialLinksItem>>;
 }
 
 /**
@@ -3691,6 +3728,7 @@ declare module "@prismicio/client" {
       FooterDocument,
       FooterDocumentData,
       FooterDocumentDataLinksItem,
+      FooterDocumentDataPopupPlayAppstoreLinkItem,
       FooterDocumentDataSocialLinksItem,
       HomePageDocument,
       HomePageDocumentData,

@@ -14,6 +14,8 @@ import { createClient } from "@/prismicio";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 import { JSXMapSerializer, PrismicRichText, SliceComponentProps } from "@prismicio/react";
+import GetStartedsec from "@/components/Homepage/GetStartedsec";
+import FreeDemo_Btn from "@/components/Homepage/FreeDemo_Btn";
 
 /**
  * Props for `Homepage`.
@@ -88,6 +90,7 @@ const Homepage = ({ slice }: HomepageProps): JSX.Element => {
 
 
           <section>
+           
             <Logomove />
 
             <Feature/>  

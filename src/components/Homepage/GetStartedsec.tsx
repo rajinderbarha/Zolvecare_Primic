@@ -1,7 +1,6 @@
 import { PrismicRichText } from '@prismicio/react'
 import React from 'react'
 import { createClient } from '@/prismicio'
-import Free_Demo from './FreeDemo_Btn'
 import FreeDemo_Btn from './FreeDemo_Btn'
 
 const GetStartedsec = async() => {
@@ -27,8 +26,7 @@ const GetStartedsec = async() => {
                         <p className="mb-5 font-normal text-white">{children}</p>
                       )
                     }}/>
-                    {/* <FreeDemo_Btn/> */}
-                    <button  className='Free_Demo'>Get a free demo</button>
+                     <FreeDemo_Btn name={"Get a free demo"}/>
                     </div>
                 </div>
             </div>

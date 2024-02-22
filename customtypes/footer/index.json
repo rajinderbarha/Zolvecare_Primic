@@ -6,17 +6,6 @@
   "status": true,
   "json": {
     "Main": {
-      "logo": {
-        "type": "Image",
-        "config": {
-          "label": "Logo",
-          "constraint": {
-            "width": 436,
-            "height": 160
-          },
-          "thumbnails": []
-        }
-      },
       "links": {
         "type": "Group",
         "config": {
@@ -37,10 +26,52 @@
                 "label": "Label",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "single": "paragraph"
               }
             }
           }
+        }
+      },
+      "popup_play_appstore_link": {
+        "type": "Group",
+        "config": {
+          "label": "Popup_Play_AppStore_link",
+          "repeat": true,
+          "fields": {
+            "popup_slider": {
+              "type": "Link",
+              "config": {
+                "label": "Popup_Slider",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "googleplaystore_img": {
+              "type": "Image",
+              "config": {
+                "label": "GooglePlayStore_img",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "appstore_img": {
+              "type": "Image",
+              "config": {
+                "label": "AppStore_img",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      },
+      "copyright": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Copyright",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em"
         }
       },
       "social_links": {
@@ -69,15 +100,6 @@
               }
             }
           }
-        }
-      },
-      "copyright": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Copyright",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,strong,em,hyperlink"
         }
       }
     }

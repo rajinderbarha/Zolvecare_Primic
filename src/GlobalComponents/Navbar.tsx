@@ -47,8 +47,7 @@ async function NavBar() {
                                 </SheetTrigger>
                             </div>
                             <div className="hidden lg:flex lg:gap-x-16">
-                                <PrismicNextLink field={item.features_link} className=" nav_link font-medium  ">Features</PrismicNextLink>
-
+                                <PrismicNextLink field={item.features_link} className=" nav_link font-medium ">Features</PrismicNextLink>
                                 <PrismicNextLink field={item.benifits_link} className=" nav_link font-medium  "> Benefits</PrismicNextLink>
                                 <PrismicNextLink field={item.how_it_works_link} className=" nav_link font-medium  ">How it works</PrismicNextLink>
                                 <PrismicNextLink field={item.pricing_link} className=" nav_link font-medium  ">Pricing</PrismicNextLink>
@@ -56,7 +55,7 @@ async function NavBar() {
                             <div className="hidden lg:flex items-center gap-8 lg:flex-1 lg:justify-end">
                                 <PrismicNextLink field={item.sign_up_link} className=" nav_link font-medium  ">Sign Up</PrismicNextLink>
 
-                                <FreeDemo_Btn />
+                                <FreeDemo_Btn name={"Free Demo"}/>
                             </div>
                         </nav>
                         {/* Mobile menu, show/hide based on menu open state. */}
@@ -85,8 +84,7 @@ async function NavBar() {
                                             <div className="py-6 items-center flex gap-4">
                                                 <PrismicNextLink field={item.sign_up_link} className=" nav_link font-medium  ">Sign Up</PrismicNextLink>
 
-                                                <FreeDemo_Btn />
-                                            </div>
+                                            </div> <FreeDemo_Btn name={"Free Demo"}/>
                                         </div>
                                     </div>
                                 </div>
