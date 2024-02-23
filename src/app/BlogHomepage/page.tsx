@@ -7,35 +7,12 @@ import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import { PostCard } from "@/components/BlogHomepage/PostCard";
 import { Navigation } from "@/components/BlogHomepage/Navigation";
-import NavBar from "@/GlobalComponents/Navbar";
+import NavBar from "@/GlobalComponents/Navbar_Homepage";
 import Footer from "@/GlobalComponents/Footer";
 import { RelatedPosts_Side } from "@/components/BlogHomepage/RelatedPosts_Side";
+import NavBar_OtherRoutes from "@/GlobalComponents/Navbar_OtherRoutes";
 
-/**
- * This component renders your homepage.
- *
- * Use Next's generateMetadata function to render page metadata.
- *
- * Use the SliceZone to render the content of the page.
- */
 
-// export async function generateMetadata(): Promise<Metadata> {
-//   const client = createClient();
-//   const home = await client.getByUID("page", "bloghomepage");
-
-//   return {
-//     title: prismic.asText(home.data.title),
-//     description: home.data.meta_description,
-//     openGraph: {
-//       title: home.data.meta_title || undefined,
-//       // images: [
-//       //   {
-//       //     url: home.data.meta_image.url || "",
-//       //   },
-//       // ],
-//     },
-//   };
-// }
 
 export default async function BlogHomepage() {
   // The client queries content from the Prismic API
@@ -54,8 +31,7 @@ export default async function BlogHomepage() {
 
   return (
     <>
-      {/* <Navigation client={client} /> */}
-      <NavBar />
+      <NavBar_OtherRoutes />
 
       <SliceZone slices={home.data.slices} components={components} />
       <div className="container-blogs">

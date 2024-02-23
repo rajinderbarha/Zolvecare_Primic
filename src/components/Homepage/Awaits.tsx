@@ -2,11 +2,11 @@ import React from 'react'
 import { createClient } from '@/prismicio'
 import { PrismicNextImage } from '@prismicio/next'
 import { PrismicRichText } from '@prismicio/react';
+import FreeDemo_Btn from './FreeDemo_Btn';
 
 const Awaits = async () => {
     const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
     const HomepageDocumentation = await client.getSingle("homepagedocumentation");
-    // console.log("HomepageDocumentation", HomepageDocumentation)
     return (
         <div>
             <div className='Awaits border-b'>
@@ -19,8 +19,7 @@ const Awaits = async () => {
                                 <p className="font-semibold md:mb-12">{children}</p>
                             )
                         }} />
-
-                        <button className='Free_Demo'>Get a free demo</button>
+                        <FreeDemo_Btn name="Get a free demo " />
                     </div>
                 </div>
             </div>

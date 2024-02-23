@@ -1,8 +1,8 @@
 import Footer from "@/GlobalComponents/Footer";
-import NavBar from "@/GlobalComponents/Navbar";
+import NavBar_OtherRoutes from "@/GlobalComponents/Navbar_OtherRoutes";
 import FaqsSection from "@/components/Faq/FaqsSection";
 import { Content } from "@prismicio/client";
-import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
+import {SliceComponentProps } from "@prismicio/react";
 
 /**
  * Props for `FaqsPage`.
@@ -18,8 +18,7 @@ const FaqsPage = ({ slice }: FaqsPageProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-    {/* <PrismicRichText field={slice.primary.faqh2tag} /> */}
-    <NavBar />
+    <NavBar_OtherRoutes />
     <FaqsSection/>
     <Footer />
     </section>

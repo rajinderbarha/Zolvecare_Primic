@@ -3213,6 +3213,115 @@ export type NavbarDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<NavbarDocumentData>, "navbar", Lang>;
 
 /**
+ * Item in *NavBar_OtherRoutes → Navbar_OtherRoutes*
+ */
+export interface NavbarOtherroutesDocumentDataNavbarOtherroutesItem {
+  /**
+   * Zolvecare_Logo field in *NavBar_OtherRoutes → Navbar_OtherRoutes*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar_otherroutes.navbar_otherroutes[].zolvecare_logo
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  zolvecare_logo: prismic.ImageField<never>;
+
+  /**
+   * Menu_Logo_nav field in *NavBar_OtherRoutes → Navbar_OtherRoutes*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar_otherroutes.navbar_otherroutes[].menu_logo_nav
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  menu_logo_nav: prismic.ImageField<never>;
+
+  /**
+   * Home_Link field in *NavBar_OtherRoutes → Navbar_OtherRoutes*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar_otherroutes.navbar_otherroutes[].home_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  home_link: prismic.LinkField;
+
+  /**
+   * Aboutus_Link field in *NavBar_OtherRoutes → Navbar_OtherRoutes*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar_otherroutes.navbar_otherroutes[].aboutus_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  aboutus_link: prismic.LinkField;
+
+  /**
+   * Blog_Link field in *NavBar_OtherRoutes → Navbar_OtherRoutes*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar_otherroutes.navbar_otherroutes[].blog_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  blog_link: prismic.LinkField;
+
+  /**
+   * FAQs_Link field in *NavBar_OtherRoutes → Navbar_OtherRoutes*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar_otherroutes.navbar_otherroutes[].faqs_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  faqs_link: prismic.LinkField;
+
+  /**
+   * Sign_Up_Link field in *NavBar_OtherRoutes → Navbar_OtherRoutes*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar_otherroutes.navbar_otherroutes[].sign_up_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  sign_up_link: prismic.LinkField;
+}
+
+/**
+ * Content for NavBar_OtherRoutes documents
+ */
+interface NavbarOtherroutesDocumentData {
+  /**
+   * Navbar_OtherRoutes field in *NavBar_OtherRoutes*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar_otherroutes.navbar_otherroutes[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  navbar_otherroutes: prismic.GroupField<
+    Simplify<NavbarOtherroutesDocumentDataNavbarOtherroutesItem>
+  >;
+}
+
+/**
+ * NavBar_OtherRoutes document from Prismic
+ *
+ * - **API ID**: `navbar_otherroutes`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type NavbarOtherroutesDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<NavbarOtherroutesDocumentData>,
+    "navbar_otherroutes",
+    Lang
+  >;
+
+/**
  * Item in *Navigation → Menu Items*
  */
 export interface NavigationDocumentDataMenuItemsItem {
@@ -3359,6 +3468,7 @@ export type AllDocumentTypes =
   | LandingDocument
   | LandingPageDocument
   | NavbarDocument
+  | NavbarOtherroutesDocument
   | NavigationDocument
   | PageDocument
   | SettingsDocument;
@@ -3601,33 +3711,6 @@ export type HomepageSlice = prismic.SharedSlice<
 >;
 
 /**
- * Default variation for Page Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type PageSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Record<string, never>,
-  never
->;
-
-/**
- * Slice variation for *Page*
- */
-type PageSliceVariation = PageSliceDefault;
-
-/**
- * Page Shared Slice
- *
- * - **API ID**: `page`
- * - **Description**: Page
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type PageSlice = prismic.SharedSlice<"page", PageSliceVariation>;
-
-/**
  * Primary content in *RichText → Primary*
  */
 export interface RichTextSliceDefaultPrimary {
@@ -3761,6 +3844,9 @@ declare module "@prismicio/client" {
       NavbarDocument,
       NavbarDocumentData,
       NavbarDocumentDataNavbarHomepageItem,
+      NavbarOtherroutesDocument,
+      NavbarOtherroutesDocumentData,
+      NavbarOtherroutesDocumentDataNavbarOtherroutesItem,
       NavigationDocument,
       NavigationDocumentData,
       NavigationDocumentDataMenuItemsItem,
@@ -3786,9 +3872,6 @@ declare module "@prismicio/client" {
       HomepageSliceDefaultPrimary,
       HomepageSliceVariation,
       HomepageSliceDefault,
-      PageSlice,
-      PageSliceVariation,
-      PageSliceDefault,
       RichTextSlice,
       RichTextSliceDefaultPrimary,
       RichTextSliceVariation,

@@ -7,10 +7,8 @@ import * as prismic from "@prismicio/client";
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import { PrismicNextImage } from "@prismicio/next";
-import { PostCard } from "@/components/BlogHomepage/PostCard";
 import { RichText } from "@/components/BlogHomepage/RichText";
-import { Navigation } from "@/components/BlogHomepage/Navigation";
-import NavBar from "@/GlobalComponents/Navbar";
+import NavBar from "@/GlobalComponents/Navbar_Homepage";
 import Footer from "@/GlobalComponents/Footer";
 import { RelatedPosts_bottom } from "@/components/BlogHomepage/Relateposts_Bottom";
 

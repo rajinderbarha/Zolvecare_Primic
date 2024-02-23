@@ -17,9 +17,9 @@ async function Footer() {
                 <div className="w-full max-w-screen-xl mx-auto  md:py-8">
                     <div className="">
                         <ul className="flex flex-wrap  md:gap-10 gap-5 items-center mb-6 justify-center text-sm font-medium  sm:mb-10">
-                            {Footer.data.links.map((item,index) => {
+                            {Footer.data.links.map((item, index) => {
                                 return (
-                                    <li  key={`footer_1${index}`} >
+                                    <li key={`footer_1${index}`} >
                                         <PrismicNextLink field={item.link}><PrismicRichText field={item.label}></PrismicRichText></PrismicNextLink>
 
                                     </li>
@@ -29,9 +29,9 @@ async function Footer() {
 
                         </ul>
                         <div className=' flex  justify-center gap-4' >
-                            {Footer.data.popup_play_appstore_link.map((item,index) => (
+                            {Footer.data.popup_play_appstore_link.map((item, index) => (
 
-                                <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"  key={`footer_2${index}`}>
+                                <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse" key={`footer_2${index}`}>
                                     <PrismicNextImage field={item.googleplaystore_img} className="w-auto" width={120} height={40} />
                                     <PrismicNextImage field={item.appstore_img} className="w-auto" width={120} height={40} />
                                 </a>
@@ -47,28 +47,26 @@ async function Footer() {
                                         <p className="me-4 font-medium md:me-6">{children}</p>
                                     )
                                 }} />
-                                {/* <a href="#" className="  me-4 font-medium md:me-6">Copyright © 2024. Zolvecare</a> */}
                             </li>
 
                         </ul>
-                         {/* Loop through each social link */}
-                         <div className='flex gap-4'>
-    {Footer.data.social_links.map((item, index) => (
-      <PrismicNextLink
-        key={index}
-        // href={item.url} // Assuming each item in social_links has a 'url' field
-        field={item.link}
-        className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-      >
-        <PrismicNextImage
-          field={item.icon} // Assuming each item in social_links has an 'icon' field
-          className="w-auto"
-          width={140}
-          height={20}
-        />
-      </PrismicNextLink>
-    ))}
-</div>
+                        {/* Loop through each social link */}
+                        <div className='flex gap-4'>
+                            {Footer.data.social_links.map((item, index) => (
+                                <PrismicNextLink
+                                    key={index}
+                                    field={item.link}
+                                    className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+                                >
+                                    <PrismicNextImage
+                                        field={item.icon} // Assuming each item in social_links has an 'icon' field
+                                        className="w-auto"
+                                        width={140}
+                                        height={20}
+                                    />
+                                </PrismicNextLink>
+                            ))}
+                        </div>
 
                     </div>
                 </div>
