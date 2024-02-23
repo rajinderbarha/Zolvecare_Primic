@@ -29,10 +29,10 @@ async function Slider() {
                     <CarouselContent className="-ml-1 ">
 
                         <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/2">
-                            {HomepageShadcn.data.carouselshadcn_first.map(item => (
+                            {HomepageShadcn.data.carouselshadcn_first.map((item,index) => (
 
 
-                                <div className='sliditem' >
+                                <div className='sliditem' key={`slider_1${index}`} >
                                     <Card className="p-10 border-0 bg-transparent shadow-none" >
                                         <div className='mb-6 clint_img_slider gap-6 flex items-center'>
                                             <PrismicNextImage
@@ -67,8 +67,8 @@ async function Slider() {
 
 
                         <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/2">
-                            {HomepageShadcn.data.carouselshadcn_second.map(item => (
-                                <div className='sliditem'>
+                            {HomepageShadcn.data.carouselshadcn_second.map((item,index) => (
+                                <div className='sliditem' key={`slider_2${index}`}>
                                     <Card className="bg-transparent p-10 border-0 shadow-none" >
                                         <div className='mb-6 clint_img_slider gap-6 flex items-center'>
                                             <PrismicNextImage
@@ -102,10 +102,10 @@ async function Slider() {
 
 
                         <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/2">
-                            {HomepageShadcn.data.carouselshadcn_third.map(item => (
+                            {HomepageShadcn.data.carouselshadcn_third.map((item,index) => (
 
 
-                                <div className='sliditem'>
+                                <div className='sliditem' key={`slider_3${index}`}>
                                     <Card className="bg-transparent p-10 border-0 shadow-none" >
                                         <div className='mb-6 clint_img_slider gap-6 flex items-center'>
                                             <PrismicNextImage
@@ -140,8 +140,8 @@ async function Slider() {
 
 
                         <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/2">
-                            {HomepageShadcn.data.carouselshadcn_fourth.map(item => (
-                                <div className='sliditem'>
+                            {HomepageShadcn.data.carouselshadcn_fourth.map((item,index) => (
+                                <div className='sliditem' key={`slider_4${index}`}>
                                     <Card className="bg-transparent p-10 border-0 shadow-none" >
                                         <div className='mb-6 clint_img_slider gap-6 flex items-center'>
                                             <PrismicNextImage

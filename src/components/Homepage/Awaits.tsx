@@ -6,7 +6,7 @@ import { PrismicRichText } from '@prismicio/react';
 const Awaits = async () => {
     const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
     const HomepageDocumentation = await client.getSingle("homepagedocumentation");
-    console.log("HomepageDocumentation", HomepageDocumentation)
+    // console.log("HomepageDocumentation", HomepageDocumentation)
     return (
         <div>
             <div className='Awaits border-b'>

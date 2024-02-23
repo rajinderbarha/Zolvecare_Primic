@@ -70,7 +70,14 @@ const FreeDemo_Btn: React.FC<ButtonProp> = (props) => {
 
                                 : <div className="stap">
                                     <div className="stap_1_img">
-                                        <img src="https://framerusercontent.com/images/NMKtK3gNVdeb5dkKv5I4HXZ9AFo.png?scale-down-to=1024" alt="stap_img" />
+                                    <Image
+                            className=" w-full mx-auto"
+                            src="/Image/poup1.png"
+                            alt="stap_img"
+                            width={996}
+                            height={721}
+                        />
+                                        {/* <img src="https://framerusercontent.com/images/NMKtK3gNVdeb5dkKv5I4HXZ9AFo.png?scale-down-to=1024" alt="stap_img" /> */}
 
                                     </div>
                                     <div className="start_demo">
