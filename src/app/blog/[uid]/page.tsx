@@ -8,9 +8,9 @@ import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import { PrismicNextImage } from "@prismicio/next";
 import { RichText } from "@/components/BlogHomepage/RichText";
-import NavBar from "@/GlobalComponents/Navbar_Homepage";
 import Footer from "@/GlobalComponents/Footer";
 import { RelatedPosts_bottom } from "@/components/BlogHomepage/Relateposts_Bottom";
+import NavBar_OtherRoutes from "@/GlobalComponents/Navbar_OtherRoutes";
 
 type Params = { uid: string };
 
@@ -70,7 +70,7 @@ export default async function Page({ params }: { params: Params }) {
 
   return (
     <>
-      <NavBar />
+      <NavBar_OtherRoutes />
 
       <div className="Blogs_main">
         {/* <Navigation client={client} /> */}

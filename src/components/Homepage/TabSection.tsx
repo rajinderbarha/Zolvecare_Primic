@@ -20,7 +20,7 @@ const TabSection = async () => {
 
 
       {/* start */}
-      <div className='Tabs ' id="How it works">
+      <div className='Tabs ' id="How_it_works">
         <div className='container_Tabs'>
           <PrismicRichText
             field={HomepageDocumentation.data.tab_sectionh2}
