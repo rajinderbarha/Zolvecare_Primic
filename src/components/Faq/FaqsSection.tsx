@@ -30,10 +30,10 @@ const FaqsSection = async() => {
                 }} />
               
                 <Accordion type="single" collapsible className="w-full">
-                    {FaqPage.data.faq_sec_ques_answer_1.map(item => (
+                    {FaqPage.data.faq_sec_ques_answer_1.map((item,index) => (
 
                    
-                    <AccordionItem value="item-1">
+                    <AccordionItem value="item-1" key={`faqSection${index}`}>
 
                         <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
                             paragraph: ({ children }) => (
@@ -54,10 +54,10 @@ const FaqsSection = async() => {
                     </AccordionItem>
                      ))}
 
-                   {FaqPage.data.faq_sec_ques_answer_2.map(item => (
+                   {FaqPage.data.faq_sec_ques_answer_2.map((item,index) => (
 
                    
-                    <AccordionItem value="item-2">
+                    <AccordionItem value="item-2" key={`faqSection_2${index}`}>
 
                         <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
                             paragraph: ({ children }) => (
@@ -77,10 +77,10 @@ const FaqsSection = async() => {
                         </AccordionContent>
                     </AccordionItem>
                      ))}
-                     {FaqPage.data.faq_sec_ques_answer_3.map(item => (
+                     {FaqPage.data.faq_sec_ques_answer_3.map((item,index) => (
 
                    
-<AccordionItem value="item-3">
+<AccordionItem value="item-3" key={`faqSection_3${index}`}>
 
     <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
         paragraph: ({ children }) => (
@@ -103,10 +103,10 @@ const FaqsSection = async() => {
 
 
 
-{FaqPage.data.faq_sec_ques_answer_4.map(item => (
+{FaqPage.data.faq_sec_ques_answer_4.map((item,index) => (
 
                    
-<AccordionItem value="item-4">
+<AccordionItem value="item-4" key={`faqSection_4${index}`}>
 
     <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
         paragraph: ({ children }) => (
@@ -127,35 +127,10 @@ const FaqsSection = async() => {
 </AccordionItem>
  ))}
 
-{FaqPage.data.faq_sec_ques_answer_5.map(item => (
+{FaqPage.data.faq_sec_ques_answer_5.map((item,index) => (
 
                    
-<AccordionItem value="item-5">
-
-    <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
-        paragraph: ({ children }) => (
-            <p >
-                {children}
-            </p>
-        ),
-    }} /></AccordionTrigger>
-    <AccordionContent>
-        <PrismicRichText field={item.faq_sec_answer1_ptag} components={{
-            paragraph: ({ children }) => (
-                <p >
-                    {children}
-                </p>
-            ),
-        }} />
-    </AccordionContent>
-</AccordionItem>
- ))}
-
-
-{FaqPage.data.faq_sec_ques_answer_6.map(item => (
-
-                   
-<AccordionItem value="item-6">
+<AccordionItem value="item-5" key={`faqSection_5${index}`}>
 
     <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
         paragraph: ({ children }) => (
@@ -177,12 +152,10 @@ const FaqsSection = async() => {
  ))}
 
 
-
-
-{FaqPage.data.faq_sec_ques_answer_7.map(item => (
+{FaqPage.data.faq_sec_ques_answer_6.map((item,index) => (
 
                    
-<AccordionItem value="item-7">
+<AccordionItem value="item-6" key={`faqSection_2${index}`}>
 
     <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
         paragraph: ({ children }) => (
@@ -206,11 +179,10 @@ const FaqsSection = async() => {
 
 
 
-
-{FaqPage.data.faq_sec_ques_answer_8.map(item => (
+{FaqPage.data.faq_sec_ques_answer_7.map((item,index) => (
 
                    
-<AccordionItem value="item-8">
+<AccordionItem value="item-7" key={`faqSection_7${index}`}>
 
     <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
         paragraph: ({ children }) => (
@@ -233,35 +205,12 @@ const FaqsSection = async() => {
 
 
 
-{FaqPage.data.faq_sec_ques_answer_9.map(item => (
+
+
+{FaqPage.data.faq_sec_ques_answer_8.map((item,index) => (
 
                    
-<AccordionItem value="item-9">
-
-    <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
-        paragraph: ({ children }) => (
-            <p >
-                {children}
-            </p>
-        ),
-    }} /></AccordionTrigger>
-    <AccordionContent>
-        <PrismicRichText field={item.faq_sec_answer1_ptag} components={{
-            paragraph: ({ children }) => (
-                <p >
-                    {children}
-                </p>
-            ),
-        }} />
-    </AccordionContent>
-</AccordionItem>
- ))}
-
-
-{FaqPage.data.faq_sec_ques_answer_10.map(item => (
-
-                   
-<AccordionItem value="item-10">
+<AccordionItem value="item-8" key={`faqSection_8${index}`}>
 
     <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
         paragraph: ({ children }) => (
@@ -284,10 +233,35 @@ const FaqsSection = async() => {
 
 
 
-{FaqPage.data.faq_sec_ques_answer_11.map(item => (
+{FaqPage.data.faq_sec_ques_answer_9.map((item,index) => (
 
                    
-<AccordionItem value="item-11">
+<AccordionItem value="item-9" key={`faqSection_2${index}`}>
+
+    <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
+        paragraph: ({ children }) => (
+            <p >
+                {children}
+            </p>
+        ),
+    }} /></AccordionTrigger>
+    <AccordionContent>
+        <PrismicRichText field={item.faq_sec_answer1_ptag} components={{
+            paragraph: ({ children }) => (
+                <p >
+                    {children}
+                </p>
+            ),
+        }} />
+    </AccordionContent>
+</AccordionItem>
+ ))}
+
+
+{FaqPage.data.faq_sec_ques_answer_10.map((item,index) => (
+
+                   
+<AccordionItem value="item-10" key={`faqSection_2${index}`}>
 
     <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
         paragraph: ({ children }) => (
@@ -310,10 +284,10 @@ const FaqsSection = async() => {
 
 
 
-{FaqPage.data.faq_sec_ques_answer_12.map(item => (
+{FaqPage.data.faq_sec_ques_answer_11.map((item,index) => (
 
                    
-<AccordionItem value="item-12">
+<AccordionItem value="item-11" key={`faqSection_2${index}`}>
 
     <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
         paragraph: ({ children }) => (
@@ -336,10 +310,36 @@ const FaqsSection = async() => {
 
 
 
-{FaqPage.data.faq_sec_ques_answer_13.map(item => (
+{FaqPage.data.faq_sec_ques_answer_12.map((item,index) => (
 
                    
-<AccordionItem value="item-13">
+<AccordionItem value="item-12" key={`faqSection_2${index}`}>
+
+    <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
+        paragraph: ({ children }) => (
+            <p >
+                {children}
+            </p>
+        ),
+    }} /></AccordionTrigger>
+    <AccordionContent>
+        <PrismicRichText field={item.faq_sec_answer1_ptag} components={{
+            paragraph: ({ children }) => (
+                <p >
+                    {children}
+                </p>
+            ),
+        }} />
+    </AccordionContent>
+</AccordionItem>
+ ))}
+
+
+
+{FaqPage.data.faq_sec_ques_answer_13.map((item,index) => (
+
+                   
+<AccordionItem value="item-13" key={`faqSection_2${index}`}>
 
     <AccordionTrigger className='text-left'> <PrismicRichText field={item.faq_sec_ques1_ptag} components={{
         paragraph: ({ children }) => (

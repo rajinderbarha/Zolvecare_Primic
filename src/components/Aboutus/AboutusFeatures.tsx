@@ -16,10 +16,10 @@ const AboutusFeatures = async() => {
                 <div className='container_platform mx-auto'>
                     <div className='md:gap-24 gap-6 grid '>
                         <div className='md:gap-24 gap-6 grid md:grid-cols-2 grid-cols-1'>
-                            {AboutsPageFeatures.data.aboutus_feature_1.map(item => (
+                            {AboutsPageFeatures.data.aboutus_feature_1.map((item,index) => (
 
                           
-                            <div className='platform_box items-start md:flex block gap-8'>
+                            <div key={`feature_1_${index}`} className='platform_box items-start md:flex block gap-8'>
 
                             <PrismicNextImage field={item.aboutus_featureimg1} className='w-6xl md:mb-0 mb-4' />
                                 
@@ -48,11 +48,11 @@ const AboutusFeatures = async() => {
                             </div>
                               ))}
 
-                    {AboutsPageFeatures.data.aboutus_feature_2.map(item => (
+                    {AboutsPageFeatures.data.aboutus_feature_2.map((item,index) => (
 
                    
 
-                            <div className='platform_box items-start md:flex block gap-8'>
+                            <div key={`feature_2_${index}`} className='platform_box items-start md:flex block gap-8'>
                             <PrismicNextImage field={item.aboutus_featureimg2} className='w-6xl md:mb-0 mb-4' />
                                 <div className='platform_box_text'>
                                 <PrismicRichText field={item.aboutus_featureh4tag_2} components={{
@@ -74,10 +74,10 @@ const AboutusFeatures = async() => {
 
 
                         <div className='md:gap-24 gap-6 grid md:grid-cols-2 grid-cols-1'>
-                        {AboutsPageFeatures.data.aboutus_feature_3.map(item => (
+                        {AboutsPageFeatures.data.aboutus_feature_3.map((item,index) => (
 
 
-                            <div className='platform_box items-start md:flex block gap-8'>
+                            <div key={`feature_3_${index}`} className='platform_box items-start md:flex block gap-8'>
                             <PrismicNextImage field={item.aboutus_featureimg3} className='w-6xl md:mb-0 mb-4' />
                                 <div className='platform_box_text'>
                                 <PrismicRichText field={item.aboutus_featureh4tag_3} components={{
@@ -96,10 +96,10 @@ const AboutusFeatures = async() => {
                             ))}
 
 
-{AboutsPageFeatures.data.aboutus_feature_4.map(item =>(
+{AboutsPageFeatures.data.aboutus_feature_4.map((item,index) =>(
 
 
-                            <div className='platform_box items-start md:flex block gap-8'>
+                            <div key={`feature_4_${index}`} className='platform_box items-start md:flex block gap-8'>
                             <PrismicNextImage field={item.aboutus_featureimg4} className='w-6xl md:mb-0 mb-4' />
                                 <div className='platform_box_text'>
                                 <PrismicRichText field={item.aboutus_featureh4tag_4} components={{
@@ -120,10 +120,10 @@ const AboutusFeatures = async() => {
                         </div>
                         <div className='md:gap-24 gap-6 grid md:grid-cols-2 grid-cols-1'>
           
-{AboutsPageFeatures.data.aboutus_feature_5.map(item =>(
+{AboutsPageFeatures.data.aboutus_feature_5.map((item,index) =>(
 
 
-                            <div className='platform_box items-start md:flex block gap-8'>
+                            <div key={`feature_5_${index}`} className='platform_box items-start md:flex block gap-8'>
                             <PrismicNextImage field={item.aboutus_featureimg5} className='w-6xl md:mb-0 mb-4' />
                                 <div className='platform_box_text'>
                                 <PrismicRichText field={item.aboutus_featureh4tag_5} components={{
@@ -142,10 +142,10 @@ const AboutusFeatures = async() => {
                             ))}
 
 
-{AboutsPageFeatures.data.aboutus_feature_6.map(item =>(
+{AboutsPageFeatures.data.aboutus_feature_6.map((item,index) =>(
 
 
-                            <div className='platform_box items-start md:flex block gap-8'>
+                            <div key={`feature_6_${index}`} className='platform_box items-start md:flex block gap-8'>
                             <PrismicNextImage field={item.aboutus_featureimg6} className='w-6xl md:mb-0 mb-4' />
                                 <div className='platform_box_text'>
                                 <PrismicRichText field={item.aboutus_featureh4tag_6} components={{

@@ -22,10 +22,10 @@ async function NavBar() {
     return (
         <div>
             <Sheet>
-                {HomepageNavbar.data.navbar_homepage.map(item => (
+                {HomepageNavbar.data.navbar_homepage.map((item,index) => (
 
 
-                    <header className="bg-white">
+                    <header className="bg-white"  key={`header${index}`}>
                         <nav
                             className="mx-auto flex nav_bar items-center justify-between"
                             aria-label="Global"

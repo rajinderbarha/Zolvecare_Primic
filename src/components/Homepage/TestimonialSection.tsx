@@ -7,14 +7,14 @@ const TestimonialSection = async () => {
 
   const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
   const HomepageDocumentation = await client.getSingle("homepagedocumentation");
-  console.log("HomepageDocumentation", HomepageDocumentation)
+  // console.log("HomepageDocumentation", HomepageDocumentation)
 
   return (
     <>
 
       <div className='clint relative '>
-        {HomepageDocumentation.data.documentation_testimonial.map((item) => (
-          <div className='container_clint lg:flex block gap-y-8 relative z-30 md:gap-x-16'>
+        {HomepageDocumentation.data.documentation_testimonial.map((item,index) => (
+          <div className='container_clint lg:flex block gap-y-8 relative z-30 md:gap-x-16' key={`TestimonialSection${index}`}>
             <PrismicNextImage field={item.documentation_testimonialbgimage} className='clint_img_absolute absolute top-28  left-16 hidden lg:block' />
             <div className='clint_img  relative z-30'>
               <PrismicNextImage field={item.documentation_testimonialimage} className="" />

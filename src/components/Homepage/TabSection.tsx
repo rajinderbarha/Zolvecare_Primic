@@ -54,12 +54,12 @@ const TabSection = async () => {
               <TabsTrigger value="Send_Patient">Send to Patient</TabsTrigger>
             </TabsList>
 
-            {HomepageDocumentation.data.tab_section_start_session.map(item => (
-              <TabsContent value="Start_Session">
+            {HomepageDocumentation.data.tab_section_start_session.map((item,index) => (
+              <TabsContent value="Start_Session"  key={`TabSection_1${index}`}>
 
                 <div className='tabs_main grid items-center gap-y-12 md:grid-cols-2 grid-cols-1'>
                   <div className='tabs-image'>
-
+                 
                     <PrismicNextImage
                       field={item.tab_section_start_session_mobileimg}
                       className=""
@@ -103,10 +103,10 @@ const TabSection = async () => {
 
 
 
-            {HomepageDocumentation.data.tab_section_start_recording.map(item => (
+            {HomepageDocumentation.data.tab_section_start_recording.map((item,index) => (
 
 
-              <TabsContent value="Start_Recording" className="bg-none">
+              <TabsContent value="Start_Recording" className="bg-none"  key={`TabSection_2${index}`}>
 
                 <div className='tabs_main grid items-center gap-y-12 md:grid-cols-2 grid-cols-1'>
                   <div className='tabs-image'>
@@ -152,11 +152,11 @@ const TabSection = async () => {
 
 
 
-            {HomepageDocumentation.data.tab_section_sumary.map(item => (
+            {HomepageDocumentation.data.tab_section_sumary.map((item,index) => (
 
 
 
-              <TabsContent value="Generated_Summary">
+              <TabsContent value="Generated_Summary"  key={`TabSection_3${index}`}>
 
                 <div className='tabs_main grid items-center gap-y-12 md:grid-cols-2 grid-cols-1'>
                   <div className='tabs-image'>
@@ -205,10 +205,10 @@ const TabSection = async () => {
 
 
 
-            {HomepageDocumentation.data.tab_section_sendto_patient.map(item => (
+            {HomepageDocumentation.data.tab_section_sendto_patient.map((item,index) => (
 
 
-              <TabsContent value="Send_Patient">
+              <TabsContent value="Send_Patient"  key={`TabSection_4${index}`}>
 
                 <div className='tabs_main grid items-center gap-y-12 md:grid-cols-2 grid-cols-1'>
                   <div className='tabs-image'>

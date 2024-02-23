@@ -14,9 +14,9 @@ export const Navigation = async ({
     <nav className="font-bold text-xl self-center">
       <ul>
         {isFilled.group(navigation.data.menu_items) &&
-          navigation.data.menu_items.map((item) => {
+          navigation.data.menu_items.map((item,index) => {
             return (
-              <li >
+              <li  key={`menu_items${index}`} >
                 <PrismicLink field={item.link}><PrismicRichText field={item.label} /></PrismicLink>
               </li>
             );

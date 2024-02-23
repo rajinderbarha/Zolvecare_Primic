@@ -25,8 +25,8 @@ const Feature = async () => {
                       )
                     }} />
                       <div className='Features_box grid md:grid-cols-2 sm:grid-cols-1	 md:gap-y-16 gap-y-12 gap-x-8'>
-        {Homepagelanding.data.featureboxes.map((item) => (
-          <ul className='relative Features_boxs'>
+        {Homepagelanding.data.featureboxes.map((item,index) => (
+          <ul className='relative Features_boxs' key={`featurE${index}`}>
             <li>
               <PrismicNextImage field={item.count1} className='absolute bottom-0 left-0 w-auto'/>
               <PrismicNextImage field={item.featureicon1} className="mb-4 relative z-10 w-auto"/>

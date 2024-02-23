@@ -42,10 +42,10 @@ const Pricesec = async() => {
                   }}/>
 
                             <ul className='pricing_list pb-4 border-b mb-4'>
-                            {HomepageDocumentation.data.pricesec_starter_ul?.map(item => (
+                            {HomepageDocumentation.data.pricesec_starter_ul?.map((item,index) => (
 
                            
-                              <li> <PrismicRichText field={item.pricesec_starter_li} /></li> 
+                              <li  key={`HomepageDocumentation_1${index}`}> <PrismicRichText field={item.pricesec_starter_li} /></li> 
                               
 
                             ))}
@@ -83,10 +83,10 @@ const Pricesec = async() => {
                   }}/>
 
                             <ul className='pricing_list pb-4 border-b mb-4'>
-                            {HomepageDocumentation.data.pricesec_professional_ul?.map(item => (
+                            {HomepageDocumentation.data.pricesec_professional_ul?.map((item,index) => (
 
                            
-                              <li> <PrismicRichText field={item.pricesec_professional_li} /></li> 
+                              <li key={`HomepageDocumentation_2${index}`}> <PrismicRichText field={item.pricesec_professional_li} /></li> 
                               
 
                             ))}
@@ -131,10 +131,10 @@ const Pricesec = async() => {
                   }}/>
 
                             <ul className='pricing_list pb-4 border-b mb-4'>
-                            {HomepageDocumentation.data.pricesec_custom_ul?.map(item => (
+                            {HomepageDocumentation.data.pricesec_custom_ul?.map((item,index) => (
 
                            
-                              <li> <PrismicRichText field={item.pricesec_custom_li} /></li> 
+                              <li key={`HomepageDocumentation_2${index}`}> <PrismicRichText field={item.pricesec_custom_li} /></li> 
                               
 
                             ))}

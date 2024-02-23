@@ -10,11 +10,11 @@ const ShortcutSection = async() => {
     <section>
     <div className='container_shortcut md:px-0 px-3  mx-auto'>
         <div className='shortcut md:p-0 p-5'>
-        {AboutsPageFeatures.data.about_shortcut_section.map(item => (
+        {AboutsPageFeatures.data.about_shortcut_section.map((item,index) => (
             // {AboutsPageFeatures.data.about_shortcut_section.map(item => (
 
            
-            <div className='md:gap-16 gap-8 block items-center justify-center md:flex'>
+            <div key={`shortcut_1_${index}`} className='md:gap-16 gap-8 block items-center justify-center md:flex'>
                 
                 <PrismicNextImage field={item.shortcut_image} className='w-6xl md:mb-0 mb-4' />
                 {/* <img src={Sort} alt='' /> */}
