@@ -1,7 +1,6 @@
 import React from "react";
 import { createClient } from "@/prismicio";
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next"; // PrismicNextLink is useful for internal linking bcz it can access the id of the link from the prismic document(settings) with some extra features that next/link
-import Link from "next/link";
+import { PrismicNextImage } from "@prismicio/next"; // PrismicNextLink is useful for internal linking bcz it can access the id of the link from the prismic document(settings) with some extra features that next/link
 import { PrismicRichText } from "@prismicio/react";
 import {
   Tabs,
@@ -9,29 +8,20 @@ import {
   TabsList,
   TabsTrigger,
 } from "../ui/tabs";
-import { Card } from "../ui/card";
 import FreeDemo_Btn from "./FreeDemo_Btn";
-
-
-
 
 
 const TabSection = async () => {
   const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
-  const HomepageDocumentation = await client.getSingle(
-    "homepagedocumentation"
-  );
-
-  const Homepagelanding = await client.getSingle("landing")  //     we accessing this for below buttton 
+  const HomepageDocumentation = await client.getSingle("homepagedocumentation");
 
   return (
     <div>
 
 
       {/* start */}
-      <div className='Tabs '>
+      <div className='Tabs ' id="How it works">
         <div className='container_Tabs'>
-          {/* <h2 className='mb-8 mb:md-16 text-center mx-auto font-semibold'>This is how easy it is to use Zolvecare. Easy, Simple and Accurate</h2> */}
           <PrismicRichText
             field={HomepageDocumentation.data.tab_sectionh2}
             components={{
@@ -54,12 +44,12 @@ const TabSection = async () => {
               <TabsTrigger value="Send_Patient">Send to Patient</TabsTrigger>
             </TabsList>
 
-            {HomepageDocumentation.data.tab_section_start_session.map((item,index) => (
-              <TabsContent value="Start_Session"  key={`TabSection_1${index}`}>
+            {HomepageDocumentation.data.tab_section_start_session.map((item, index) => (
+              <TabsContent value="Start_Session" key={`TabSection_1${index}`}>
 
                 <div className='tabs_main grid items-center gap-y-12 md:grid-cols-2 grid-cols-1'>
                   <div className='tabs-image'>
-                 
+
                     <PrismicNextImage
                       field={item.tab_section_start_session_mobileimg}
                       className=""
@@ -82,7 +72,7 @@ const TabSection = async () => {
                         </p>
                       ),
                     }} />
-                    <FreeDemo_Btn name="Free Demo"/>
+                    <FreeDemo_Btn name="Start a demo" />
 
                   </div>
 
@@ -103,10 +93,10 @@ const TabSection = async () => {
 
 
 
-            {HomepageDocumentation.data.tab_section_start_recording.map((item,index) => (
+            {HomepageDocumentation.data.tab_section_start_recording.map((item, index) => (
 
 
-              <TabsContent value="Start_Recording" className="bg-none"  key={`TabSection_2${index}`}>
+              <TabsContent value="Start_Recording" className="bg-none" key={`TabSection_2${index}`}>
 
                 <div className='tabs_main grid items-center gap-y-12 md:grid-cols-2 grid-cols-1'>
                   <div className='tabs-image'>
@@ -131,8 +121,7 @@ const TabSection = async () => {
                         </p>
                       ),
                     }} />
-<button  className='Free_Demo'>Free Demo</button>
-                  {/* <FreeDemo_Btn /> */}
+                    <FreeDemo_Btn name="Start a demo" />
                   </div>
 
                 </div>
@@ -152,11 +141,11 @@ const TabSection = async () => {
 
 
 
-            {HomepageDocumentation.data.tab_section_sumary.map((item,index) => (
+            {HomepageDocumentation.data.tab_section_sumary.map((item, index) => (
 
 
 
-              <TabsContent value="Generated_Summary"  key={`TabSection_3${index}`}>
+              <TabsContent value="Generated_Summary" key={`TabSection_3${index}`}>
 
                 <div className='tabs_main grid items-center gap-y-12 md:grid-cols-2 grid-cols-1'>
                   <div className='tabs-image'>
@@ -181,9 +170,7 @@ const TabSection = async () => {
                         </p>
                       ),
                     }} />
-                    <button  className='Free_Demo'>Free Demo</button>
-
-{/* <FreeDemo_Btn /> */}
+                    <FreeDemo_Btn name="Start a demo" />
                   </div>
 
                 </div>
@@ -205,10 +192,10 @@ const TabSection = async () => {
 
 
 
-            {HomepageDocumentation.data.tab_section_sendto_patient.map((item,index) => (
+            {HomepageDocumentation.data.tab_section_sendto_patient.map((item, index) => (
 
 
-              <TabsContent value="Send_Patient"  key={`TabSection_4${index}`}>
+              <TabsContent value="Send_Patient" key={`TabSection_4${index}`}>
 
                 <div className='tabs_main grid items-center gap-y-12 md:grid-cols-2 grid-cols-1'>
                   <div className='tabs-image'>
@@ -234,11 +221,9 @@ const TabSection = async () => {
                         </p>
                       ),
                     }} />
-                    <button  className='Free_Demo'>Free Demo</button>
-
-{/* <FreeDemo_Btn /> */}
+                    <FreeDemo_Btn name="Start a demo" />
                   </div>
-                            
+
                 </div>
 
               </TabsContent>

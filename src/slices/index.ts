@@ -7,6 +7,5 @@ export const components = {
   faqs_page: dynamic(() => import("./FaqsPage")),
   hero: dynamic(() => import("./Hero")),
   homepage: dynamic(() => import("./Homepage")),
-  page: dynamic(() => import("./Page")),
   rich_text: dynamic(() => import("./RichText")),
 };

@@ -1,0 +1,82 @@
+{
+  "format": "custom",
+  "id": "navbar_otherroutes",
+  "label": "NavBar_OtherRoutes",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "navbar_otherroutes": {
+        "type": "Group",
+        "config": {
+          "label": "Navbar_OtherRoutes",
+          "repeat": true,
+          "fields": {
+            "zolvecare_logo": {
+              "type": "Image",
+              "config": {
+                "label": "Zolvecare_Logo",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "menu_logo_nav": {
+              "type": "Image",
+              "config": {
+                "label": "Menu_Logo_nav",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "home_link": {
+              "type": "Link",
+              "config": {
+                "label": "Home_Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "aboutus_link": {
+              "type": "Link",
+              "config": {
+                "label": "Aboutus_Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "blog_link": {
+              "type": "Link",
+              "config": {
+                "label": "Blog_Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "faqs_link": {
+              "type": "Link",
+              "config": {
+                "label": "FAQs_Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "sign_up_link": {
+              "type": "Link",
+              "config": {
+                "label": "Sign_Up_Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -62,12 +62,12 @@ async function Faq_sec() {
                     <AccordionItem value="item-3">
                         <AccordionTrigger className='text-left'>
                             <PrismicRichText field={HomepageShadcn.data.faq_sec_ques3_ptag} components={{
-                            paragraph: ({ children }) => (
-                                <p>
-                                    {children}
-                                </p>
-                            ),
-                        }} /></AccordionTrigger>
+                                paragraph: ({ children }) => (
+                                    <p>
+                                        {children}
+                                    </p>
+                                ),
+                            }} /></AccordionTrigger>
                         <AccordionContent>
                             <PrismicRichText field={HomepageShadcn.data.faq_sec_answer3_ptag} components={{
                                 paragraph: ({ children }) => (

@@ -1,10 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-// import {
-//     Sheet,
-//     SheetContent,
-//     SheetTrigger,
-// } from "../ui/sheet"
 import Image from 'next/image';
 
 interface ButtonProp {
@@ -49,7 +44,6 @@ const FreeDemo_Btn: React.FC<ButtonProp> = (props) => {
 
                     </div>
                     <div className="start_demo">
-                        {/* <button onClick={hideToggleHandler}>close</button> */}
                         <div className="demo_start">
                             {!emailSubmit ?
                                 <div>
@@ -77,7 +71,6 @@ const FreeDemo_Btn: React.FC<ButtonProp> = (props) => {
                             width={996}
                             height={721}
                         />
-                                        {/* <img src="https://framerusercontent.com/images/NMKtK3gNVdeb5dkKv5I4HXZ9AFo.png?scale-down-to=1024" alt="stap_img" /> */}
 
                                     </div>
                                     <div className="start_demo">
