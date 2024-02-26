@@ -8,12 +8,28 @@ import {
     CarouselPrevious,
 } from "../ui/carousel"
 import { createClient } from '@/prismicio';
-import { PrismicRichText } from '@prismicio/react';
+import { JSXMapSerializer, PrismicRichText } from '@prismicio/react';
 import { PrismicNextImage } from '@prismicio/next';
+import Homepage_Documentationh3, { Homepag_Slider_Ptag } from './Reusable';
 async function Slider() {
     const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
     const HomepageShadcn = await client.getSingle("homepageshadcn");
 
+
+    const components: JSXMapSerializer = {      //A map of Rich Text block types to React Components. It is used to render Rich Text or Title fields.
+
+        heading3: ({ children }) => (
+            <Homepage_Documentationh3 h3as='h3' >
+                {children}
+            </Homepage_Documentationh3>
+        ),
+        paragraph: ({ children }) => (
+            <Homepag_Slider_Ptag Ptagas='p'>
+                {children}
+            </Homepag_Slider_Ptag>
+        ),
+
+    }
     return (
         <div className='Slider border-b'>
             <div className='container_Slider'>
@@ -41,25 +57,9 @@ async function Slider() {
                                                 width={48}
                                                 height={48}
                                             />
-
-
-                                            <PrismicRichText field={item.first_h3tag} components={{
-                                                heading3: ({ children }) => (
-                                                    <h3 className="font-semibold ">
-                                                        {children}
-                                                    </h3>
-                                                ),
-                                            }} />
-
+                                            <PrismicRichText field={item.first_h3tag} components={components} />
                                         </div>
-                                        <PrismicRichText field={item.first_ptag} components={{
-                                            paragraph: ({ children }) => (
-                                                <p className="font-semibold ">
-                                                    {children}
-                                                </p>
-                                            ),
-                                        }} />
-
+                                        <PrismicRichText field={item.first_ptag} components={components} />
                                     </Card>
                                 </div>
                             ))}
@@ -77,24 +77,9 @@ async function Slider() {
                                                 width={48}
                                                 height={48}
                                             />
-
-                                            <PrismicRichText field={item.second_h3tag} components={{
-                                                heading3: ({ children }) => (
-                                                    <h3 className="font-semibold ">
-                                                        {children}
-                                                    </h3>
-                                                ),
-                                            }} />
-
+                                            <PrismicRichText field={item.second_h3tag} components={components} />
                                         </div>
-                                        <PrismicRichText field={item.second_ptag} components={{
-                                            paragraph: ({ children }) => (
-                                                <p className="font-semibold ">
-                                                    {children}
-                                                </p>
-                                            ),
-                                        }} />
-
+                                        <PrismicRichText field={item.second_ptag} components={components} />
                                     </Card>
                                 </div>
                             ))}
@@ -103,8 +88,6 @@ async function Slider() {
 
                         <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/2">
                             {HomepageShadcn.data.carouselshadcn_third.map((item, index) => (
-
-
                                 <div className='sliditem' key={`slider_3${index}`}>
                                     <Card className="bg-transparent p-10 border-0 shadow-none" >
                                         <div className='mb-6 clint_img_slider gap-6 flex items-center'>
@@ -114,25 +97,9 @@ async function Slider() {
                                                 width={48}
                                                 height={48}
                                             />
-
-
-                                            <PrismicRichText field={item.third_h3tag} components={{
-                                                heading3: ({ children }) => (
-                                                    <h3 className="font-semibold ">
-                                                        {children}
-                                                    </h3>
-                                                ),
-                                            }} />
-
+                                            <PrismicRichText field={item.third_h3tag} components={components} />
                                         </div>
-                                        <PrismicRichText field={item.third_ptag} components={{
-                                            paragraph: ({ children }) => (
-                                                <p className="font-semibold ">
-                                                    {children}
-                                                </p>
-                                            ),
-                                        }} />
-
+                                        <PrismicRichText field={item.third_ptag} components={components} />
                                     </Card>
                                 </div>
                             ))}
@@ -150,23 +117,9 @@ async function Slider() {
                                                 width={48}
                                                 height={48}
                                             />
-
-                                            <PrismicRichText field={item.fourth_h3tag} components={{
-                                                heading3: ({ children }) => (
-                                                    <h3 className="font-semibold ">
-                                                        {children}
-                                                    </h3>
-                                                ),
-                                            }} />
-
+                                            <PrismicRichText field={item.fourth_h3tag} components={components} />
                                         </div>
-                                        <PrismicRichText field={item.fourth_ptag} components={{
-                                            paragraph: ({ children }) => (
-                                                <p className="font-semibold ">
-                                                    {children}
-                                                </p>
-                                            ),
-                                        }} />
+                                        <PrismicRichText field={item.fourth_ptag} components={components} />
                                     </Card>
                                 </div>
                             ))}

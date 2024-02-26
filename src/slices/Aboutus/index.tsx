@@ -1,4 +1,4 @@
-import Faq_sec from "@/GlobalComponents/Faq_sec";
+import Faq_sec_bottom from "@/GlobalComponents/Faq_sec_bottom";
 import Footer from "@/GlobalComponents/Footer";
 import NavBar from "@/GlobalComponents/Navbar_Homepage";
 import NavBar_OtherRoutes from "@/GlobalComponents/Navbar_OtherRoutes";
@@ -45,7 +45,7 @@ const Aboutus = ({ slice }: AboutusProps): JSX.Element => {
                     <p className="md:mb-16 mb-6 md:text- lg text-base font-normal leading-8">{children}</p>
                   )
                 }} />
-                <FreeDemo_Btn name="Start a demo" />
+                <FreeDemo_Btn name="Start a demo"  className="Free_Demo"/>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Aboutus = ({ slice }: AboutusProps): JSX.Element => {
       <div className="Pricesec_ShortcutSection_BG">
         <Pricesec /> <ShortcutSection />
       </div>
-      <Faq_sec />
+      <Faq_sec_bottom />
       <Footer />
     </>
 

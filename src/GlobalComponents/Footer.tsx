@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { createClient } from '@/prismicio';
 import { PrismicImage, PrismicRichText } from '@prismicio/react';
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next';
+import FreeDemo_Btn from '@/components/Homepage/FreeDemo_Btn';
 async function Footer() {
 
     const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
@@ -30,11 +31,18 @@ async function Footer() {
                         </ul>
                         <div className=' flex  justify-center gap-4' >
                             {Footer.data.popup_play_appstore_link.map((item, index) => (
+                                <>
+                                    <div  className="flex relative items-center mb-4 sm:mb-0  " key={`footer_2${index}`}>
+                                    <FreeDemo_Btn name={"Get a free demo"} className="Free_Demo_footer" />
+                                        <PrismicNextImage field={item.googleplaystore_img} className="w-auto m-0" width={120} height={40} />
 
-                                <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse" key={`footer_2${index}`}>
-                                    <PrismicNextImage field={item.googleplaystore_img} className="w-auto" width={120} height={40} />
-                                    <PrismicNextImage field={item.appstore_img} className="w-auto" width={120} height={40} />
-                                </a>
+                                    </div>
+                                    <div className="flex relative items-center mb-4 sm:mb-0 " key={`footer_2${index}`}>
+                                    <FreeDemo_Btn name={"Get a free demo"} className="Free_Demo_footer" />
+                                        <PrismicNextImage field={item.appstore_img} className="w-auto  m-0" width={120} height={40} />
+
+                                    </div>
+                                </>
                             ))}
                         </div>
                     </div>

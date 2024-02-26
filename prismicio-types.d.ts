@@ -1014,245 +1014,6 @@ interface AuthorDocumentData {
 export type AuthorDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<AuthorDocumentData>, "author", Lang>;
 
-type BlogArticleDocumentDataSlicesSlice = never;
-
-/**
- * Content for Blog Article documents
- */
-interface BlogArticleDocumentData {
-  /**
-   * Title field in *Blog Article*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.title
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.RichTextField;
-
-  /**
-   * Author field in *Blog Article*
-   *
-   * - **Field Type**: Content Relationship
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.author
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  author: prismic.ContentRelationshipField<"author">;
-
-  /**
-   * Excerpt field in *Blog Article*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.excerpt
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  excerpt: prismic.RichTextField;
-
-  /**
-   * Featured Image field in *Blog Article*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.featured_image
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  featured_image: prismic.ImageField<never>;
-
-  /**
-   * Category field in *Blog Article*
-   *
-   * - **Field Type**: Content Relationship
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.category
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  category: prismic.ContentRelationshipField<"blog_category">;
-
-  /**
-   * Slice Zone field in *Blog Article*
-   *
-   * - **Field Type**: Slice Zone
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.slices[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#slices
-   */
-  slices: prismic.SliceZone<BlogArticleDocumentDataSlicesSlice> /**
-   * Meta Description field in *Blog Article*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: blog_article.meta_description
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */;
-  meta_description: prismic.KeyTextField;
-
-  /**
-   * Meta Image field in *Blog Article*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_article.meta_image
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  meta_image: prismic.ImageField<never>;
-
-  /**
-   * Meta Title field in *Blog Article*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: blog_article.meta_title
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_title: prismic.KeyTextField;
-}
-
-/**
- * Blog Article document from Prismic
- *
- * - **API ID**: `blog_article`
- * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type BlogArticleDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithUID<
-    Simplify<BlogArticleDocumentData>,
-    "blog_article",
-    Lang
-  >;
-
-/**
- * Content for Blog Category documents
- */
-interface BlogCategoryDocumentData {
-  /**
-   * Category Name field in *Blog Category*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_category.category_name
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  category_name: prismic.KeyTextField;
-}
-
-/**
- * Blog Category document from Prismic
- *
- * - **API ID**: `blog_category`
- * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type BlogCategoryDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithUID<
-    Simplify<BlogCategoryDocumentData>,
-    "blog_category",
-    Lang
-  >;
-
-type BlogIndexDocumentDataSlicesSlice = never;
-
-/**
- * Content for Blog Index documents
- */
-interface BlogIndexDocumentData {
-  /**
-   * Title field in *Blog Index*
-   *
-   * - **Field Type**: Title
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_index.title
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  title: prismic.TitleField;
-
-  /**
-   * Description field in *Blog Index*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_index.description
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  description: prismic.RichTextField;
-
-  /**
-   * Slice Zone field in *Blog Index*
-   *
-   * - **Field Type**: Slice Zone
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_index.slices[]
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#slices
-   */
-  slices: prismic.SliceZone<BlogIndexDocumentDataSlicesSlice> /**
-   * Meta Description field in *Blog Index*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: blog_index.meta_description
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */;
-  meta_description: prismic.KeyTextField;
-
-  /**
-   * Meta Image field in *Blog Index*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blog_index.meta_image
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  meta_image: prismic.ImageField<never>;
-
-  /**
-   * Meta Title field in *Blog Index*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: blog_index.meta_title
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_title: prismic.KeyTextField;
-}
-
-/**
- * Blog Index document from Prismic
- *
- * - **API ID**: `blog_index`
- * - **Repeatable**: `false`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type BlogIndexDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithoutUID<
-    Simplify<BlogIndexDocumentData>,
-    "blog_index",
-    Lang
-  >;
-
 type BlogPostDocumentDataSlicesSlice = RichTextSlice;
 
 /**
@@ -3420,6 +3181,100 @@ export type PageDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
 
 /**
+ * Content for Popup documents
+ */
+interface PopupDocumentData {
+  /**
+   * FreeDemo_btn_Img field in *Popup*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: popup.freedemo_btn_img
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  freedemo_btn_img: prismic.ImageField<never>;
+
+  /**
+   * FreeDemo_btn_H2tag_1 field in *Popup*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Start your demo!
+   * - **API ID Path**: popup.freedemo_btn_h2tag_1
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  freedemo_btn_h2tag_1: prismic.RichTextField;
+
+  /**
+   * FreeDemo_btn_Ptag_1 field in *Popup*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: popup.freedemo_btn_ptag_1
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  freedemo_btn_ptag_1: prismic.RichTextField;
+
+  /**
+   * FreeDemo_btn_H3tag_1 field in *Popup*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: popup.freedemo_btn_h3tag_1
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  freedemo_btn_h3tag_1: prismic.RichTextField;
+
+  /**
+   * FreeDemo_btn_H2tag_2 field in *Popup*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Ready for your demo?
+   * - **API ID Path**: popup.freedemo_btn_h2tag_2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  freedemo_btn_h2tag_2: prismic.RichTextField;
+
+  /**
+   * FreeDemo_btn_Ptag_2 field in *Popup*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: popup.freedemo_btn_ptag_2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  freedemo_btn_ptag_2: prismic.RichTextField;
+
+  /**
+   * FreeDemo_btn_H3tag_2 field in *Popup*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: popup.freedemo_btn_h3tag_2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  freedemo_btn_h3tag_2: prismic.RichTextField;
+}
+
+/**
+ * Popup document from Prismic
+ *
+ * - **API ID**: `popup`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type PopupDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<PopupDocumentData>, "popup", Lang>;
+
+/**
  * Content for Settings documents
  */
 interface SettingsDocumentData {
@@ -3451,14 +3306,94 @@ export type SettingsDocument<Lang extends string = string> =
     Lang
   >;
 
+/**
+ * Content for Signup documents
+ */
+interface SignupDocumentData {
+  /**
+   * SignUP_ZolvecareLogo field in *Signup*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: signup.signup_zolvecarelogo
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  signup_zolvecarelogo: prismic.ImageField<never>;
+
+  /**
+   * SignUP_H3tag field in *Signup*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Create an account
+   * - **API ID Path**: signup.signup_h3tag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  signup_h3tag: prismic.RichTextField;
+
+  /**
+   * SignUP_Ptag_1 field in *Signup*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Please enter your details
+   * - **API ID Path**: signup.signup_ptag_1
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  signup_ptag_1: prismic.RichTextField;
+
+  /**
+   * SignUP_H6tag field in *Signup*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Have an account? Login
+   * - **API ID Path**: signup.signup_h6tag
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  signup_h6tag: prismic.RichTextField;
+
+  /**
+   * SignUP_GoogleImg field in *Signup*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: signup.signup_googleimg
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  signup_googleimg: prismic.ImageField<never>;
+
+  /**
+   * SignUP_AppleImg field in *Signup*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: signup.signup_appleimg
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  signup_appleimg: prismic.ImageField<never>;
+}
+
+/**
+ * Signup document from Prismic
+ *
+ * - **API ID**: `signup`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type SignupDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<SignupDocumentData>, "signup", Lang>;
+
 export type AllDocumentTypes =
   | AboutspagefeaturesDocument
   | AboutusDocument
   | AllfaqsDocument
   | AuthorDocument
-  | BlogArticleDocument
-  | BlogCategoryDocument
-  | BlogIndexDocument
   | BlogPostDocument
   | FaqpageDocument
   | FooterDocument
@@ -3471,7 +3406,9 @@ export type AllDocumentTypes =
   | NavbarOtherroutesDocument
   | NavigationDocument
   | PageDocument
-  | SettingsDocument;
+  | PopupDocument
+  | SettingsDocument
+  | SignupDocument;
 
 /**
  * Primary content in *Aboutus → Primary*
@@ -3794,14 +3731,6 @@ declare module "@prismicio/client" {
       AllfaqsDocumentDataFaqSecQuesAnswer13Item,
       AuthorDocument,
       AuthorDocumentData,
-      BlogArticleDocument,
-      BlogArticleDocumentData,
-      BlogArticleDocumentDataSlicesSlice,
-      BlogCategoryDocument,
-      BlogCategoryDocumentData,
-      BlogIndexDocument,
-      BlogIndexDocumentData,
-      BlogIndexDocumentDataSlicesSlice,
       BlogPostDocument,
       BlogPostDocumentData,
       BlogPostDocumentDataSlicesSlice,
@@ -3853,8 +3782,12 @@ declare module "@prismicio/client" {
       PageDocument,
       PageDocumentData,
       PageDocumentDataSlicesSlice,
+      PopupDocument,
+      PopupDocumentData,
       SettingsDocument,
       SettingsDocumentData,
+      SignupDocument,
+      SignupDocumentData,
       AllDocumentTypes,
       AboutusSlice,
       AboutusSliceDefaultPrimary,

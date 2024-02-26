@@ -4,9 +4,7 @@ import { PrismicRichText } from '@prismicio/react';
 import FreeDemo_Btn from '@/components/Homepage/FreeDemo_Btn';
 const Pricesec = async () => {
    const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
-   const HomepageDocumentation = await client.getSingle(
-      "homepagedocumentation"
-   );
+   const HomepageDocumentation = await client.getSingle("homepagedocumentation");
 
    return (
       <div>
@@ -47,7 +45,7 @@ const Pricesec = async () => {
                            ))}
                         </ul>
 
-                        <FreeDemo_Btn name="Get started for free" />
+                        <FreeDemo_Btn name="Get started for free" className="Free_Demo_price" />
                      </div>
                   </div>
 
@@ -80,7 +78,7 @@ const Pricesec = async () => {
                               <li key={`HomepageDocumentation_2${index}`}> <PrismicRichText field={item.pricesec_professional_li} /></li>
                            ))}
                         </ul>
-                        <FreeDemo_Btn name="Get started " />
+                        <FreeDemo_Btn name="Get started " className="Free_Demo_price"/>
                      </div>
                   </div>
 
@@ -121,7 +119,7 @@ const Pricesec = async () => {
                            ))}
 
                         </ul>
-                        <FreeDemo_Btn name="Contacy Us" />
+                        <FreeDemo_Btn name="Contacy Us" className="Free_Demo_price"/>
                      </div>
                   </div>
 

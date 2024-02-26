@@ -26,7 +26,7 @@ const GetStartedsec = async () => {
                 <p className="mb-5 font-normal text-white">{children}</p>
               )
             }} />
-            <FreeDemo_Btn name={"Get a free demo"} />
+            <FreeDemo_Btn name={"Get a free demo"} className="Free_Demo" />
           </div>
         </div>
       </div>

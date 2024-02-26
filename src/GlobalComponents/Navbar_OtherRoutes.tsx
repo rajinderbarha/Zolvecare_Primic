@@ -9,6 +9,7 @@ import Link from 'next/link';
 import FreeDemo_Btn from '../components/Homepage/FreeDemo_Btn';
 import { createClient } from '@/prismicio';
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+import SignUp from './Signup';
 
 async function NavBar_OtherRoutes() {
     const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
@@ -48,9 +49,10 @@ async function NavBar_OtherRoutes() {
                             <PrismicNextLink field={item.faqs_link} className=" nav_link font-medium  ">FAQs</PrismicNextLink>
                         </div>
                         <div className="hidden lg:flex items-center gap-8 lg:flex-1 lg:justify-end">
-                            <PrismicNextLink field={item.sign_up_link} className=" nav_link font-medium  ">Sign Up</PrismicNextLink>
+                        <SignUp/>
+                            {/* <PrismicNextLink field={item.sign_up_link} className=" nav_link font-medium  ">Sign Up</PrismicNextLink> */}
 
-                            <FreeDemo_Btn name={"Free Demo"} />
+                            <FreeDemo_Btn name={"Free Demo"}  className="Free_Demo"/>
                         </div>
                     </nav>
                     {/* Mobile menu, show/hide based on menu open state. */}
@@ -77,9 +79,10 @@ async function NavBar_OtherRoutes() {
                                             <PrismicNextLink field={item.faqs_link} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">FAQs</PrismicNextLink>
                                         </div>
                                         <div className="py-6 items-center flex gap-4">
-                                            <PrismicNextLink field={item.sign_up_link} className=" nav_link font-medium  ">Sign Up</PrismicNextLink>
+                                        <SignUp/>
+                                            {/* <PrismicNextLink field={item.sign_up_link} className=" nav_link font-medium  ">Sign Up</PrismicNextLink> */}
 
-                                        </div> <FreeDemo_Btn name={"Free Demo"} />
+                                        </div> <FreeDemo_Btn name={"Free Demo"}  className="Free_Demo"   />
                                     </div>
                                 </div>
                             </div>

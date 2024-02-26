@@ -1,9 +1,8 @@
 import Awaits from "@/components/Homepage/Awaits";
 import Documentation from "@/components/Homepage/Documentation";
-import Faq_sec from "@/GlobalComponents/Faq_sec";
+import Faq_sec_bottom from "@/GlobalComponents/Faq_sec_bottom";
 import Feature from "@/components/Homepage/Feature";
 import Footer from "@/GlobalComponents/Footer";
-import Heading from "@/components/Homepage/Heading";
 import Logomove from "@/components/Homepage/Logomove";
 import NavBar from "@/GlobalComponents/Navbar_Homepage";
 import Pricesec from "@/GlobalComponents/Pricesec";
@@ -12,29 +11,11 @@ import TabSection from "@/components/Homepage/TabSection";
 import TestimonialSection from "@/components/Homepage/TestimonialSection";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
-import { JSXMapSerializer, PrismicRichText, SliceComponentProps } from "@prismicio/react";
+import {  PrismicRichText, SliceComponentProps } from "@prismicio/react";
 
 /**
  * Props for `Homepage`.
  */
-
-
-const components: JSXMapSerializer = {      //A map of Rich Text block types to React Components. It is used to render Rich Text or Title fields.
-
-  heading1: ({ children }) => (
-    <Heading as="h1" size="xl" className="text-7xl	mb-4 text-center font-semibold">
-      {children}
-    </Heading>
-  ),
-  paragraph: ({ children }) => (
-    <p className="text-lg mb-4 text-center font-semibold">
-      {children}
-    </p>
-  ),
-
-}
-
-
 
 export type HomepageProps = SliceComponentProps<Content.HomepageSlice>;
 
@@ -95,7 +76,7 @@ const Homepage = ({ slice }: HomepageProps): JSX.Element => {
             <Pricesec />
             <Slider />
             <Awaits />
-            <Faq_sec />
+            <Faq_sec_bottom />
             <Footer />
           </section>
 

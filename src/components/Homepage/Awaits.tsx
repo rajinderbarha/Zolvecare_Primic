@@ -19,7 +19,7 @@ const Awaits = async () => {
                                 <p className="font-semibold md:mb-12">{children}</p>
                             )
                         }} />
-                        <FreeDemo_Btn name="Get a free demo " />
+                        <FreeDemo_Btn name="Get a free demo " className="Free_Demo" />
                     </div>
                 </div>
             </div>

@@ -28,7 +28,7 @@ const ShortcutSection = async () => {
                     ),
                   }}
                 />
-                <FreeDemo_Btn name='Start a demo' />
+                <FreeDemo_Btn name='Start a demo'  className="Free_Demo"/>
               </div>
 
             </div>
