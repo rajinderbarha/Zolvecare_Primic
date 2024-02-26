@@ -1,12 +1,30 @@
 import React from 'react'
 import { createClient } from '@/prismicio'
 import { PrismicNextImage } from '@prismicio/next';
-import { PrismicRichText } from '@prismicio/react';
+import { JSXMapSerializer, PrismicRichText } from '@prismicio/react';
+import Aboutus_heading, { Aboutus_Paragraph } from './Reusable';
 
 
 const AboutusFeatures = async () => {
   const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
   const AboutsPageFeatures = await client.getSingle("aboutspagefeatures");
+
+
+  const components: JSXMapSerializer = {      //A map of Rich Text block types to React Components. It is used to render Rich Text or Title fields.
+
+    heading4: ({ children }) => (
+      <Aboutus_heading h4as='h4' >
+        {children}
+      </Aboutus_heading>
+    ),
+    paragraph: ({ children }) => (
+      <Aboutus_Paragraph Ptagas='p'>
+        {children}
+      </Aboutus_Paragraph>
+    ),
+  
+  }
+  
   return (
     <>
       <div className='platform'>
@@ -24,23 +42,11 @@ const AboutusFeatures = async () => {
                   <div className='platform_box_text'>
                     <PrismicRichText
                       field={item.aboutus_featureh4tag_1}
-                      components={{
-                        heading4: ({ children }) => (
-                          <h4 className="mb-4 font-semibold text-2xl">
-                            {children}
-                          </h4>
-                        ),
-                      }}
+                      components={components}
                     />
                     <PrismicRichText
                       field={item.aboutus_featureptag_1}
-                      components={{
-                        paragraph: ({ children }) => (
-                          <p className="md:text-lg text-base font-normal leading-8">
-                            {children}
-                          </p>
-                        ),
-                      }}
+                      components={components}
                     />
                   </div>
                 </div>
@@ -53,15 +59,8 @@ const AboutusFeatures = async () => {
                 <div key={`feature_2_${index}`} className='platform_box items-start md:flex block gap-8'>
                   <PrismicNextImage field={item.aboutus_featureimg2} className='w-6xl md:mb-0 mb-4' />
                   <div className='platform_box_text'>
-                    <PrismicRichText field={item.aboutus_featureh4tag_2} components={{
-                      heading4: ({ children }) => (
-                        <h4 className="mb-4 font-semibold text-2xl"> {children}</h4>
-                      ),
-                    }} />
-                    <PrismicRichText field={item.aboutus_featureptag_2} components={{
-                      paragraph: ({ children }) => (<p className="md:text-lg text-base font-normal leading-8">{children}</p>
-                      ),
-                    }} />
+                    <PrismicRichText field={item.aboutus_featureh4tag_2} components={components} />
+                    <PrismicRichText field={item.aboutus_featureptag_2} components={components} />
                   </div>
                 </div>
               ))}
@@ -76,15 +75,8 @@ const AboutusFeatures = async () => {
                 <div key={`feature_3_${index}`} className='platform_box items-start md:flex block gap-8'>
                   <PrismicNextImage field={item.aboutus_featureimg3} className='w-6xl md:mb-0 mb-4' />
                   <div className='platform_box_text'>
-                    <PrismicRichText field={item.aboutus_featureh4tag_3} components={{
-                      heading4: ({ children }) => (
-                        <h4 className="mb-4 font-semibold text-2xl"> {children}</h4>
-                      ),
-                    }} />
-                    <PrismicRichText field={item.aboutus_featureptag_3} components={{
-                      paragraph: ({ children }) => (<p className="md:text-lg text-base font-normal leading-8">{children}</p>
-                      ),
-                    }} />
+                    <PrismicRichText field={item.aboutus_featureh4tag_3} components={components} />
+                    <PrismicRichText field={item.aboutus_featureptag_3} components={components} />
                   </div>
                 </div>
               ))}
@@ -96,15 +88,8 @@ const AboutusFeatures = async () => {
                 <div key={`feature_4_${index}`} className='platform_box items-start md:flex block gap-8'>
                   <PrismicNextImage field={item.aboutus_featureimg4} className='w-6xl md:mb-0 mb-4' />
                   <div className='platform_box_text'>
-                    <PrismicRichText field={item.aboutus_featureh4tag_4} components={{
-                      heading4: ({ children }) => (
-                        <h4 className="mb-4 font-semibold text-2xl"> {children}</h4>
-                      ),
-                    }} />
-                    <PrismicRichText field={item.aboutus_featureptag_4} components={{
-                      paragraph: ({ children }) => (<p className="md:text-lg text-base font-normal leading-8">{children}</p>
-                      ),
-                    }} />
+                    <PrismicRichText field={item.aboutus_featureh4tag_4} components={components} />
+                    <PrismicRichText field={item.aboutus_featureptag_4} components={components} />
                   </div>
                 </div>
               ))}
@@ -118,15 +103,8 @@ const AboutusFeatures = async () => {
                 <div key={`feature_5_${index}`} className='platform_box items-start md:flex block gap-8'>
                   <PrismicNextImage field={item.aboutus_featureimg5} className='w-6xl md:mb-0 mb-4' />
                   <div className='platform_box_text'>
-                    <PrismicRichText field={item.aboutus_featureh4tag_5} components={{
-                      heading4: ({ children }) => (
-                        <h4 className="mb-4 font-semibold text-2xl"> {children}</h4>
-                      ),
-                    }} />
-                    <PrismicRichText field={item.aboutus_featureptag_5} components={{
-                      paragraph: ({ children }) => (<p className="md:text-lg text-base font-normal leading-8">{children}</p>
-                      ),
-                    }} />
+                    <PrismicRichText field={item.aboutus_featureh4tag_5} components={components} />
+                    <PrismicRichText field={item.aboutus_featureptag_5} components={components} />
                   </div>
                 </div>
               ))}
@@ -138,15 +116,8 @@ const AboutusFeatures = async () => {
                 <div key={`feature_6_${index}`} className='platform_box items-start md:flex block gap-8'>
                   <PrismicNextImage field={item.aboutus_featureimg6} className='w-6xl md:mb-0 mb-4' />
                   <div className='platform_box_text'>
-                    <PrismicRichText field={item.aboutus_featureh4tag_6} components={{
-                      heading4: ({ children }) => (
-                        <h4 className="mb-4 font-semibold text-2xl"> {children}</h4>
-                      ),
-                    }} />
-                    <PrismicRichText field={item.aboutus_featureptag_6} components={{
-                      paragraph: ({ children }) => (<p className="md:text-lg text-base font-normal leading-8">{children}</p>
-                      ),
-                    }} />
+                    <PrismicRichText field={item.aboutus_featureh4tag_6} components={components} />
+                    <PrismicRichText field={item.aboutus_featureptag_6} components={components} />
                   </div>
                 </div>
               ))}
@@ -163,3 +134,8 @@ const AboutusFeatures = async () => {
 }
 
 export default AboutusFeatures
+
+
+
+
+

@@ -1,0 +1,68 @@
+{
+  "format": "custom",
+  "id": "signup",
+  "label": "Signup",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "signup_zolvecarelogo": {
+        "type": "Image",
+        "config": {
+          "label": "SignUP_ZolvecareLogo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "signup_h3tag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "SignUP_H3tag",
+          "placeholder": "Create an account",
+          "allowTargetBlank": true,
+          "multi": "heading3"
+        }
+      },
+      "signup_ptag_1": {
+        "type": "StructuredText",
+        "config": {
+          "label": "SignUP_Ptag_1",
+          "placeholder": "Please enter your details",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "signup_h6tag": {
+        "type": "StructuredText",
+        "config": {
+          "label": "SignUP_H6tag",
+          "placeholder": "Have an account? Login",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "signup_googleimg": {
+        "type": "Image",
+        "config": {
+          "label": "SignUP_GoogleImg",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "signup_appleimg": {
+        "type": "Image",
+        "config": {
+          "label": "SignUP_AppleImg",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "format": "custom",
+  "id": "popup",
+  "label": "Popup",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "freedemo_btn_img": {
+        "type": "Image",
+        "config": {
+          "label": "FreeDemo_btn_Img",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "freedemo_btn_h2tag_1": {
+        "type": "StructuredText",
+        "config": {
+          "label": "FreeDemo_btn_H2tag_1",
+          "placeholder": "Start your demo!",
+          "allowTargetBlank": true,
+          "multi": "heading2"
+        }
+      },
+      "freedemo_btn_ptag_1": {
+        "type": "StructuredText",
+        "config": {
+          "label": "FreeDemo_btn_Ptag_1",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "freedemo_btn_h3tag_1": {
+        "type": "StructuredText",
+        "config": {
+          "label": "FreeDemo_btn_H3tag_1",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "heading3"
+        }
+      },
+      "freedemo_btn_h2tag_2": {
+        "type": "StructuredText",
+        "config": {
+          "label": "FreeDemo_btn_H2tag_2",
+          "placeholder": "Ready for your demo?",
+          "allowTargetBlank": true,
+          "multi": "heading2"
+        }
+      },
+      "freedemo_btn_ptag_2": {
+        "type": "StructuredText",
+        "config": {
+          "label": "FreeDemo_btn_Ptag_2",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph"
+        }
+      },
+      "freedemo_btn_h3tag_2": {
+        "type": "StructuredText",
+        "config": {
+          "label": "FreeDemo_btn_H3tag_2",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "heading3"
+        }
+      }
+    }
+  }
+}

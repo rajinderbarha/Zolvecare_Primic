@@ -1,7 +1,8 @@
 import { PrismicNextImage } from "@prismicio/next";
-import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react";
+import { JSXMapSerializer, PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react";
 import { RichText } from "./RichText";
 import { Content } from "@prismicio/client";
+import { BlogHomepage_Heading } from "./BlogHomepage_Heading";
 
 export const PostCard = ({
   post,
@@ -9,6 +10,17 @@ export const PostCard = ({
   post: Content.BlogPostDocument;
 }): JSX.Element => {
   const { data } = post;
+
+
+  const components: JSXMapSerializer = {      //A map of Rich Text block types to React Components. It is used to render Rich Text or Title fields.
+
+    heading6: ({ children }) => (
+      <BlogHomepage_Heading h6as='h6' >
+        {children}
+      </BlogHomepage_Heading>
+    ),
+
+  }
 
   return (
     <>
@@ -30,27 +42,11 @@ export const PostCard = ({
 
 
                     <div className='categories my-8 gap-2 flex-wrap flex'>
-                      <PrismicRichText field={data.posttag1} components={{
-                        heading6: ({ children }) => (
-                          <h6 className="px-4 py-2 font-medium">{children}</h6>
-                        )
-                      }} />
-                      <PrismicRichText field={data.posttag2} components={{
-                        heading6: ({ children }) => (
-                          <h6 className="px-4 py-2 font-medium">{children}</h6>
-                        )
-                      }} />
-                      <PrismicRichText field={data.posttag3} components={{
-                        heading6: ({ children }) => (
-                          <h6 className="px-4 py-2 font-medium">{children}</h6>
-                        )
-                      }} />
-                      <PrismicRichText field={data.posttag4} components={{
-                        heading6: ({ children }) => (
-                          <h6 className="px-4 py-2 font-medium">{children}</h6>
-                        )
-                      }} />
-                      
+                      <PrismicRichText field={data.posttag1} components={components} />
+                      <PrismicRichText field={data.posttag2} components={components} />
+                      <PrismicRichText field={data.posttag3} components={components} />
+                      <PrismicRichText field={data.posttag4} components={components} />
+
                     </div>
 
                     <div className="text-lg font-normal">

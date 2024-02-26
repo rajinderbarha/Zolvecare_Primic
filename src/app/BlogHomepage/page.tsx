@@ -1,13 +1,7 @@
-import { Metadata } from "next";
-
 import { SliceZone } from "@prismicio/react";
-import * as prismic from "@prismicio/client";
-
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
 import { PostCard } from "@/components/BlogHomepage/PostCard";
-import { Navigation } from "@/components/BlogHomepage/Navigation";
-import NavBar from "@/GlobalComponents/Navbar_Homepage";
 import Footer from "@/GlobalComponents/Footer";
 import { RelatedPosts_Side } from "@/components/BlogHomepage/RelatedPosts_Side";
 import NavBar_OtherRoutes from "@/GlobalComponents/Navbar_OtherRoutes";

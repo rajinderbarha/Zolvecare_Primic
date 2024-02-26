@@ -2,15 +2,43 @@ import React from "react";
 import { createClient } from "@/prismicio";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next"; // PrismicNextLink is useful for internal linking bcz it can access the id of the link from the prismic document(settings) with some extra features that next/link
 import Link from "next/link";
-import { PrismicRichText } from "@prismicio/react";
+import { JSXMapSerializer, PrismicRichText } from "@prismicio/react";
 import FreeDemo_Btn from "./FreeDemo_Btn";
+import {Homepage_Documentation_Ptag, Homepage_Documentation_Ptag_blue} from "./Reusable";
+import Homepage_Documentationh3 from "./Reusable";
 
 const Documentation = async () => {
   const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
   const HomepageDocumentation = await client.getSingle("homepagedocumentation");
 
-  const Homepagelanding = await client.getSingle("landing")  //     we accessing this for below buttton 
+  const components: JSXMapSerializer = {      //A map of Rich Text block types to React Components. It is used to render Rich Text or Title fields.
 
+    heading3: ({ children }) => (
+      <Homepage_Documentationh3 h3as='h3' className="my-3">
+        {children}
+      </Homepage_Documentationh3>
+    ),
+    paragraph: ({ children }) => (
+      <Homepage_Documentation_Ptag_blue Ptagas='p'>
+        {children}
+      </Homepage_Documentation_Ptag_blue>
+    ),
+    
+  }
+  
+   const components_Ph3tag: JSXMapSerializer = {      //A map of Rich Text block types to React Components. It is used to render Rich Text or Title fields.
+    paragraph: ({ children }) => (
+      <Homepage_Documentation_Ptag Ptagas='p'>
+        {children}
+      </Homepage_Documentation_Ptag>
+    ),
+    heading3: ({ children }) => (
+      <Homepage_Documentationh3 h3as='h3' >
+        {children}
+      </Homepage_Documentationh3>
+    ),
+  
+  }
   return (
     <>
 
@@ -42,31 +70,17 @@ const Documentation = async () => {
                       <li>
                         <PrismicRichText
                           field={item.documentation_efficiencyptag}
-                          components={{
-                            paragraph: ({ children }) => (
-                              <p className="font-semibold Efficiency_bg_blu">{children}</p>
-                            ),
-                          }}
+                          components={components}
                         />
 
                         <PrismicRichText
                           field={item.documentationh3tag}
-                          components={{
-                            heading3: ({ children }) => (
-                              <h3 className="my-3 font-semibold ">
-                                {children}
-                              </h3>
-                            ),
-                          }}
+                          components={components}
                         />
 
                         <PrismicRichText
                           field={item.documentation_ptag}
-                          components={{
-                            paragraph: ({ children }) => (
-                              <p className="font-normal">{children}</p>
-                            ),
-                          }}
+                          components={components_Ph3tag}
                         />
                       </li>
                     </ul>
@@ -112,31 +126,17 @@ const Documentation = async () => {
                       <li>
                         <PrismicRichText
                           field={item.documentation_ai_para1}
-                          components={{
-                            paragraph: ({ children }) => (
-                              <p className="font-semibold Efficiency_bg_blu">{children}</p>
-                            ),
-                          }}
+                          components={components}
                         />
 
                         <PrismicRichText
                           field={item.documentation_ai_h3tag}
-                          components={{
-                            heading3: ({ children }) => (
-                              <h3 className="my-3 font-semibold">
-                                {children}
-                              </h3>
-                            ),
-                          }}
+                          components={components}
                         />
 
                         <PrismicRichText
                           field={item.documentation_ai_para2}
-                          components={{
-                            paragraph: ({ children }) => (
-                              <p className="font-normal">{children}</p>
-                            ),
-                          }}
+                          components={components_Ph3tag}
                         />
                       </li>
                     </ul>
@@ -190,31 +190,17 @@ const Documentation = async () => {
                       <li>
                         <PrismicRichText
                           field={item.documentation_optimizing_para1}
-                          components={{
-                            paragraph: ({ children }) => (
-                              <p className="font-semibold  Efficiency_bg_blu">{children}</p>
-                            ),
-                          }}
+                          components={components}
                         />
 
                         <PrismicRichText
                           field={item.documentation_optimizing_h3tag}
-                          components={{
-                            heading3: ({ children }) => (
-                              <h3 className="my-3 font-semibold">
-                                {children}
-                              </h3>
-                            ),
-                          }}
+                          components={components}
                         />
 
                         <PrismicRichText
                           field={item.documentation_optimizing_para2}
-                          components={{
-                            paragraph: ({ children }) => (
-                              <p className="font-normal">{children}</p>
-                            ),
-                          }}
+                          components={components_Ph3tag}
                         />
                       </li>
                     </ul>
@@ -237,7 +223,7 @@ const Documentation = async () => {
 
             </div>
             <div className="text-center md:mt-16 mt-8 w-full">
-              <FreeDemo_Btn name={"Get a free demo"} />
+              <FreeDemo_Btn name={"Get a free demo"} className="Free_Demo"/>
             </div>
           </div>
         </div>

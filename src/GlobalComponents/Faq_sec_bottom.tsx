@@ -8,7 +8,7 @@ import {
 import { createClient } from '@/prismicio';
 import { PrismicRichText } from '@prismicio/react';
 import Link from 'next/link';
-async function Faq_sec() {
+async function Faq_sec_bottom() {
     const client = createClient(); //Creates a Prismic client for the project's repository. The client is used to query(fetch) content from the Prismic API
     const HomepageShadcn = await client.getSingle("homepageshadcn");
     return (
@@ -85,4 +85,4 @@ async function Faq_sec() {
     )
 }
 
-export default Faq_sec
+export default Faq_sec_bottom
