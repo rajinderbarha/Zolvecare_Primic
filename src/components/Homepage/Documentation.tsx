@@ -62,9 +62,9 @@ const Documentation = async () => {
             <div className='grid items-center md:gap-16 gap-6 md:grid-cols-2 grid-cols-1'>
               <div className='Efficiency'>
                 {HomepageDocumentation.data.documentationefficiency.map(
-                  (item) => (
+                  (item,index) => (
                     <ul
-                      key={Math.random.toString()}
+                      key={`HomepageDocumentation1${index}`}
                       className=""
                     >
                       <li>
@@ -118,9 +118,9 @@ const Documentation = async () => {
               <div className='Efficiency'>
 
                 {HomepageDocumentation.data.documentation_ai_content.map(
-                  (item) => (
+                  (item,index) => (
                     <ul
-                      key={Math.random.toString()}
+                    key={`HomepageDocumentation2${index}`}
                       className=""
                     >
                       <li>
@@ -182,9 +182,9 @@ const Documentation = async () => {
               <div className='Efficiency'>
 
                 {HomepageDocumentation.data.documentation_optimizing_content.map(
-                  (item) => (
+                  (item,index) => (
                     <ul
-                      key={Math.random.toString()}
+                    key={`HomepageDocumentation3${index}`}
                     // className="relative Features_boxs"
                     >
                       <li>

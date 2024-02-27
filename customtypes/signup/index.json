@@ -12,6 +12,14 @@
         },
         "type": "UID"
       },
+      "mainimg": {
+        "type": "Image",
+        "config": {
+          "label": "MainImg",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "signup_zolvecarelogo": {
         "type": "Image",
         "config": {

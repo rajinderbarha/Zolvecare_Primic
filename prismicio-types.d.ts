@@ -3311,6 +3311,17 @@ export type SettingsDocument<Lang extends string = string> =
  */
 interface SignupDocumentData {
   /**
+   * MainImg field in *Signup*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: signup.mainimg
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  mainimg: prismic.ImageField<never>;
+
+  /**
    * SignUP_ZolvecareLogo field in *Signup*
    *
    * - **Field Type**: Image

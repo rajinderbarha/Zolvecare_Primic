@@ -37,7 +37,7 @@ const SignUp = () => {
         {signupBtn && signupData &&
         <div className="stap">
           <div className="stap_1_img">
-              <img src="https://framerusercontent.com/images/NMKtK3gNVdeb5dkKv5I4HXZ9AFo.png?scale-down-to=1024" alt="stap_img" />
+                    <PrismicNextImage field={signupData.data.mainimg} className=" " />
 
           </div>
           <div className="start_demo">
