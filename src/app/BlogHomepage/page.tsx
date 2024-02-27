@@ -13,7 +13,7 @@ export default async function BlogHomepage() {
   const client = createClient();
 
   // Fetch the content of the home page from Prismic
-  const home = await client.getByUID("page", "bloghomepage");
+  const home = await client.getByUID("page", "bloghomepage");     //  here page is id of bloghomepage which we created on prismic     Page types       bloghomepage is UID of our BlogHomePage  where we put data to our page like uploading photos
 
   // Get all of the blog_post documents created on Prismic ordered by publication date
   const posts = await client.getAllByType("blog_post", {
