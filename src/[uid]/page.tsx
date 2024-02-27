@@ -14,12 +14,6 @@ export default async function Page({ params }: { params: Params }) {
     // Handle case when page data is not available
     return <div>Loading...</div>;
   }
-//   const works = await client.getAllByType("page", {
-//     orderings: {
-//       field: "document.first_publication_date",
-//       direction: "desc",
-//     },
-//   });
   return <SliceZone slices={page.data.slices} components={components} />;
 }
 
@@ -50,6 +44,15 @@ export async function getStaticProps({ params }: { params: Params }) {
     },
   };
 }
+
+
+
+// export async function generateStaticParams() {
+//   const client = createClient();
+//   const pages = await client.getAllByType("blog_post");
+//   return pages.map((page) => ({ uid: page.uid }));
+// }
+
 
 
 

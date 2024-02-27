@@ -2,6 +2,7 @@ import { Content } from "@prismicio/client";
 import { SliceComponentProps, PrismicText } from "@prismicio/react";
 import { RichText } from "@/components/BlogHomepage/RichText";
 import { PrismicNextImage } from "@prismicio/next";
+import FreeDemo_Btn from "@/components/Homepage/FreeDemo_Btn";
 
 /**
  * Props for `Hero`.
@@ -28,8 +29,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             <div className='About_banner_text'>
               <h2 className='md:mb-6 mb-2 font-semibold '> <PrismicText field={slice.primary.title} /></h2>
               <div className="md:mb-16 mb:6 md:text-lg text-base font-normal leading-8"> <RichText field={slice.primary.description} /></div>
-
-              <button className="Free_Demo">Start a demo</button>
+              <FreeDemo_Btn name="Start a demo" className="Free_Demo" />
             </div>
           </div>
         </div>
